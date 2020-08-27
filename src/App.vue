@@ -1,30 +1,23 @@
 <template>
   <div id="app">
-    <LoadingScreen :isLoading="isLoading" />
-    <div v-if="!isLoading">
+    <div>
       <img alt="Vue logo" src="./assets/LiQ.png">
-      <HelloWorld msg="Welcome To The Party"/>
+      <Info/>
     </div>    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import LoadingScreen from "./components/LoadingScreen";
+import Info from "./components/Info.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    LoadingScreen
+    Info
   },
   data() {
-    return { isLoading: true };
   },
   mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
   }
 };
 </script>
