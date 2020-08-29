@@ -9,8 +9,8 @@
                 <v-toolbar-items class="text-right">
                     <v-btn
                     :x-small="$vuetify.breakpoint.smAndDown"
-                    @click="$vuetify.goTo('#about',options )"
-                    text>About</v-btn>
+                    @click="$vuetify.goTo('#Servers',options )"
+                    text>Servers</v-btn>
                     <v-btn
                     :x-small="$vuetify.breakpoint.smAndDown"
                     @click="$vuetify.goTo('#contact',options )"
@@ -37,6 +37,20 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
+    <v-fab-transition>
+      <v-btn
+            v-scroll="onScroll"
+            v-show="fab"
+            fab
+            dark
+            fixed
+            bottom
+            right
+            @click="toTop"
+          >
+            <v-icon>expand_less</v-icon>
+          </v-btn>
+    </v-fab-transition>
     </nav>
 </template>
 
@@ -48,11 +62,22 @@ export default {
       drawer: false,
       items: [
         { title: 'Home', icon: 'mdi-home-city' },
-        { title: 'About', icon: 'mdi-account' },
+        { title: 'Servers', icon: 'mdi-dns' },
         { title: 'Contact', icon: 'mdi-account-group-outline' },
       ],
       mini: true,
+      fab: false
     };
+  },
+    methods: {
+    onScroll (e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset ||   e.target.scrollTop || 0
+      this.fab = top > 20
+    },
+    toTop () {
+      this.$vuetify.goTo(0)
+    }
   }
 };
 </script>

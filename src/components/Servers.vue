@@ -1,22 +1,11 @@
 <template>
   <v-card
-            target="_blank"
-            elevation="5"
-            style="border-radius: 20px; margin:5px;"
-            max-width="950px">
-    <v-card-title>
-      <v-layout>
-          <v-row align="center" justify="center">
-            <v-flex>
-              <div class="title mt-2" style="color: rgba(0, 0, 0, 0.7);">{{server.name}}</div>
-              <template>
-                <!-- <div></div> -->
-              </template>
-            </v-flex>
-          </v-row>
-      </v-layout>
-    </v-card-title>
+        target="_blank"
+        elevation="5"
+        style="border-radius: 20px; margin:5px;"
+        max-width="950px">
     <v-card-text>
+      <div class="title mt-2">{{server.name}}</div>
       <div>{{server.description}}</div>
       <div class="title mt-2">Battmetrics</div>
       <v-layout>

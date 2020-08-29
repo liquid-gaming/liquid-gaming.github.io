@@ -21,17 +21,19 @@
       </v-layout>
     </v-img>
     <v-container class="mt-5">
-      <v-layout wrap my-5>
-        <v-flex xs12 class="mt-5">
-          <v-layout wrap>
-            <template v-for="(server, i) in servers">
-              <v-flex :key="i" xs12 sm6 lg6>
-                <Servers :server="server" />
-              </v-flex>
-            </template>
-          </v-layout>
-        </v-flex>
-      </v-layout>
+      <v-row align="center" justify="center">
+        <v-layout wrap my-5>
+          <v-flex justify-center class="mt-5">
+            <v-layout wrap>
+              <template v-for="(server, i) in servers">
+                <v-flex :key="i" xs12 sm6 lg5 just>
+                  <Servers id="Servers" :server="server" />
+                </v-flex>
+              </template>
+            </v-layout>
+          </v-flex>
+        </v-layout>
+      </v-row>
     </v-container>
   </div>
 </template>
