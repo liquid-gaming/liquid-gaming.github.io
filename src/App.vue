@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <ToolBar />
+    <NavBar />
     <v-content style="background-color: white">
       <!-- <HelloWorld /> -->
       <router-view />
@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import ToolBar from "./components/Toolbar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 export default {
   name: 'App',
 
   components: {
-    ToolBar,
+    NavBar,
     Footer
   },
 
