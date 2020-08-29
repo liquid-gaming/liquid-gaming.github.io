@@ -2,7 +2,6 @@
   <v-app>
     <NavBar />
     <v-content style="background-color: white">
-      <!-- <HelloWorld /> -->
       <router-view />
     </v-content>
     <Footer />

@@ -11,7 +11,7 @@
             <v-col cols="12">
               <div
                 :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
-              >LiQ Gaming</div>
+              >LiQuid Gaming</div>
               <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75;">
                 We are a high-level clan in various gaming platforms with a community of over 500 players. <br/>
                 We currently host 2 servers in Squad and have plan for more in the future. <br/>
