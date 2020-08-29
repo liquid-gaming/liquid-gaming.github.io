@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <v-app-bar flat fixed color="transparent" dark height="120px">
+        <v-app-bar flat fixed style="opacity: .5" dark height="80px">
             <v-layout justify-center>
             <v-container>
                 <v-layout>
@@ -67,7 +67,7 @@ export default {
       ],
       mini: true,
       fab: false
-    };
+    }; 
   },
     methods: {
     onScroll (e) {
@@ -83,4 +83,7 @@ export default {
 </script>
 
 <style>
+  .change_color {
+       background-color:red
+   }
 </style>
