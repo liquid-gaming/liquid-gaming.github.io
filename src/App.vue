@@ -26,3 +26,8 @@ export default {
   }),
 };
 </script>
+<style>
+.v-application {
+    background-color: var(--v-background-base) !important;
+}
+</style>

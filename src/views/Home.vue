@@ -8,26 +8,30 @@
     <v-layout fill-height align-center>
         <v-container>
           <v-row align="center" justify="center" class="white--text">
-            <v-col align="center" justify="center" cols="12">
+            <v-col cols="12">
               <div
                 :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
               >LiQ Gaming</div>
-              <div
-                :class="{'headline': $vuetify.breakpoint.smAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
-              >LiQ these nutz.</div>
+              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75;">
+                We are a high-level clan in various gaming platforms with a community of over 500 players. <br/>
+                We currently host 2 servers in Squad and have plan for more in the future. <br/>
+                <br/>
+                We are eager to help new or ruturning players redisocer their passion for gaming. <br/>
+                Please scroll down and take a look, we would love for you to join us! <br/>
+              </div>
             </v-col>
           </v-row>
         </v-container>
       </v-layout>
     </v-img>
-    <v-container class="mt-5">
+    <v-container class="mt-5" id="Servers" >
       <v-row align="center" justify="center">
         <v-layout wrap my-5>
           <v-flex justify-center class="mt-5">
             <v-layout wrap>
-              <template v-for="(server, i) in servers">
+              <template v-for="(server, i) in serversList">
                 <v-flex :key="i" xs12 sm6 lg5 just>
-                  <Servers id="Servers" :server="server" />
+                  <Servers :server="server" />
                 </v-flex>
               </template>
             </v-layout>
@@ -35,21 +39,24 @@
         </v-layout>
       </v-row>
     </v-container>
+        <Carousel :carouselItems="firstCarouselItems"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Servers from "@/components/Servers.vue";
+import Carousel from "@/components/Carousel.vue"
 
 export default {
   name: "home",
   components: {
-    Servers
+    Servers,
+    Carousel
   },
   data() {
     return {
-      servers: [
+      serversList: [
         {
           name: "『LiQ』Liquid Gaming: Noob Friendly -AAS/RAAS/INV - PTFO",
           description:
@@ -143,6 +150,14 @@ export default {
               description:"When a squad is created and named with the intention of using a certain vehicle “ex. Helo” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad."
             }
           ]                  
+        }
+      ],
+      firstCarouselItems: [
+        {
+          src:require('../assets/TANK.jpg')
+        },
+        {
+          src:require('../assets/tandam.png')
         }
       ]
     };
