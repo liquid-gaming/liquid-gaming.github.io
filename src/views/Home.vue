@@ -47,7 +47,7 @@
                   </div>
                 </v-row>
               </v-container>
-              <template v-for="(server, i) in serversList">
+              <template v-for="(server, i) in squadServersList">
                 <v-flex :key="i" xs12 sm6 lg5 just>
                   <Servers :server="server" />
                 </v-flex>
@@ -74,7 +74,7 @@ export default {
   },
   data() {
     return {
-      serversList: [
+      squadServersList: [
         {
           name: "『LiQ』Liquid Gaming: Noob Friendly -AAS/RAAS/INV - PTFO",
           description:

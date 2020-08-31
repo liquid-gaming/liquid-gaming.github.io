@@ -1,10 +1,10 @@
 <template>
-    <nav>
-        <v-app-bar flat fixed style="opacity: .5" dark height="80px">
+    <nav id="navbar">
+        <v-app-bar flat fixed color="transparent" dark height="80px">
             <v-layout justify-center>
             <v-container>
                 <v-layout>
-                    <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
+                    <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn
@@ -70,9 +70,14 @@ export default {
   },
     methods: {
     onScroll (e) {
+      let header = document.querySelector(".v-toolbar");
       if (typeof window === 'undefined') return
       const top = window.pageYOffset ||   e.target.scrollTop || 0
-      this.fab = top > 20
+      if(top > 300){
+        header.classList.remove("transparent")
+      }
+      this.fab = top > 500
+      ;
     },
     toTop () {
       this.$vuetify.goTo(0)
@@ -81,8 +86,10 @@ export default {
 };
 </script>
 
-<style>
-  .change_color {
-       background-color:red
-   }
+<style lang="css">
+ 
+  .v-app-bar--is-scrolled {
+    opacity: .9 !important;
+  }
+
 </style>
