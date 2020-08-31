@@ -24,7 +24,7 @@
           </v-container>
         </v-layout>
     </v-parallax>
-    <v-container class="mt-5 dark black--background">
+    <v-container class="mt-5 dark black--background" id="About">
       <About :discord="dicord" />
     </v-container>
       <Carousel :carouselItems="firstCarouselItems"/>

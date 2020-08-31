@@ -9,12 +9,12 @@
                 <v-toolbar-items class="text-right">
                     <v-btn
                     :x-small="$vuetify.breakpoint.smAndDown"
-                    @click="$vuetify.goTo('#Servers',options )"
-                    text>Servers</v-btn>
+                    @click="$vuetify.goTo('#About',options )"
+                    text>Discord</v-btn>
                     <v-btn
                     :x-small="$vuetify.breakpoint.smAndDown"
-                    @click="$vuetify.goTo('#contact',options )"
-                    text>Contact</v-btn>
+                    @click="$vuetify.goTo('#Servers',options )"
+                    text>Servers</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -61,8 +61,9 @@ export default {
       drawer: false,
       items: [
         { title: 'Home', icon: 'mdi-home-city' },
+        { title: 'About', icon: 'mdi-account-group-outline' },
         { title: 'Servers', icon: 'mdi-dns' },
-        { title: 'Contact', icon: 'mdi-account-group-outline' },
+        { title: 'Contact', icon: 'connect_without_contact' }
       ],
       mini: true,
       fab: false
