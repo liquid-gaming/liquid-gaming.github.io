@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" style="background: #121212;">
     <v-parallax
       height="950"
       src="@/assets/TANK.jpg"
@@ -9,7 +9,7 @@
           <v-container>
             <v-row align="center" justify="center" class="white--text">
               <v-col cols="12">
-                <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
                   LiQuid Gaming
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
@@ -23,21 +23,30 @@
             </v-row>
           </v-container>
         </v-layout>
-      </v-img>
-      <v-container class="mt-5 dark black--background" id="Servers" >
-        <v-row align="center" justify="center" class="white--text">
-          <v-col cols="12">
-            <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
-              LiQuid Gaming
-            </div>
-          </v-col>
-        </v-row>
     </v-parallax>
-    <v-container class="mt-5" id="Servers" >
+    <v-container class="mt-5 dark black--background" id="Servers" >
       <v-row align="center" justify="center">
+        <v-container>
+          <v-row align="left" justify="left">
+            <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+              Servers
+            </div>
+            <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </v-row>
+        </v-container>
         <v-layout wrap my-5>
           <v-flex justify-center class="mt-5">
             <v-layout wrap>
+              <v-container>
+              <v-row align="left" justify="left">
+                  <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
+                    Squad
+                  </div>
+                </v-row>
+              </v-container>
               <template v-for="(server, i) in serversList">
                 <v-flex :key="i" xs12 sm6 lg5 just>
                   <Servers :server="server" />
