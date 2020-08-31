@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <NavBar />
     <v-content style="background-color: white">
       <router-view />
@@ -26,7 +26,7 @@ export default {
 };
 </script>
 <style>
-.v-application {
-    background-color: var(--v-background-base) !important;
+#app {
+    background-color: var(--v-background-base);
 }
 </style>

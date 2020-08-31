@@ -5,9 +5,9 @@
         style="border-radius: 20px; margin:5px;"
         max-width="950px">
     <v-card-text>
-      <div class="title mt-2">{{server.name}}</div>
+      <div class="title mt-2 titleColour">{{server.name}}</div>
       <div>{{server.description}}</div>
-      <div class="title mt-2">Battmetrics</div>
+      <div class="title mt-2 titleColour">Battmetrics</div>
       <v-layout>
         <template>
           <!-- <div></div> -->
@@ -17,16 +17,16 @@
       <div>
         <v-expansion-panels>
         <v-expansion-panel>
-          <v-expansion-panel-header>Rules</v-expansion-panel-header>
+          <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
             <v-expansion-panel-content>
               <template v-slot:actions>
                   <v-icon color="primary">accessibility</v-icon>
               </template>
               <v-flex v-for="(rule, index) in server.rules" :key="index">
-                <v-card class="card-container" style="margin:7px;">
-                  <v-card-text class="px-4 grey--text">
+                <v-card class="card-container" style="margin:7px;background:#262626;">
+                  <v-card-text class="px-4">
                     <v-card-title>
-                      <h5>{{index+1}}: {{rule.title}}</h5>
+                      <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
                     </v-card-title>
                     <v-card-subtitle>
                       <p>{{rule.description}}</p>
@@ -59,5 +59,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .titleColour{
+    color:#e6e6e6;
+  }
 </style>

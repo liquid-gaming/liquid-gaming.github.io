@@ -5,14 +5,14 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
-    options: {
-      customProperties: true,
-    },
     themes: {
       dark: {
-        background: '#1ECBE1',
+        background: '#272727',
       },
     },
-    dark: true    
+    dark: true,
+    options: {
+      customProperties: true,
+    }, 
   },
 });
