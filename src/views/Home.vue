@@ -25,7 +25,7 @@
         </v-layout>
     </v-parallax>
     <v-container class="mt-5 dark black--background" id="About">
-      <About :discord="dicord" />
+      <About :discord="dicord" :teamMembers="teamMembers"/>
     </v-container>
       <Carousel :carouselItems="firstCarouselItems"/>
     <v-container class="mt-5 dark black--background" id="Servers">
@@ -85,9 +85,11 @@ import Servers from "@/components/Servers.vue";
 import Carousel from "@/components/Carousel.vue"
 import About from "@/components/About.vue"
 
+//Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
 import discord from "@/assets/json/discordInfo.json"
+import teamMembers from "@/assets/json/teamMembers.json"
 
 export default {
   name: "home",
@@ -101,6 +103,7 @@ export default {
       dicord: discord,
       minecraftServersList: minecraftServersListJson,
       squadServersList: squadServersListJson,
+      teamMembers: teamMembers,
       firstCarouselItems: [
         {
           src:require('../assets/TANK.jpg')

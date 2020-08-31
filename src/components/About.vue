@@ -2,19 +2,34 @@
     <v-row align="left" justify="left">
         <v-flex xs12 sm5 md6 lg8 just>
             <v-container>
-            <v-row align="left" justify="left">
-                <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
-                    Who We Are
-                </div>
-                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" style="margin-top:20px;">
-                    Our Leaders
-                    
-                </div>
-            </v-row>
+                <v-row align="left" justify="left">
+                    <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                        Who We Are
+                    </div>
+                    <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" style="margin-top:20px;">
+                        Our Team
+                    </div>
+                    <v-container class="my-5">
+                        <v-layout row wrap>
+                            <v-flex xs12 sm6 md4 lg3  v-for="(person, index) in teamMembers" :key="index">
+                                <v-hover v-slot:default="{ hover }">
+                                    <v-card class="text-xs-center ma-3" :elevation="hover ? 12 : 2">
+                                        <v-card-text>
+                                            <div class="subheading">{{person.name}}</div>
+                                            <div v-for="(role, index) in person.roles" :key="index" class="grey--text" :class="role.name">
+                                                {{role.name}}
+                                            </div>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-hover>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-row>
             </v-container>
         </v-flex>        
         
@@ -79,9 +94,15 @@ export default {
         discord: {
         type: Object,
         default: function () {
-            return {};
+                return {};
+            },
         },
-        },
+        teamMembers: {
+        type: Object,
+        default: function () {
+                return {};
+            },
+        }
     }
 };
 </script>
@@ -96,5 +117,11 @@ export default {
 }
 .flex.xl3{
     flex-basis: 20% !important;
+}
+.Founder{
+    color: mix(#eb36d9, grey) !important;
+}
+.Administrator{
+    color: mix(red, grey) !important;
 }
 </style>

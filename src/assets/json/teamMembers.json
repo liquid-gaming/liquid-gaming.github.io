@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Almtree",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Apache1",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Budge",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Chase",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "SuperFlanker",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Wolf Fang",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
+                }
+            ]
+    }
+]
