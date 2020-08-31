@@ -10,7 +10,9 @@
       <div class="title mt-2 titleColour">Battmetrics</div>
       <v-layout>
         <template>
-          <!-- <div></div> -->
+          <div>
+            <iframe :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.html?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'" frameborder=0 style="border:0" name="rnoga"></iframe>
+          </div>
         </template>
       </v-layout>
     </v-card-text>
@@ -41,6 +43,16 @@
   </v-card>
 </template>
 
+<script lang="application/javascript">
+  window.addEventListener('message',function(e)
+  {
+    if(e.data.uid&&e.data.type==='sizeUpdate')
+    {
+      var i = document.querySelector('iframe[name="'+e.data.uid+'"]');
+      i.style.width = e.data.payload.width;i.style.height = e.data.payload.height;
+    }
+  });
+</script>
 <script>
 export default {
   props: {
