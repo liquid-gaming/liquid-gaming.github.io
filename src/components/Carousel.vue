@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="background:black;">
         <v-carousel 
             hide-delimiters 
             cycle
