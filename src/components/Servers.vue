@@ -6,7 +6,17 @@
       <div class="title mt-2 titleColour">Battmetrics</div>
       <v-layout>
         <template>
-          <div>
+          <div v-if="$vuetify.breakpoint.mdAndDown">
+            <!-- <iframe
+              :src="'https://cdn.battlemetrics.com/b/horizontal500x80px/' + server.battlemetricId + '.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700'"
+              frameborder="0"
+              style="border:0"
+              :name="server.battlemetricId"
+            ></iframe> -->
+            <a href="https://www.battlemetrics.com/servers/squad/7894269"><img :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.png?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'" /></a>
+          </div>
+          <div v-else></div>
+          <div v-if="$vuetify.breakpoint.lgAndUp">
             <!-- <iframe
               :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.html?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'"
               frameborder="0"
@@ -14,14 +24,8 @@
               :name="server.battlemetricId"
             ></iframe> -->
             <a href="https://www.battlemetrics.com/servers/squad/7894269"><img :src="'https://cdn.battlemetrics.com/b/horizontal500x80px/' + server.battlemetricId + '.png?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700'" /></a>
-            <!-- <iframe
-              :src="'https://cdn.battlemetrics.com/b/horizontal500x80px/' + server.battlemetricId + '.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700'"
-              frameborder="0"
-              style="border:0"
-              :name="server.battlemetricId"
-            ></iframe> -->
-            <!-- <a href="https://www.battlemetrics.com/servers/squad/7894269"><img :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.png?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'" /></a> -->
           </div>
+          <div v-else></div>
         </template>
       </v-layout>
     </v-card-text>
@@ -75,6 +79,9 @@ export default {
     logo(name) {
       return require("../assets/" + name);
     },
+    screenSize(){
+      return vuetify.breakpoint.smAndDown;
+    }
   },
 };
 </script>

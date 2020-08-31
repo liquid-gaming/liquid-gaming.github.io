@@ -48,7 +48,7 @@
                 </v-row>
               </v-container>
               <template v-for="(server, i) in squadServersList">
-                <v-flex :key="i" xs12 sm6 lg5 just>
+                <v-flex :key="i" xs12 sm4 md5 lg6 just>
                   <Servers :server="server" />
                 </v-flex>
               </template>
