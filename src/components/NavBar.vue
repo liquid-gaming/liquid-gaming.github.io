@@ -43,9 +43,8 @@
             v-show="fab"
             fab
             dark
-            fixed
-            bottom
-            right
+            fixed bottom right
+            style="background: #041238"
             @click="toTop"
           >
             <v-icon>expand_less</v-icon>
