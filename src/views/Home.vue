@@ -1,37 +1,39 @@
 <template>
   <div class="home">
-    <v-img
-      gradient="to top right, rgba(100,100,100,.33), rgba(100,100,100,.7)"
-      max-height="1000px"
+    <v-parallax
+      height="950"
       src="@/assets/TANK.jpg"
+      id="home-image"
     >
-    <v-layout fill-height align-center>
-        <v-container>
-          <v-row align="center" justify="center" class="white--text">
-            <v-col cols="12">
-              <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
-                LiQuid Gaming
-              </div>
-              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                We are a high-level clan in various gaming platforms with a community of over 500 players. <br/>
-                We currently host 2 servers in Squad and have plan for more in the future. <br/>
-                <br/>
-                We are eager to help new or ruturning players redisocer their passion for gaming. <br/>
-                Please scroll down and take a look, we would love for you to join us! <br/>
-              </div>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-layout>
-    </v-img>
-    <v-container class="mt-5 dark black--background" id="Servers" >
-      <v-row align="center" justify="center" class="white--text">
-        <v-col cols="12">
-          <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
-            LiQuid Gaming
-          </div>
-        </v-col>
-      </v-row>
+      <v-layout fill-height align-center>
+          <v-container>
+            <v-row align="center" justify="center" class="white--text">
+              <v-col cols="12">
+                <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                  LiQuid Gaming
+                </div>
+                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                  We are a high-level clan in various gaming platforms with a community of over 500 players. <br/>
+                  We currently host 2 servers in Squad and have plan for more in the future. <br/>
+                  <br/>
+                  We are eager to help new or ruturning players redisocer their passion for gaming. <br/>
+                  Please scroll down and take a look, we would love for you to join us! <br/>
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-layout>
+      </v-img>
+      <v-container class="mt-5 dark black--background" id="Servers" >
+        <v-row align="center" justify="center" class="white--text">
+          <v-col cols="12">
+            <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}">
+              LiQuid Gaming
+            </div>
+          </v-col>
+        </v-row>
+    </v-parallax>
+    <v-container class="mt-5" id="Servers" >
       <v-row align="center" justify="center">
         <v-layout wrap my-5>
           <v-flex justify-center class="mt-5">
@@ -171,3 +173,9 @@ export default {
   }
 };
 </script>
+
+<style lang="css">
+  #home-image .v-parallax__content {
+    background: linear-gradient(45deg, rgba(100,100,100,.33), rgba(100,100,100,.7));
+  }
+</style>
