@@ -1,8 +1,8 @@
 <template>
   <div class="home background-image">
     <v-parallax
-      height="950"
-      src="@/assets/TANK.jpg"
+      height="900"
+      src="@/assets/tankInfield.jpg"
       id="home-image"
     >
       <v-layout fill-height align-center>
