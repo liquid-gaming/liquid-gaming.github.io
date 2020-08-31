@@ -1,5 +1,5 @@
 <template>
-  <div class="home" style="background: #121212;">
+  <div class="home background-image">
     <v-parallax
       height="950"
       src="@/assets/TANK.jpg"
@@ -188,5 +188,9 @@ export default {
 <style lang="css">
   #home-image .v-parallax__content {
     background: linear-gradient(45deg, rgba(100,100,100,.33), rgba(100,100,100,.7));
+  }
+  .background-image{
+    background-image: url('~@/assets/background.png');
+    background-repeat: repeat;
   }
 </style>
