@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <v-parallax
-      gradient="to top right, rgba(100,100,100,.33), rgba(100,100,100,.7)"
       height="950"
       src="@/assets/TANK.jpg"
       id="home-image"
