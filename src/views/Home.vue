@@ -1,9 +1,10 @@
 <template>
   <div class="home">
-    <v-img
+    <v-parallax
       gradient="to top right, rgba(100,100,100,.33), rgba(100,100,100,.7)"
-      max-height="1000px"
+      height="950"
       src="@/assets/TANK.jpg"
+      id="home-image"
     >
     <v-layout fill-height align-center>
         <v-container>
@@ -23,7 +24,7 @@
           </v-row>
         </v-container>
       </v-layout>
-    </v-img>
+    </v-parallax>
     <v-container class="mt-5" id="Servers" >
       <v-row align="center" justify="center">
         <v-layout wrap my-5>
@@ -164,3 +165,9 @@ export default {
   }
 };
 </script>
+
+<style lang="css">
+  #home-image .v-parallax__content {
+    background: linear-gradient(45deg, rgba(100,100,100,.33), rgba(100,100,100,.7));
+  }
+</style>
