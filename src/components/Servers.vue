@@ -1,5 +1,6 @@
 <template>
-  <v-card target="_blank" elevation="5" style="border-radius: 20px; margin:5px;" max-width="950px">
+<v-hover v-slot:default="{ hover }">
+  <v-card target="_blank" :elevation="hover ? 15 : 5" style="border-radius: 20px; margin:5px;" max-width="950px">
     <v-card-text>
       <div class="title mt-2 titleColour">{{server.name}}</div>
       <div>{{server.description}}</div>
@@ -54,6 +55,7 @@
       </v-expansion-panels>
     </div>
   </v-card>
+</v-hover>
 </template>
 
 <script type="application/javascript">
