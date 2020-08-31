@@ -76,6 +76,11 @@ export default {
       if(top > 300){
         header.classList.remove("transparent")
       }
+      if(top<300){
+        if (!header.classList.contains("transparent")){
+          header.classList.add("transparent")
+        }
+      }
       this.fab = top > 500
       ;
     },
