@@ -25,70 +25,66 @@
         </v-layout>
     </v-parallax>
       <v-container class="mt-5 dark black--background" style="margin-bottom:20px;" id="About">        
-        <v-hover v-slot:default="{ hover }">
-          <v-card :elevation="hover ? 15 : 5"  style="background:#222222;padding:30px;border-radius: 10px;">
-            <About :discord="dicord" :teamMembers="teamMembers"/>
-          </v-card>
-        </v-hover>
+        <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;">
+          <About :discord="dicord" :teamMembers="teamMembers"/>
+        </v-card>
       </v-container>
       <Carousel id="Servers" :carouselItems="firstCarouselItems"/>
     <v-container class="mt-5 dark black--background" style="margin-bottom:20px;">    
-      <v-hover v-slot:default="{ hover }">
-        <v-card :elevation="hover ? 15 : 5"  style="background:#222222;padding:30px;border-radius: 10px;">
-          <v-row align="center" justify="center">
-            <v-container>
-              <v-row align="left" justify="left">
-                <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
-                  Servers
-                </div>
-                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </v-row>
-            </v-container>
-            <v-layout wrap my-5>
-              <v-flex justify-center class="mt-5">
-                <v-layout wrap>
-                  <v-container>
-                    <v-row align="left" justify="left">
-                      <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
-                        Squad
-                      </div>
-                    </v-row>
-                  </v-container>
-                  <template v-for="(server, i) in squadServersList">
-                    <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                      <Servers :server="server" />
-                    </v-flex>
-                  </template>
-                </v-layout>
-                <v-layout wrap>
-                  <v-container>
-                    <v-row align="left" justify="left">
-                      <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
-                        Minecraft
-                      </div>
-                    </v-row>
-                  </v-container>
-                  <template v-for="(server, i) in minecraftServersList">
-                    <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                      <Servers :server="server" />
-                    </v-flex>
-                  </template>
-                </v-layout>
-                <v-layout wrap>
-                  <template>
-                    <v-flex xs12 sm12 md12 lg12>
-                      <Patreon />
-                    </v-flex>
-                  </template>
-                </v-layout>
-              </v-flex>
-            </v-layout>
-          </v-row>
-        </v-card>
-      </v-hover>
+      <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;">
+        <v-row align="center" justify="center">
+          <v-container>
+            <v-row align="left" justify="left">
+              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                Servers
+              </div>
+              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </v-row>
+          </v-container>
+          <v-layout wrap my-5>
+            <v-flex justify-center class="mt-5">
+              <v-layout wrap>
+                <v-container>
+                  <v-row align="left" justify="left">
+                    <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
+                      Squad
+                    </div>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in squadServersList">
+                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
+                    <Servers :server="server" />
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
+                <v-container>
+                  <v-row align="left" justify="left">
+                    <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
+                      Minecraft
+                    </div>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in minecraftServersList">
+                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
+                    <Servers :server="server" />
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
+                <template>
+                  <v-flex xs12 sm12 md12 lg12>
+                    <Patreon />
+                  </v-flex>
+                </template>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-row>
+      </v-card>
     </v-container>
       <Carousel :carouselItems="secondCarouselItems" id="Recruitment"/>
     <v-container class="mt-5 dark black--background" style="margin-bottom:20px;">
