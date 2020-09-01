@@ -40,7 +40,7 @@
                     <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;">
                         <v-card-text>
                             <v-layout wrap my-5 style="margin: 0 !important;">
-                                <v-flex justify-center class="mt-5">
+                                <v-flex justify-center class="mt-2">
                                     <v-layout wrap>
                                         <div>
                                             <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
