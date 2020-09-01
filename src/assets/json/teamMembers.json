@@ -80,21 +80,22 @@
                 }
             ]
     },
-    {
-        "name": "KFCAPOCALYPSE",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Squad_Competiive"
-                }
-            ]
-    },
+    
     {
         "name": "Mitron",
         "roles":
             [
                 {
                     "name": "Director_of_Recruitment"
+                }
+            ]
+    },
+    {
+        "name": "KFCAPOCALYPSE",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Squad_Competiive"
                 }
             ]
     }
