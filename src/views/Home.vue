@@ -76,7 +76,7 @@
       </v-row>
     </v-container>
       <Carousel :carouselItems="secondCarouselItems"/>
-    <v-container class="mt-5 dark black--background" id="About">
+    <v-container class="mt-5 dark black--background" id="Recruitment">
       <Recruitment :stepsForRecruitment="stepsForRecruitment"/>
     </v-container>
       <Carousel :carouselItems="thirdCarouselItems"/>

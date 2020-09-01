@@ -15,6 +15,10 @@
                     :x-small="$vuetify.breakpoint.smAndDown"
                     @click="$vuetify.goTo('#Servers',options )"
                     text>Servers</v-btn>
+                    <v-btn
+                    :x-small="$vuetify.breakpoint.smAndDown"
+                    @click="$vuetify.goTo('#Recruitment',options )"
+                    text>Recruitment</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -63,7 +67,8 @@ export default {
         { title: 'Home', icon: 'mdi-home-city' },
         { title: 'About', icon: 'mdi-account-group-outline' },
         { title: 'Servers', icon: 'mdi-dns' },
-        { title: 'Contact', icon: 'connect_without_contact' }
+        { title: 'Recruitment', icon: 'assignment' },
+        { title: 'Contact', icon: 'connect_without_contact' }        
       ],
       mini: true,
       fab: false

@@ -35,7 +35,7 @@
         
         <v-spacer></v-spacer>
         <template>
-            <v-flex :key="i" xs10 sm5 md5 lg4 xl3 just>
+            <v-flex xs10 sm5 md5 lg4 xl3 just>
                 <v-hover v-slot:default="{ hover }">
                     <v-card target="_blank" :elevation="hover ? 15 : 5" style="border-radius: 20px;">
                         <v-card-text>
@@ -98,7 +98,7 @@ export default {
             },
         },
         teamMembers: {
-        type: Object,
+        type: Array,
         default: function () {
                 return {};
             },

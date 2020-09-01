@@ -40,7 +40,7 @@
 export default {
     props: {
         stepsForRecruitment: {
-        type: Object,
+        type: Array,
         default: function () {
                 return {};
             },
