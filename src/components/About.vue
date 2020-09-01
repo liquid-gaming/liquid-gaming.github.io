@@ -17,7 +17,7 @@
                         <v-layout row wrap>
                             <v-flex xs12 sm6 md4 lg3  v-for="(person, index) in teamMembers" :key="index">
                                 <v-hover v-slot:default="{ hover }">
-                                    <v-card class="text-xs-center ma-3" :elevation="hover ? 12 : 2">
+                                    <v-card class="text-xs-center ma-3" :elevation="hover ? 10 : 2">
                                         <v-card-text>
                                             <div class="subheading">{{person.name}}</div>
                                             <div v-for="(role, index) in person.roles" :key="index" class="grey--text" :class="role.name">
@@ -37,7 +37,7 @@
         <template>
             <v-flex xs10 sm5 md5 lg4 xl3 just>
                 <v-hover v-slot:default="{ hover }">
-                    <v-card target="_blank" :elevation="hover ? 15 : 5" style="border-radius: 20px;">
+                    <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;">
                         <v-card-text>
                             <v-layout wrap my-5 style="margin: 0 !important;">
                                 <v-flex justify-center class="mt-5">
@@ -63,7 +63,7 @@
                                         <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
                                         <v-expansion-panel-content>
                                             <template v-slot:actions>
-                                                <v-icon color="primary">accessibility</v-icon>
+                                                <v-icon color="primary">gavel</v-icon>
                                             </template>
                                             <v-flex v-for="(rule, index) in discord.rules" :key="index">
                                                 <v-card class="card-container" style="margin:7px;background:#262626;">

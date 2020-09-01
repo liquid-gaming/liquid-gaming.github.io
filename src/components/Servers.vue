@@ -1,6 +1,6 @@
 <template>
 <v-hover v-slot:default="{ hover }">
-  <v-card target="_blank" :elevation="hover ? 15 : 5" style="border-radius: 20px; margin:5px;" max-width="950px">
+  <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;" max-width="950px">
     <v-card-text>
       <div class="title mt-2 titleColour">{{server.name}}</div>
       <div :class="{ preWrapped: containBreaks()}">
@@ -38,7 +38,7 @@
           <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
             <template v-slot:actions>
-              <v-icon color="primary">accessibility</v-icon>
+              <v-icon color="primary">gavel</v-icon>
             </template>
             <v-flex v-for="(rule, index) in server.rules" :key="index">
               <v-card class="card-container" style="margin:7px;background:#262626;">

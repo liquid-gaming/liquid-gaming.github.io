@@ -47,7 +47,7 @@ export default {
   data: () => ({
       mediaLinks: mediaLinks,
       discordLink: mediaLinks.find(o=>{
-        return o.icon === "mdi-discord";
+        return o.name === "discord";
       })
     }),
 };

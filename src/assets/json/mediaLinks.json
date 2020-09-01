@@ -1,6 +1,12 @@
 [
     {
+        "name":"discord",
         "link":"https://discord.gg/5WrXn4a",
         "icon":"mdi-discord"
+    },
+    {
+        "name":"patreon",
+        "link":"",
+        "icon":"mdi-patreon"
     }
 ]
