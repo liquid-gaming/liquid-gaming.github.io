@@ -8,15 +8,15 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn
-                    :x-small="$vuetify.breakpoint.smAndDown"
+                    v-show="$vuetify.breakpoint.smAndUp"
                     @click="$vuetify.goTo('#About',options )"
                     text>Discord</v-btn>
                     <v-btn
-                    :x-small="$vuetify.breakpoint.smAndDown"
+                    v-show="$vuetify.breakpoint.smAndUp"
                     @click="$vuetify.goTo('#Servers',options )"
                     text>Servers</v-btn>
                     <v-btn
-                    :x-small="$vuetify.breakpoint.smAndDown"
+                    v-show="$vuetify.breakpoint.smAndUp"
                     @click="$vuetify.goTo('#Recruitment',options )"
                     text>Recruitment</v-btn>
                 </v-toolbar-items>
@@ -48,7 +48,6 @@
             fab
             dark
             fixed bottom right
-            style="background: #041238"
             @click="toTop"
           >
             <v-icon>expand_less</v-icon>

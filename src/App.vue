@@ -4,7 +4,7 @@
     <v-content style="background-color: white">
       <router-view />
     </v-content>
-    <Footer />
+    <Footer id="Contact" />
   </v-app>
 </template>
 

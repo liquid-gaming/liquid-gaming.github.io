@@ -23,7 +23,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        If you have any questions or inquiries please contact one of our administration members on our discord.
+        If you have any questions or inquiries please contact one of our administration members on our <a :href="discordLink.link" target="_targetBlanks">discord</a>.
       </v-card-text>
 
       <v-divider></v-divider>
@@ -45,7 +45,10 @@
 import mediaLinks from "@/assets/json/mediaLinks.json"
 export default {
   data: () => ({
-      mediaLinks: mediaLinks
+      mediaLinks: mediaLinks,
+      discordLink: mediaLinks.find(o=>{
+        return o.icon === "mdi-discord";
+      })
     }),
 };
 </script>
