@@ -21,7 +21,7 @@
                                         <v-card-text>
                                             <div class="subheading">{{person.name}}</div>
                                             <div v-for="(role, index) in person.roles" :key="index" class="grey--text" :class="role.name">
-                                                {{role.name}}
+                                                {{role.name.replace(/_/g, " ")}}
                                             </div>
                                         </v-card-text>
                                     </v-card>
@@ -123,5 +123,14 @@ export default {
 }
 .Administrator{
     color: mix(red, grey) !important;
+}
+.Advisor{
+    color: mix(purple, grey) !important;
+}
+.Director_of_Squad_Competiive{
+    color: #8f1c1c !important;
+}
+.Director_of_Recruitment{
+    color: mix(#3b38dd, grey) !important;
 }
 </style>

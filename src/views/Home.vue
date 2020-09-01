@@ -75,7 +75,11 @@
         </v-layout>
       </v-row>
     </v-container>
-      <Carousel :carouselItems="firstCarouselItems"/>
+      <Carousel :carouselItems="secondCarouselItems"/>
+    <v-container class="mt-5 dark black--background" id="About">
+      <Recruitment :stepsForRecruitment="stepsForRecruitment"/>
+    </v-container>
+      <Carousel :carouselItems="thirdCarouselItems"/>
   </div>
 </template>
 
@@ -84,32 +88,73 @@
 import Servers from "@/components/Servers.vue";
 import Carousel from "@/components/Carousel.vue"
 import About from "@/components/About.vue"
+import Recruitment from "@/components/Recruitment.vue"
 
 //Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
-import discord from "@/assets/json/discordInfo.json"
-import teamMembers from "@/assets/json/teamMembers.json"
+import discordJson from "@/assets/json/discordInfo.json"
+import teamMembersJson from "@/assets/json/teamMembers.json"
+import stepsForRecruitmentJson from "@/assets/json/stepsForRecruitment.json"
 
 export default {
   name: "home",
   components: {
     Servers,
     Carousel,
-    About
+    About,
+    Recruitment
   },
   data() {
     return {
-      dicord: discord,
+      dicord: discordJson,
       minecraftServersList: minecraftServersListJson,
       squadServersList: squadServersListJson,
-      teamMembers: teamMembers,
+      teamMembers: teamMembersJson,
+      stepsForRecruitment: stepsForRecruitmentJson,
       firstCarouselItems: [
         {
           src:require('../assets/TANK.jpg')
         },
         {
           src:require('../assets/tandam.png')
+        },
+        {
+          src:require('../assets/people.png')
+        },
+        {
+          src:require('../assets/tankInSide.jpg')
+        },
+        {
+          src:require('../assets/tank on hill.jpg')
+        }
+      ],
+      secondCarouselItems: [
+        {
+          src:require('../assets/1.png')
+        },
+        {
+          src:require('../assets/2.jpg')
+        },
+        {
+          src:require('../assets/3.jpg')
+        },
+        {
+          src:require('../assets/4.jpg')
+        },
+        {
+          src:require('../assets/5.jpg')
+        }
+      ],
+      thirdCarouselItems: [
+        {
+          src:require('../assets/6.jpg')
+        },
+        {
+          src:require('../assets/7.jpg')
+        },
+        {
+          src:require('../assets/8.jpg')
         }
       ]
     };

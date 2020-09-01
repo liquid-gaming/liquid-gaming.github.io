@@ -52,5 +52,50 @@
                     "name": "Administrator"
                 }
             ]
+    },
+    {
+        "name": "CeeJay",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Magical Girl",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Shaka",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "KFCAPOCALYPSE",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Squad_Competiive"
+                }
+            ]
+    },
+    {
+        "name": "Mitron",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Recruitment"
+                }
+            ]
     }
 ]
