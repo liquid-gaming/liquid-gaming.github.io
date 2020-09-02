@@ -3,9 +3,7 @@
   <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;" max-width="950px">
     <v-card-text>
       <div class="title mt-2 titleColour">{{server.name}}</div>
-      <div :class="{ preWrapped: containBreaks()}">
-        {{server.description}}
-      </div>
+      <div :class="{ preWrapped: containBreaks()}">{{server.description}}</div>
       <div class="title mt-2 titleColour">Battmetrics</div>
       <v-layout>
         <template>

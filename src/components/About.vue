@@ -44,7 +44,7 @@
                                     <v-layout wrap>
                                         <div>
                                             <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
-                                                Joing Our Discord
+                                                Join Our Discord
                                             </div>
                                             <div v-if="$vuetify.breakpoint.smAndDown">
                                                 <iframe src="https://discordapp.com/widget?id=583882225012047873&theme=dark" width="275" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>

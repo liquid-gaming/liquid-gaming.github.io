@@ -1,28 +1,45 @@
 <template>
-    <v-hover v-slot:default="{ hover }">
-        <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:20px 5px 0px 5px;">
-            <v-card-text>
-                <div class="display-1 font-weight-bold">
-                    Queue to long?
-                </div>
-                <div class="subtitle-1 mt-2">Join LiQ and get whitelisted! Or become a patreon and skip the queue!</div>
-                <div>
-                  <!-- patreon link -->
-                </div>
-            </v-card-text>
-        </v-card>
-    </v-hover>
+  <v-hover v-slot:default="{ hover }">
+    <v-card
+      target="_blank"
+      :elevation="hover ? 10 : 5"
+      style="border-radius: 20px; margin:20px 5px 0px 5px;"
+    >
+      <v-row align="left" justify="left">
+        <v-flex xs6 sm6 md6 lg6 just>
+          <v-card-text>
+            <div class="display-1 font-weight-bold">Queue too long?</div>
+            <div
+              class="subtitle-1 mt-2"
+            >Join LiQ and get whitelisted! Or become a patreon and skip the queue!</div>
+          </v-card-text>
+        </v-flex>
+        <v-flex xs6 sm6 md6 lg6 just>
+          <div>
+            <a
+              href="https://www.patreon.com/bePatron?u=38350579"
+              target="_blankTarget"
+              width="50px"
+              height="50px">
+              <img src="@/assets/patreon3.png" width="50px" height="50px" />
+            </a>
+          </div>
+        </v-flex>
+      </v-row>
+    </v-card>
+  </v-hover>
 </template>
 
+
 <script>
-import mediaLinks from "@/assets/json/mediaLinks.json"
+import mediaLinks from "@/assets/json/mediaLinks.json";
 export default {
-    data: () => ({
-      mediaLinks: mediaLinks,
-      discordLink: mediaLinks.find(o=>{
-        return o.name === "patreon";
-      })
+  data: () => ({
+    mediaLinks: mediaLinks,
+    discordLink: mediaLinks.find((o) => {
+      return o.name === "patreon";
     }),
+  }),
 };
 </script>
 

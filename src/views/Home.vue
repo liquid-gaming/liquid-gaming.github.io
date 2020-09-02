@@ -39,8 +39,9 @@
                 Servers
               </div>
               <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur.
               </div>
             </v-row>
           </v-container>
@@ -61,6 +62,13 @@
                 </template>
               </v-layout>
               <v-layout wrap>
+                <template>
+                  <v-flex xs6 sm6 md6 lg6>
+                    <Patreon />
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
                 <v-container>
                   <v-row align="left" justify="left">
                     <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
@@ -71,13 +79,6 @@
                 <template v-for="(server, i) in minecraftServersList">
                   <v-flex :key="i" xs12 sm4 md5 lg6 just>
                     <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
-              <v-layout wrap>
-                <template>
-                  <v-flex xs12 sm12 md12 lg12>
-                    <Patreon />
                   </v-flex>
                 </template>
               </v-layout>

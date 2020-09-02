@@ -29,10 +29,10 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        <strong>LiQ These Nutz</strong>
+        <strong>LiQ Gaming</strong>
       </v-card-text>
       <v-card-text class="white--text" style="opacity:0.3;font-size:12px">
-        @Copyright 2020-{{ new Date().getFullYear() }}<br>
+        @Copyright 2019-{{ new Date().getFullYear() }}<br>
         <span style="font-style: italic;">
           All rights reserved. Powered by these fists.
         </span>
