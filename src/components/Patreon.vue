@@ -13,18 +13,20 @@
               class="subtitle-1 mt-2"
             >Join LiQ and get whitelisted! Or become a patreon and skip the queue!</div>
           </v-card-text>
-        </v-flex>
-        <v-flex xs6 sm6 md6 lg6 just>
-          <div>
-            <a
-              href="https://www.patreon.com/bePatron?u=38350579"
-              target="_blankTarget"
-              width="50px"
-              height="50px">
-              <img src="@/assets/patreon3.png" width="50px" height="50px" />
-            </a>
-          </div>
-        </v-flex>
+        </v-flex>        
+        <v-layout row wrap align-center>
+          <v-col align="center" justify="center">
+          <v-hover v-slot:default="{ hover }">
+              <v-card :elevation="hover ? 10 : 5" width="239px" height="68px">
+                <a
+                  href="https://www.patreon.com/bePatron?u=38350579"
+                  target="_blankTarget">
+                  <img src="@/assets/patreon4.png" width="239px" height="68px" />
+                </a>
+              </v-card>
+          </v-hover>
+          </v-col>
+        </v-layout>
       </v-row>
     </v-card>
   </v-hover>
