@@ -5,7 +5,7 @@
         <v-row align="left" justify="left">
           <v-card
             :elevation="5"
-            style="background:#222222;padding:30px;border-radius: 10px;margin:0 10px 0 10px">
+            style="background:#222222;padding:30px;border-radius: 10px;margin:0 10px 0 10px;width:100%">
             <div 
               :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
               Wanna join LiQ?
@@ -13,8 +13,8 @@
             <div
               :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}"
               style="opacity: 0.75; margin-top:10px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              We are always looking for new members. If you are interest in joining please read the steps below on 
+              how to become a memeber or contact one of our recruiters in our discord.
             </div>
           </v-card>
         </v-row>
@@ -46,8 +46,10 @@
             style="background:#222222;padding:30px;border-radius: 10px;margin:30px 10px 0 10px">
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">Want more of challenge?</div>
             <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Think you have what it takes to compete in the Squad World Championship? Consider joining our competitive team! Learn more about 
+              our competitive team in Squad Competitive channels in our discord and visit our 
+              <a target="_blank" href="https://trello.com/b/KfnyVsRh/meetingtraining-times"> Trello page </a>. Wanna learn more about Squad World Championship?
+              Click <a target="_blank" href="https://joinsquad.com/2019/02/06/squad-world-championship/">here</a> for more info.
             </div>
           </v-card>
         </v-row>
@@ -57,7 +59,14 @@
 </template>
 
 <script>
+import mediaLinks from "@/assets/json/mediaLinks.json"
 export default {
+  data: () => ({
+      mediaLinks: mediaLinks,
+      discordLink: mediaLinks.find(o=>{
+        return o.name === "discord";
+      })
+    }),
   props: {
     stepsForRecruitment: {
       type: Array,
