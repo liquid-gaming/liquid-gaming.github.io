@@ -48,8 +48,8 @@
             <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
               Think you have what it takes to compete in the Squad World Championship? Consider joining our competitive team! Learn more about 
               our competitive team in Squad Competitive channels in our discord and visit our 
-              <a target="_blank" href="https://trello.com/b/KfnyVsRh/meetingtraining-times"> Trello page </a>. Wanna learn more about Squad World Championship?
-              Click <a target="_blank" href="https://joinsquad.com/2019/02/06/squad-world-championship/">here</a> for more info.
+              <a target="_blank" :href="competitiveTrelloLink.link"> Trello page </a>. Wanna learn more about Squad World Championship?
+              Click <a target="_blank" :href="squadCompetitiveLink.link">here</a> for more info.
             </div>
           </v-card>
         </v-row>
@@ -63,8 +63,11 @@ import mediaLinks from "@/assets/json/mediaLinks.json"
 export default {
   data: () => ({
       mediaLinks: mediaLinks,
-      discordLink: mediaLinks.find(o=>{
-        return o.name === "discord";
+      squadCompetitiveLink: mediaLinks.find(o=>{
+        return o.name === "squadCompetitive";
+      }),
+      competitiveTrelloLink: mediaLinks.find(o=>{
+        return o.name === "competitiveTrello";
       })
     }),
   props: {

@@ -8,5 +8,25 @@
         "name":"patreon",
         "link":"https://www.patreon.com/bePatron?u=38350579",
         "icon":"mdi-patreon"
+    },
+    {
+        "name":"squadCompetitive",
+        "link":"https://joinsquad.com/2019/02/06/squad-world-championship/"
+    },
+    {
+        "name":"competitiveTrello",
+        "link":"https://trello.com/b/KfnyVsRh/meetingtraining-times"
+    },
+    {
+        "name":"minecraft",
+        "link":"https://www.minecraft.net/en-us/about-minecraft"
+    },
+    {
+        "name":"squad",
+        "link":"https://joinsquad.com/"
+    },
+    {
+        "name":"squadTrello",
+        "link":"https://trello.com/b/12AMfhIv/squad-roadmap"
     }
 ]

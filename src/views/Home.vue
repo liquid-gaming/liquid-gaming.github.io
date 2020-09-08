@@ -57,8 +57,8 @@
                       <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
                         "Squad is a tactical FPS that provides authentic combat experiences through teamwork, communication, and gameplay. It seeks to bridge 
                         the large gap between arcade shooter and military simulation. Large scale, combined arms combat, base building, and a great integrated VoIP system."
-                        - Offworld Industries. To learn more about Squad click <a target="_blank" href="https://joinsquad.com/">here</a>, to see their roadmap click 
-                        <a target="_blank" href="https://trello.com/b/12AMfhIv/squad-roadmap">here</a>.
+                        - Offworld Industries. To learn more about Squad click <a target="_blank" :href="squadLink.link">here</a>, to see their roadmap click 
+                        <a target="_blank" :href="squadTrelloLink.link">here</a>.
                       </div>
                     </v-col>
                   </v-row>
@@ -77,7 +77,7 @@
                         Minecraft
                       </div>
                       <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                        To learn more about Minecraft and what it is, click <a target="_blank" href="https://www.minecraft.net/en-us/about-minecraft">here</a>.
+                        To learn more about Minecraft and what it is, click <a target="_blank" :href="minecraftLink.link">here</a>.
                       </div>
                     </v-col>
                   </v-row>
@@ -113,6 +113,7 @@ import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
 import discordJson from "@/assets/json/discordInfo.json"
 import teamMembersJson from "@/assets/json/teamMembers.json"
 import stepsForRecruitmentJson from "@/assets/json/stepsForRecruitment.json"
+import mediaLinks from "@/assets/json/mediaLinks.json"
 
 export default {
   name: "home",
@@ -124,6 +125,16 @@ export default {
   },
   data() {
     return {
+      mediaLinks: mediaLinks,
+      minecraftLink: mediaLinks.find(o=>{
+        return o.name === "minecraft";
+      }),
+      squadLink: mediaLinks.find(o=>{
+        return o.name === "squad";
+      }),
+      squadTrelloLink: mediaLinks.find(o=>{
+        return o.name === "squadTrello";
+      }),
       dicord: discordJson,
       minecraftServersList: minecraftServersListJson,
       squadServersList: squadServersListJson,
