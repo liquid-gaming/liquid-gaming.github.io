@@ -3,24 +3,24 @@
         "color": "grey",
         "icon": "assignment",
         "title": "First",
-        "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        "content": "To join liquid gaming you must first join our discord! When you join you must then navigate to the new recruit channel and type !liqrecruit.\nDisclaimer: YOU MUST BE 18 TO JOIN THE LIQUID COMMUNITY AS A MEMBER"
     },
     {
         "color": "#8a6617",
         "icon": "alarm",
         "title": "Second",
-        "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        "content": "You should receive an application from one of our recruiters in a direct message after you typed in the !liqrecruit. Please fill in the application and send a message that you completed it to the recruiter who sent you the application."
     },
     {
         "color": "#bf5204",
         "icon": "thumb_up_alt",
         "title": "Third",
-        "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        "content": "You will be sent a message regarding you application saying whether it was accepted or denied with some extra instructions and your recruit tags. At this point you must be patient and wait a minimum of 7 days and interact with the community. Interacting with the community can speed up this process as more people will recognize your name and be more willing to sponsor you."
     },
     {
         "color": "#14b5d9",
         "icon": "how_to_reg",
-        "title": "Fourth",
-        "content": "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae."
+        "title": "Final",
+        "content": "Congratulations someone has seen you and have recognized you to be a good fit within the community (again the best way to do this is in the discord or playing with LiQ in squad). At this point usually every Saturday we will add the new full members to our community and update whitelisting for all our servers."
     }
 ]
