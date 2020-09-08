@@ -6,7 +6,7 @@
       style="border-radius: 20px; margin:20px 5px 0px 5px;"
     >
       <v-row align="left" justify="left">
-        <v-flex xs6 sm6 md6 lg6 just>
+        <v-flex xs12 sm12 md12 lg6 just>
           <v-card-text>
             <div class="display-1 font-weight-bold">Queue too long?</div>
             <div

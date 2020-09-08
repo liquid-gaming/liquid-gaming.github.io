@@ -7,8 +7,9 @@
                         Who We Are
                     </div>
                     <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        LiQuid Gaming was created back in May of 2019 by our founding fathers. Since then we have grown to to upward of 800 members in our discord and over 200 LiQ members.
+                        Our board of directors currently consist of the 11 members bellow, not listed are our many trustworthy admins for our various servers. If you have any questions or
+                        inquiries, please contact us in our discord.
                     </div>
                     <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" style="margin-top:20px;">
                         Our Team

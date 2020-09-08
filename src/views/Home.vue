@@ -16,7 +16,7 @@
                   We are a high-level clan in various gaming platforms with a community of over 800 players. <br/>
                   We currently host 2 servers in Squad and have plan for more in the future. <br/>
                   <br/>
-                  We are eager to help new or ruturning players redisocer their passion for gaming. <br/>
+                  We are eager to help new or ruturning players rediscover their passion for gaming. <br/>
                   Please scroll down and take a look, we would love for you to join us! <br/>
                 </div>
               </v-col>
@@ -35,14 +35,14 @@
         <v-row align="center" justify="center">
           <v-container>
             <v-row align="left" justify="left">
-              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
-                Servers
-              </div>
-              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-              </div>
+              <v-col>
+                <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                  Servers
+                </div>
+                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                  LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming through out the year.
+                </div>
+              </v-col>
             </v-row>
           </v-container>
           <v-layout wrap my-5>
@@ -58,13 +58,6 @@
                 <template v-for="(server, i) in squadServersList">
                   <v-flex :key="i" xs12 sm4 md5 lg6 just>
                     <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
-              <v-layout wrap>
-                <template>
-                  <v-flex xs6 sm6 md6 lg6>
-                    <Patreon />
                   </v-flex>
                 </template>
               </v-layout>
@@ -101,8 +94,6 @@ import Servers from "@/components/Servers.vue";
 import Carousel from "@/components/Carousel.vue"
 import About from "@/components/About.vue"
 import Recruitment from "@/components/Recruitment.vue"
-import Patreon from "@/components/Patreon.vue"
-
 //Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
@@ -116,8 +107,7 @@ export default {
     Servers,
     Carousel,
     About,
-    Recruitment,
-    Patreon
+    Recruitment
   },
   data() {
     return {

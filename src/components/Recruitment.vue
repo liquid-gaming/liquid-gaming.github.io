@@ -3,9 +3,18 @@
         <v-flex xs12 sm5 md6 lg6 just>
             <v-container>
                 <v-row align="left" justify="left">    
-                    <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;margin:0 5px 0 5px">
+                    <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;margin:0 10px 0 10px">
                         <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
                             Wanna join LiQ?
+                        </div>
+                        <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </v-card>
+                    <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;margin:30px 10px 0 10px">
+                        <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                            Want more of challenge?
                         </div>
                         <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

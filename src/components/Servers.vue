@@ -2,9 +2,13 @@
 <v-hover v-slot:default="{ hover }">
   <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;" max-width="950px">
     <v-card-text>
-      <div class="title mt-2 titleColour">{{server.name}}</div>
-      <div :class="{ preWrapped: containBreaks()}">{{server.description}}</div>
-      <div class="title mt-2 titleColour">Battmetrics</div>
+      <v-row align="left" justify="left">
+        <v-col>
+          <div class="title mt-2 titleColour">{{server.name}}</div>
+          <div :class="{ preWrapped: containBreaks()}">{{server.description}} <div v-if="server.layerLink != null"><a target="_blank" :href="server.layerLink">Squad Layers</a></div></div>
+          <div class="title mt-2 titleColour">Battmetrics</div>
+        </v-col>
+      </v-row>
       <v-layout>
         <template>
           <div v-if="$vuetify.breakpoint.mdAndDown">
@@ -30,6 +34,33 @@
         </template>
       </v-layout>
     </v-card-text>
+    <div v-if="server.mapVoteCommands != null">
+      <v-expansion-panels>
+        <v-expansion-panel>
+          <v-expansion-panel-header class="titleColour">Map Vote Commands</v-expansion-panel-header>
+          <v-expansion-panel-content>
+            <template v-slot:actions>
+              <v-icon color="primary">gavel</v-icon>
+            </template>
+            <v-flex v-for="(command, index) in server.mapVoteCommands" :key="index">
+              <v-card class="card-container" style="margin:7px;background:#262626;">
+                <v-card-text class="px-4">
+                  <v-card-title>
+                    <h5 class="titleColour">{{index+1}}: {{command.title}}</h5>
+                  </v-card-title>
+                  <v-card-subtitle v-if="command.description != null && command.link === undefind">
+                    <p>{{command.description}}</p>
+                  </v-card-subtitle>
+                  <v-card-subtitle v-if="command.description != null && command.link != null">
+                    <p>{{command.description}} <a target="_blank" :href="command.link">Squad Layers</a></p>
+                  </v-card-subtitle>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </div>
     <div>
       <v-expansion-panels>
         <v-expansion-panel>

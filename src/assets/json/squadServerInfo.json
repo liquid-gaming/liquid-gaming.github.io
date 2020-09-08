@@ -2,7 +2,7 @@
     {
       "name": "『LiQ』Liquid Gaming: Noob Friendly -AAS/RAAS/INV - PTFO",
       "description":
-        "LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming through out the year.\n\nThis is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. it will teach you all the basics so that as you fan out into the wild you will be better prepared to fit in a a valued player.",
+        "This is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. it will teach you all the basics so that as you fan out into the wild you will be better prepared to fit in a a valued player.",
       "battlemetricId": 7871746,
       "rules":[
         {
@@ -50,7 +50,22 @@
     {
       "name": "『LiQ』Liquid Gaming: - Map Voting -AAS/RAAS/INV - PTFO",
       "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
+      "mapVoteCommands": [
+        {
+          "title": "!mapvote help",
+          "description": "This will show you all the commands for !mapvote."
+        },
+        {
+          "title": "!mapvote results",
+          "description": "This will show you the results of the map voting."
+        },
+        {
+          "title": "!mapvote *Map Name Layer*",
+          "description": "The !mapvote needs to be in the following format shown in this example.\n!mapvote Al Basrah AAS v1\n\nTo view all the current layers for squad please click here: ",
+          "link": "https://docs.google.com/spreadsheets/d/1F_xOv6-hEG2Ttqh-E6AE4EISXPaArux1HfG8NfX8lic/htmlview"
+        }
+      ],
       "battlemetricId": 7894269,
       "rules":[
         {
