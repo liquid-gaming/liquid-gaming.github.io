@@ -4,6 +4,7 @@
       "description":
         "This is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. it will teach you all the basics so that as you fan out into the wild you will be better prepared to fit in a a valued player.",
       "battlemetricId": 7871746,
+      "mapRotationLink": "",
       "rules":[
         {
           "title":"RACIAL SLURS Are Strictly FORBIDDEN",
@@ -51,6 +52,8 @@
       "name": "『LiQ』Liquid Gaming: - Map Voting -AAS/RAAS/INV - PTFO",
       "description":
         "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
+      "battlemetricId": 7894269,
+      "mapRotationLink": "",
       "mapVoteCommands": [
         {
           "title": "!mapvote help",
@@ -66,7 +69,6 @@
           "link": "https://docs.google.com/spreadsheets/d/1F_xOv6-hEG2Ttqh-E6AE4EISXPaArux1HfG8NfX8lic/htmlview"
         }
       ],
-      "battlemetricId": 7894269,
       "rules":[
         {
           "title":"RACIAL SLURS Are Strictly FORBIDDEN",

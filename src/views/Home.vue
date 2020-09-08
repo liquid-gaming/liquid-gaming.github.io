@@ -50,23 +50,36 @@
               <v-layout wrap>
                 <v-container>
                   <v-row align="left" justify="left">
-                    <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
-                      Squad
-                    </div>
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
+                        Squad
+                      </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                        "Squad is a tactical FPS that provides authentic combat experiences through teamwork, communication, and gameplay. It seeks to bridge 
+                        the large gap between arcade shooter and military simulation. Large scale, combined arms combat, base building, and a great integrated VoIP system."
+                        - Offworld Industries. To learn more about Squad click <a target="_blank" href="https://joinsquad.com/">here</a>, to see their roadmap click 
+                        <a target="_blank" href="https://trello.com/b/12AMfhIv/squad-roadmap">here</a>.
+                      </div>
+                    </v-col>
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in squadServersList">
-                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                    <Servers :server="server" />
+                  <v-flex :key="i" xs12 sm6 md6 lg6 just style="margin-top:10px">
+                    <Servers :server="server"/>
                   </v-flex>
                 </template>
               </v-layout>
               <v-layout wrap>
-                <v-container>
+                <v-container style="margin-top:15px;">
                   <v-row align="left" justify="left">
-                    <div :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp}">
-                      Minecraft
-                    </div>
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
+                        Minecraft
+                      </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                        To learn more about Minecraft and what it is, click <a target="_blank" href="https://www.minecraft.net/en-us/about-minecraft">here</a>.
+                      </div>
+                    </v-col>
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in minecraftServersList">
