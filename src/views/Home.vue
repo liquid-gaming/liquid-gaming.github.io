@@ -2,7 +2,7 @@
   <div class="home background-image">
     <v-parallax
       height="950"
-      src="@/assets/tankInfield.jpg"
+      :src="selectedHomeImage"
       id="home-image"
     >
       <v-layout fill-height align-center>
@@ -184,8 +184,31 @@ export default {
         {
           src:require('../assets/8.jpg')
         }
-      ]
+      ],
+      homePageImage: [
+        {
+          src:require('../assets/tankonroad.png')
+        },
+        {
+          src:require('../assets/tankInfield.jpg')
+        },
+        {
+          src:require('../assets/10.png')
+        },
+        {
+          src:require('../assets/11.png')
+        }
+      ],
+      selectedHomeImage: null
     };
+  },
+  methods: {
+    randomItem (items) {
+      return items[Math.floor(Math.random()*items.length)];
+    }
+  },
+  created() {
+    this.selectedHomeImage = this.randomItem(this.homePageImage).src;
   }
 };
 </script>
