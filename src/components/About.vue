@@ -36,7 +36,7 @@
         
         <v-spacer></v-spacer>
         <template>
-            <v-flex xs10 sm5 md5 lg4 xl3 just>
+            <v-flex xs12 sm7 md6 lg4 xl3 just>
                 <v-hover v-slot:default="{ hover }">
                     <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;">
                         <v-card-text>
