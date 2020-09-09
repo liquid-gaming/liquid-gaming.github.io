@@ -70,7 +70,7 @@
           <v-expansion-panel-content>
             <v-flex v-for="(rule, index) in server.rules" :key="index">
               <v-card class="card-container" style="margin:7px;background:#262626;">
-                <v-card-text class="px-4">
+                <v-card-text class="px-4" :class="{'larger-display': $vuetify.breakpoint.smAndDown}">
                   <v-card-title>
                     <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
                   </v-card-title>
@@ -127,5 +127,8 @@ export default {
 }
 .preWrapped{
   white-space: pre-wrap;
+}
+.larger-display{
+  padding: 5px !important;
 }
 </style>
