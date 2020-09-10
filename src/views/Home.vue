@@ -16,7 +16,7 @@
                   We are a high-level clan in various gaming platforms with a community of over 800 players. <br/>
                   We currently host 2 servers in Squad and have plan for more in the future. <br/>
                   <br/>
-                  We are eager to help new or ruturning players rediscover their passion for gaming. <br/>
+                  We are eager to help new or returning players rediscover their passion for gaming. <br/>
                   Please scroll down and take a look, we would love for you to join us! <br/>
                 </div>
               </v-col>
