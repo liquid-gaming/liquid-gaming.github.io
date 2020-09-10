@@ -8,12 +8,11 @@ import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload)
 Vue.config.productionTip = false
 Vue.use(VueAnalytics, {
-  id: 'UA-177609629-1',
+  id: 'UA-135785528-2',
   router
 })
 
 new Vue({
-  router,
   vuetify,
   render: h => h(App)
 }).$mount('#app')
