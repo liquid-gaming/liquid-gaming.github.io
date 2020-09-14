@@ -4,7 +4,7 @@
       "description":
         "This is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. It will teach you all the basics so that as you fan out into the wild, you will be better prepared to fit in as a valued player.",
       "battlemetricId": 7871746,
-      "mapRotationLink": "",
+      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit?usp=sharing",
       "rules":[
         {
           "title":"RACIAL SLURS Are Strictly FORBIDDEN",
@@ -53,7 +53,7 @@
       "description":
         "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
       "battlemetricId": 7894269,
-      "mapRotationLink": "",
+      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit?usp=sharing",
       "mapVoteCommands": [
         {
           "title": "!mapvote help",
