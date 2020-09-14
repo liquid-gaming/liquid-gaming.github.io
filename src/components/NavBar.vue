@@ -6,7 +6,7 @@
                 <v-layout>
                     <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-spacer></v-spacer>
-                <v-toolbar-items class="text-right">
+                <v-toolbar-items v-if="$route.path == '/'" class="text-right">
                     <v-btn
                     v-show="$vuetify.breakpoint.smAndUp"
                     @click="$vuetify.goTo('#About',options )"
@@ -29,16 +29,30 @@
         <v-divider></v-divider>
   
         <v-list dense>
-  
-          <v-list-item v-for="item in items" :key="item.title" link @click="$vuetify.goTo('#'+item.title, options ), drawer = false">
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-  
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
+          <div v-for="link in links" :key="link.title">
+            <div v-if="link.route === ''">
+              <v-list-item v-if="$route.path == '/'" @click="$vuetify.goTo('#'+link.title, options ), drawer = false">
+                <v-list-item-icon>
+                  <v-icon>{{ link.icon }}</v-icon>
+                </v-list-item-icon>
+      
+                <v-list-item-content>
+                  <v-list-item-title>{{ link.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </div>
+            <div v-else>
+              <v-list-item router :to="link.route">
+                <v-list-item-icon>
+                  <v-icon>{{ link.icon }}</v-icon>
+                </v-list-item-icon>
+      
+                <v-list-item-content>
+                  <v-list-item-title>{{ link.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </div>
+          </div>
         </v-list>
       </v-navigation-drawer>
     <v-fab-transition>
@@ -62,36 +76,38 @@ export default {
   data() {
     return {
       drawer: false,
-      items: [
-        { title: 'Home', icon: 'mdi-home-city' },
-        { title: 'About', icon: 'mdi-account-group-outline' },
-        { title: 'Servers', icon: 'mdi-dns' },
-        { title: 'Recruitment', icon: 'assignment' },
-        { title: 'Contact', icon: 'connect_without_contact' }        
+      links: [
+        { title: 'Home', icon: 'mdi-home-city', route: '/' },
+        { title: 'About', icon: 'mdi-account-group-outline', route: '' },
+        { title: 'Servers', icon: 'mdi-dns', route: '' },
+        { title: 'Recruitment', icon: 'assignment', route: '' },
+        { title: 'Contact', icon: 'connect_without_contact', route: '' },
+        { title: 'Seeding Rules', icon: 'gavel', route: '/Seeding' }        
       ],
       mini: true,
-      fab: false
+      fab: false,
+      currentRoute: window.location.pathname
     }; 
   },
-    methods: {
-    onScroll (e) {
-      let header = document.querySelector(".v-toolbar");
-      if (typeof window === 'undefined') return
-      const top = window.pageYOffset ||   e.target.scrollTop || 0
-      if(top > 300){
-        header.classList.remove("transparent")
-      }
-      if(top<300){
-        if (!header.classList.contains("transparent")){
-          header.classList.add("transparent")
+  methods: {
+      onScroll (e) {
+        let header = document.querySelector(".v-toolbar");
+        if (typeof window === 'undefined') return
+        const top = window.pageYOffset ||   e.target.scrollTop || 0
+        if(top > 300){
+          header.classList.remove("transparent")
         }
+        if(top<300){
+          if (!header.classList.contains("transparent")){
+            header.classList.add("transparent")
+          }
+        }
+        this.fab = top > 500
+        ;
+      },
+      toTop () {
+        this.$vuetify.goTo(0)
       }
-      this.fab = top > 500
-      ;
-    },
-    toTop () {
-      this.$vuetify.goTo(0)
-    }
   }
 };
 </script>

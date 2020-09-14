@@ -1,5 +1,5 @@
 <template>
-  <div class="home background-image">
+  <div class="home background-image" id="Home">
     <v-parallax
       height="950"
       :src="selectedHomeImage"
