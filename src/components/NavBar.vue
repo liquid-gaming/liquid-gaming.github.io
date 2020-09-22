@@ -9,7 +9,7 @@
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/Seeding" text>Seeding</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Player Stats</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/PlayerStats" text>Player Stats</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -74,7 +74,7 @@ export default {
         { title: 'Recruitment', icon: 'assignment', route: '' },
         { title: 'Contact', icon: 'connect_without_contact', route: '' },
         { title: 'Seeding', icon: 'gavel', route: '/Seeding' },
-        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/' }
+        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/PlayerStats' }
       ],
       mini: true,
       fab: false,

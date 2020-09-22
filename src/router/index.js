@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Seeding from '../views/Seeding.vue'
+import PlayerStats from '../views/PlayerStats.vue'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ export default new VueRouter({
       path: '/Seeding',
       name: 'Seeding',
       component: Seeding
+    },
+    {
+      path: '/PlayerStats',
+      name: 'Player Stats',
+      component: PlayerStats
     }
   ]
 })
