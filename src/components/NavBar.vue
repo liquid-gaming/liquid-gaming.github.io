@@ -22,7 +22,7 @@
         <v-list dense>
           <div v-for="link in links" :key="link.title">
             <div v-if="link.route === ''">
-              <v-list-item v-if="$route.path == '/'" @click="$vuetify.goTo('#'+link.title, options ), drawer = false">
+              <v-list-item v-if="$route.path == '/'" @click="$vuetify.goTo('#'+link.title, options ), drawer = false" class="sub-navs">
                 <v-list-item-icon>
                   <v-icon>{{ link.icon }}</v-icon>
                 </v-list-item-icon>
@@ -73,7 +73,8 @@ export default {
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
         { title: 'Contact', icon: 'connect_without_contact', route: '' },
-        { title: 'Seeding', icon: 'gavel', route: '/Seeding' }        
+        { title: 'Seeding', icon: 'gavel', route: '/Seeding' },
+        { title: 'Play Stats', icon: 'insert_chart_outlined', route: '/' }
       ],
       mini: true,
       fab: false,
@@ -109,5 +110,13 @@ export default {
   }
   .v-btn--active.no-active::before {                                                                             
     opacity: 0 !important;
+  }
+  .sub-navs{
+    background-color:#303030; 
+    padding-left: 25px !important;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: rgb(43, 43, 43);
   }
 </style>
