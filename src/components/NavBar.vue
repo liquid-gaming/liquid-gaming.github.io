@@ -6,19 +6,10 @@
                 <v-layout>
                     <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-spacer></v-spacer>
-                <v-toolbar-items v-if="$route.path == '/'" class="text-right">
-                    <v-btn
-                    v-show="$vuetify.breakpoint.smAndUp"
-                    @click="$vuetify.goTo('#About',options )"
-                    text>Discord</v-btn>
-                    <v-btn
-                    v-show="$vuetify.breakpoint.smAndUp"
-                    @click="$vuetify.goTo('#Servers',options )"
-                    text>Servers</v-btn>
-                    <v-btn
-                    v-show="$vuetify.breakpoint.smAndUp"
-                    @click="$vuetify.goTo('#Recruitment',options )"
-                    text>Recruitment</v-btn>
+                <v-toolbar-items class="text-right">
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/Seeding" text>Seeding</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Player Stats</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -82,7 +73,7 @@ export default {
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
         { title: 'Contact', icon: 'connect_without_contact', route: '' },
-        { title: 'Seeding Rules', icon: 'gavel', route: '/Seeding' }        
+        { title: 'Seeding', icon: 'gavel', route: '/Seeding' }        
       ],
       mini: true,
       fab: false,
@@ -113,9 +104,10 @@ export default {
 </script>
 
 <style lang="css">
- 
   .v-app-bar--is-scrolled {
     opacity: .9 !important;
   }
-
+  .v-btn--active.no-active::before {                                                                             
+    opacity: 0 !important;
+  }
 </style>
