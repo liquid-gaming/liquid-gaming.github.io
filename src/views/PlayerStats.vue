@@ -53,6 +53,7 @@ export default {
   data () {
       return {
         search: '',
+        pagination: {},
         headers: [
           {
             text: 'Rank',
