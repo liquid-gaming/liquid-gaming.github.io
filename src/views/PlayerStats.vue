@@ -5,12 +5,11 @@
         <v-row align="left" justify="left">
           <v-col>
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
-              Player Statistics 
+              Squad Player Stats
             </div>
             <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0">
-                Seeding is made to allow players to play fairly while we try to populate the server. We typically use Al Basrah Skirmish V1 to seed our servers. 
-                Please read the rules for seeding below and look at the image provided to see how we set up the map for seeding. The image also shows the locations 
-                of the FOBs and designated zone to fight over without crossing the colored lines of your associated team.
+                LiQ gaming player stats are updated on a weekly basis, showing your stats for the past month. 
+                Use the search bar to search your in game user name and click the top of a column that you want to sort.
             </div>
             <v-card>
               <v-card-title>
