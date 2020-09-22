@@ -74,7 +74,7 @@ export default {
         { title: 'Recruitment', icon: 'assignment', route: '' },
         { title: 'Contact', icon: 'connect_without_contact', route: '' },
         { title: 'Seeding', icon: 'gavel', route: '/Seeding' },
-        { title: 'Play Stats', icon: 'insert_chart_outlined', route: '/' }
+        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/' }
       ],
       mini: true,
       fab: false,
