@@ -21,10 +21,10 @@
                 <v-icon size="24px">{{ media.icon }}</v-icon>
               </v-btn>
               <div>
-                <a target="_blank" :href="squadLink.link" width="75px !important"><img src="@/assets/squad_white.png" class="justify-center" style="margin-top:3px" width="75px"></a>
+                <a target="_blank" :href="squadLink.link" width="75px !important"><img src="@/assets/squad_white.png" class="justify-center" style="margin:3px 10px 0 10px" width="75px"></a>
               </div>              
               <div>
-                <a target="_blank" :href="minecraftLink.link" width="75px !important"><img src="@/assets/minecraft_logo.jpg" class="justify-center" style="margin-top:3px" width="45px"></a>
+                <a target="_blank" :href="minecraftLink.link" width="75px !important"><img src="@/assets/minecraft_logo.jpg" class="justify-center" style="margin:5px 10px 0 10px" width="45px"></a>
               </div>              
             </v-row>
           </v-flex>
