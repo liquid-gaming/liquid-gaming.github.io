@@ -1,5 +1,5 @@
 <template>
-  <div class="home background-image">
+  <div class="home background-image" id="Home">
     <v-parallax
       height="950"
       :src="selectedHomeImage"
@@ -165,9 +165,6 @@ export default {
           src:require('../assets/2.jpg')
         },
         {
-          src:require('../assets/3.jpg')
-        },
-        {
           src:require('../assets/4.jpg')
         },
         {
@@ -197,7 +194,13 @@ export default {
         },
         {
           src:require('../assets/11.png')
-        }
+        },
+        {
+          src:require('../assets/12.png')
+        },
+        {
+          src:require('../assets/13.png')
+        },
       ],
       selectedHomeImage: null
     };

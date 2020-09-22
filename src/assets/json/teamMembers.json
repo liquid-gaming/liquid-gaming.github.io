@@ -63,6 +63,15 @@
             ]
     },
     {
+        "name": "Got2bhockey",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
         "name": "Magical Girl",
         "roles":
             [
@@ -79,8 +88,7 @@
                     "name": "Advisor"
                 }
             ]
-    },
-    
+    },    
     {
         "name": "Mitron",
         "roles":
