@@ -1,7 +1,7 @@
 <template>
   <div class="home background-image">
     <v-container >
-      <v-card style="margin-top: 75px;padding:35px !important">
+      <v-card style="border-radius: 20px;margin-top: 75px;padding:35px !important; background-color:rgb(34, 34, 34)">
         <v-row align="left" justify="left">
             <v-flex xs12 sm5 md6 lg8 just>
               <v-container>
