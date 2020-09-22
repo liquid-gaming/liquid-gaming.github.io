@@ -72,7 +72,7 @@ export default {
         { title: 'About', icon: 'mdi-account-group-outline', route: '' },
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
-        { title: 'Contact', icon: 'connect_without_contact', route: '' },
+        // { title: 'Contact', icon: 'connect_without_contact', route: '' },
         { title: 'Seeding', icon: 'gavel', route: '/Seeding' },
         { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/PlayerStats' }
       ],
