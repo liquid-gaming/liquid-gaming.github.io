@@ -30,7 +30,7 @@
           </v-flex>
         </v-card-text>
       <v-card-text class="white--text pt-0">
-        If you have any questions or inquiries please contact one of our administration members on our <a :href="discordLink.link" target="_targetBlanks">discord</a>.
+        If you have any questions or inquiries please contact one of our administration members on our <a class="link" :href="discordLink.link" target="_targetBlanks">discord</a>.
       </v-card-text>
 
       <v-divider></v-divider>
@@ -41,7 +41,7 @@
       <v-card-text class="white--text" style="opacity:0.3;font-size:12px">
         @Copyright 2019-{{ new Date().getFullYear() }}<br>
         <span style="font-style: italic;">
-          All rights reserved. Powered by these fists.
+          All rights reserved. Powered by these fists. Like the website? <a class="link" href="https://www.linkedin.com/in/joey-maxwell/" target="_blank">Click Here</a> to get in contact with our site creator.
         </span>
       </v-card-text>
     </v-card>
@@ -73,4 +73,7 @@ export default {
 </script>
 
 <style>
+  .link{
+    color:#FFFFFF !important
+  }
 </style>
