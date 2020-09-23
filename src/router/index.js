@@ -7,7 +7,7 @@ import PlayerStats from '../views/PlayerStats.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -16,14 +16,19 @@ export default new VueRouter({
       component: Home
     },
     {
-      path: '/Seeding',
+      path: '/seeding',
       name: 'Seeding',
       component: Seeding
     },
     {
-      path: '/PlayerStats',
+      path: '/playerstats',
       name: 'Player Stats',
       component: PlayerStats
+    },
+    {
+      path: '/discord',
+      name: 'Discord',
+      beforeEnter() {location.href = 'https://discord.gg/xabsac'}
     },
     { path: '*', component: Home }
   ]

@@ -8,8 +8,8 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/Seeding" text>Seeding</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/PlayerStats" text>Player Stats</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text>Player Stats</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -73,8 +73,8 @@ export default {
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
         // { title: 'Contact', icon: 'connect_without_contact', route: '' },
-        { title: 'Seeding', icon: 'gavel', route: '/Seeding' },
-        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/PlayerStats' }
+        { title: 'Seeding', icon: 'gavel', route: '/seeding' },
+        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/playerstats' }
       ],
       mini: true,
       fab: false,
