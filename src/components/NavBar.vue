@@ -73,8 +73,9 @@ export default {
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
         // { title: 'Contact', icon: 'connect_without_contact', route: '' },
-        { title: 'Seeding', icon: 'gavel', route: '/seeding' },
-        { title: 'Player Stats', icon: 'insert_chart_outlined', route: '/playerstats' }
+        { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
+        { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
+        { title: 'Discord', icon: 'mdi-discord', route: '/discord' }
       ],
       mini: true,
       fab: false,
