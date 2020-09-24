@@ -29,7 +29,7 @@
           <About :discord="dicord" :teamMembers="teamMembers"/>
         </v-card>
       </v-container>
-      <Carousel id="Servers" :carouselItems="firstCarouselItems"/>
+      <v-parallax height="350" :src="firstCarousel" id="home-image"></v-parallax>
     <v-container class="mt-5 dark black--background compontent-container">    
       <v-card :elevation="5" class="home-cards">
         <v-row align="center" justify="center">
@@ -93,18 +93,17 @@
         </v-row>
       </v-card>
     </v-container>
-      <Carousel :carouselItems="secondCarouselItems" id="Recruitment"/>
+    <v-parallax height="350" :src="secondCarousel" id="home-image"></v-parallax>
     <v-container class="mt-5 dark black--background" style="margin-bottom:20px;">
       <Recruitment :stepsForRecruitment="stepsForRecruitment"/>
     </v-container>
-      <Carousel :carouselItems="thirdCarouselItems"/>
+     <v-parallax height="350" :src="thirdCarousel" id="home-image"></v-parallax>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Servers from "@/components/Servers.vue";
-import Carousel from "@/components/Carousel.vue"
 import About from "@/components/About.vue"
 import Recruitment from "@/components/Recruitment.vue"
 //Json files
@@ -119,7 +118,6 @@ export default {
   name: "home",
   components: {
     Servers,
-    Carousel,
     About,
     Recruitment
   },
@@ -140,78 +138,82 @@ export default {
       squadServersList: squadServersListJson,
       teamMembers: teamMembersJson,
       stepsForRecruitment: stepsForRecruitmentJson,
-      firstCarouselItems: [
+            firstCarouselItems: [
         {
-          src:require('../assets/TANK.jpg')
+          src:require('../assets/Carousel1Images/TANK.jpg')
         },
         {
-          src:require('../assets/tandam.png')
+          src:require('../assets/Carousel1Images/tandam.png')
         },
         {
-          src:require('../assets/people.png')
+          src:require('../assets/Carousel1Images/people.png')
         },
         {
-          src:require('../assets/tankInSide.jpg')
-        },
-        {
-          src:require('../assets/tank on hill.jpg')
+          src:require('../assets/Carousel1Images/tank on hill.jpg')
         }
       ],
       secondCarouselItems: [
         {
-          src:require('../assets/1.png')
+          src:require('../assets/Carousel2Images/1.png')
         },
         {
-          src:require('../assets/2.jpg')
-        },
-        {
-          src:require('../assets/4.jpg')
-        },
-        {
-          src:require('../assets/5.jpg')
+          src:require('../assets/Carousel2Images/2.jpg')
         }
       ],
       thirdCarouselItems: [
         {
-          src:require('../assets/6.jpg')
+          src:require('../assets/Carousel3Images/5.jpg')
         },
         {
-          src:require('../assets/7.jpg')
+          src:require('../assets/Carousel3Images/6.jpg')
         },
         {
-          src:require('../assets/8.jpg')
-        }
-      ],
-      homePageImage: [
-        {
-          src:require('../assets/tankonroad.png')
-        },
-        {
-          src:require('../assets/tankInfield.jpg')
-        },
-        {
-          src:require('../assets/10.png')
-        },
-        {
-          src:require('../assets/11.png')
-        },
-        {
-          src:require('../assets/12.png')
-        },
-        {
-          src:require('../assets/13.png')
+          src:require('../assets/Carousel3Images/7.jpg')
         },
       ],
-      selectedHomeImage: null
+      selectedHomeImage: null,
+      firstCarousel: null,
+      secondCarousel: null,
+      thirdCarousel: null,
     };
   },
   methods: {
     randomItem (items) {
       return items[Math.floor(Math.random()*items.length)];
+    },
+    fileNamesGetter(fileNames){   
+      let homePageImage = [];
+      let homePageImageJson = [];
+      fileNames.keys().forEach(key => (homePageImage.push(fileNames(key))));
+      homePageImage.forEach(image => {
+        console.log(image)
+        const addImage = {
+          src: image
+        }
+        homePageImageJson.push(addImage)
+      });
+      return homePageImageJson;
     }
   },
+  mounted() {
+    
+  },
   created() {
-    this.selectedHomeImage = this.randomItem(this.homePageImage).src;
+    let homeImageFolder = require.context('../assets/HomePageImages/', true);
+    const homeImageFiles = this.fileNamesGetter(homeImageFolder);
+    this.selectedHomeImage = this.randomItem(homeImageFiles).src;
+    
+    let carousel1ImagesFolder = require.context('../assets/Carousel1Images/', true);
+    const carousel1Files = this.fileNamesGetter(carousel1ImagesFolder);
+    this.firstCarousel = this.randomItem(carousel1Files).src;
+    
+    let carousel2ImagesFolder = require.context('../assets/Carousel2Images/', true);
+    const carousel2Files = this.fileNamesGetter(carousel2ImagesFolder);
+    this.secondCarousel = this.randomItem(carousel2Files).src;
+
+    let carousel3ImagesFolder = require.context('../assets/Carousel3Images/', true);   
+    const carousel3Files = this.fileNamesGetter(carousel3ImagesFolder);
+    this.thirdCarousel = this.randomItem(carousel3Files).src;
   }
 };
 </script>
