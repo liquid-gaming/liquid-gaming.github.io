@@ -12,7 +12,7 @@
                 <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
                   LiQuid Gaming
                 </div>
-                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                   We are a high-level clan in various gaming platforms with a community of over 900 players. <br/>
                   We currently host two servers in Squad and have plan for more in the future. <br/>
                   <br/>
@@ -24,14 +24,14 @@
           </v-container>
         </v-layout>
     </v-parallax>
-      <v-container class="mt-5 dark black--background" style="margin-bottom:20px;" id="About">        
-        <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;">
+      <v-container class="mt-5 dark black--background compontent-container" id="About">        
+        <v-card :elevation="5" class="home-cards">
           <About :discord="dicord" :teamMembers="teamMembers"/>
         </v-card>
       </v-container>
       <Carousel id="Servers" :carouselItems="firstCarouselItems"/>
-    <v-container class="mt-5 dark black--background" style="margin-bottom:20px;">    
-      <v-card :elevation="5"  style="background:#222222;padding:30px;border-radius: 10px;">
+    <v-container class="mt-5 dark black--background compontent-container">    
+      <v-card :elevation="5" class="home-cards">
         <v-row align="center" justify="center">
           <v-container>
             <v-row align="left" justify="left">
@@ -39,7 +39,7 @@
                 <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
                   Servers
                 </div>
-                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                   LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming through out the year.
                 </div>
               </v-col>
@@ -54,7 +54,7 @@
                       <div class="display-1 font-weight-bold ">
                         Squad
                       </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                         "Squad is a tactical FPS that provides authentic combat experiences through teamwork, communication, and gameplay. It seeks to bridge 
                         the large gap between arcade shooter and military simulation. Large scale, combined arms combat, base building, and a great integrated VoIP system."
                         - Offworld Industries. To learn more about Squad click <a target="_blank" :href="squadLink.link">here</a>, to see their roadmap click 
@@ -76,7 +76,7 @@
                       <div class="display-1 font-weight-bold ">
                         Minecraft
                       </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                         To learn more about Minecraft and what it is, click <a target="_blank" :href="minecraftLink.link">here</a>.
                       </div>
                     </v-col>
@@ -223,5 +223,17 @@ export default {
   .background-image{
     background-image: url('~@/assets/escheresque_ste.png');
     background-repeat: repeat;
+  }
+  .compontent-container{
+    margin-bottom:20px !important;
+  }
+  .home-cards{
+    background:#222222 !important;
+    padding:30px !important;
+    border-radius: 10px !important;
+  }
+  .home-text{
+    opacity: 0.75 !important; 
+    margin-top:10px !important;
   }
 </style>

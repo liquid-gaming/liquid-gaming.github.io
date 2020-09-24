@@ -1,13 +1,14 @@
 <template>
   <div class="home background-image">
     <v-container >
-      <v-card style="border-radius: 20px;margin-top: 75px;padding:35px !important; background-color:rgb(34, 34, 34)">
+      <v-card class="seeding-card">
         <v-row align="left" justify="left">
             <v-flex xs12 sm5 md6 lg8 just>
               <v-container>
                 <v-row align="left" justify="left">
                   <v-col>
-                    <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
+                    <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                         :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
                       Seeding
                     </div>
                     <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0">
@@ -15,7 +16,8 @@
                         Please read the rules for seeding below and look at the image provided to see how we set up the map for seeding. The image also shows the locations 
                         of the FOBs and designated zone to fight over without crossing the colored lines of your associated team.
                     </div>
-                    <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
+                    <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                         :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
                         Rules
                     </div>
                     <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
@@ -35,7 +37,7 @@
             <template>
                 <v-flex xs12 sm7 md6 lg4 xl4 just>
                   <v-hover v-slot:default="{ hover }">
-                    <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;padding:10px 10px 5px 10px">
+                    <v-card :elevation="hover ? 10 : 5" class="seeding-map">
                       <img class="image-fit" src="@/assets/squadseedingmap.png" alt="">
                     </v-card>  
                   </v-hover>
@@ -67,5 +69,15 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  .seeding-card{
+    border-radius: 20px !important;
+    margin-top: 75px !important;
+    padding:35px !important; 
+    background-color:rgb(34, 34, 34) !important;
+  }
+  .seeding-map{
+    border-radius: 20px !important;
+    padding:10px 10px 5px 10px !important;
   }
 </style>

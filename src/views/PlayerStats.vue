@@ -1,10 +1,11 @@
 <template>
   <div class="home background-image">
     <v-container >
-      <v-card style="border-radius: 20px;margin-top: 75px;padding:35px !important; background-color:rgb(34, 34, 34)">
+      <v-card class="playerstats-card">
         <v-row align="left" justify="left">
           <v-col>
-            <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
+            <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                 :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
               Squad Player Stats
             </div>
             <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0">
@@ -96,5 +97,11 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  .playerstats-card{
+    border-radius: 20px !important;
+    margin-top: 75px !important;
+    padding:35px !important; 
+    background-color:rgb(34, 34, 34) !important;
   }
 </style>

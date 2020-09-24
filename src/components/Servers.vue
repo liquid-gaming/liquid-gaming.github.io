@@ -44,7 +44,7 @@
           <v-expansion-panel-header class="titleColour">Map Vote Commands</v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-flex v-for="(command, index) in server.mapVoteCommands" :key="index">
-              <v-card class="card-container" style="margin:7px;background:#262626;">
+              <v-card class="card-container rule-cards">
                 <v-card-text class="px-4">
                   <v-card-title>
                     <h5 class="titleColour">{{index+1}}: {{command.title}}</h5>
@@ -69,7 +69,7 @@
           <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-flex v-for="(rule, index) in server.rules" :key="index">
-              <v-card class="card-container" style="margin:7px;background:#262626;">
+              <v-card class="card-container rule-cards">
                 <v-card-text class="px-4" :class="{'larger-display': $vuetify.breakpoint.smAndDown}">
                   <v-card-title>
                     <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
@@ -130,5 +130,9 @@ export default {
 }
 .larger-display{
   padding: 5px !important;
+}
+.rule-cards{
+  margin:7px !important;
+  background:#262626 !important;
 }
 </style>

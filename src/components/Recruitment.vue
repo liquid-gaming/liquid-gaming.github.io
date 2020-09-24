@@ -5,14 +5,14 @@
         <v-row align="left" justify="left">
           <v-card
             :elevation="5"
-            style="background:#222222;padding:30px;border-radius: 10px;margin:0 10px 0 10px;width:100%">
+            class="recruitment-card">
             <div 
               :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
               Wanna join LiQ?
               </div>
             <div
               :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}"
-              style="opacity: 0.75; margin-top:10px;">
+              class="opacity-text">
               We are always looking for new members. If you are interest in joining please read the steps below on 
               how to become a memeber or contact one of our recruiters in our discord.
             </div>
@@ -43,9 +43,9 @@
         <v-row align="left" justify="left">
           <v-card
             :elevation="5"
-            style="background:#222222;padding:30px;border-radius: 10px;margin:30px 10px 0 10px">
+            class="competitive-card">
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">Want more of challenge?</div>
-            <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
+            <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="opacity-text">
               Think you have what it takes to compete in the Squad World Championship? Consider joining our competitive team! Learn more about 
               our competitive team in Squad Competitive channels in our discord and visit our 
               <a target="_blank" :href="competitiveTrelloLink.link"> Trello page </a>. Wanna learn more about Squad World Championship?
@@ -88,5 +88,22 @@ export default {
 }
 .preWrapped {
   white-space: pre-wrap;
+}
+.recruitment-card{
+  background:#222222 !important;
+  padding:30px !important;
+  border-radius: 10px !important;
+  margin:0 10px 0 10px !important;
+  width:100% !important;
+}
+.competitive-card{
+  background:#222222 !important;
+  padding:30px !important;
+  border-radius: 10px !important;
+  margin:30px 10px 0 10px !important;
+}
+.opacity-text{
+  opacity: 0.75 !important; 
+  margin-top:10px !important;
 }
 </style>
