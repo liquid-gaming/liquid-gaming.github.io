@@ -138,38 +138,11 @@ export default {
       squadServersList: squadServersListJson,
       teamMembers: teamMembersJson,
       stepsForRecruitment: stepsForRecruitmentJson,
-            firstCarouselItems: [
-        {
-          src:require('../assets/Carousel1Images/TANK.jpg')
-        },
-        {
-          src:require('../assets/Carousel1Images/tandam.png')
-        },
-        {
-          src:require('../assets/Carousel1Images/people.png')
-        },
-        {
-          src:require('../assets/Carousel1Images/tank on hill.jpg')
-        }
+      firstCarouselItems: [
       ],
       secondCarouselItems: [
-        {
-          src:require('../assets/Carousel2Images/1.png')
-        },
-        {
-          src:require('../assets/Carousel2Images/2.jpg')
-        }
       ],
       thirdCarouselItems: [
-        {
-          src:require('../assets/Carousel3Images/5.jpg')
-        },
-        {
-          src:require('../assets/Carousel3Images/6.jpg')
-        },
-        {
-          src:require('../assets/Carousel3Images/7.jpg')
-        },
       ],
       selectedHomeImage: null,
       firstCarousel: null,
