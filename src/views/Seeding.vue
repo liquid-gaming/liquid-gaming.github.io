@@ -23,7 +23,7 @@
                     <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
                         • The server goes LIVE after the server reaches 18 v 18 players.<br/>
                         • Fighting is allowed over the middle objective.<br/>
-                        • DO NOT attack the enemy fob.<br/>
+                        • DO NOT attack the enemy FOB.<br/>
                         • No armed vehiciles or emplatements are to be used (MG, mortar, etc).<br/>
                         • Only one FOB allowed per side.<br/>
                         • FOBs placed on the main capture point are subject to attack.

@@ -32,6 +32,13 @@ export default new VueRouter({
         but this will work for now*/
       beforeEnter() {location.href = 'https://discord.gg/5WrXn4a'}
     },
+    {
+      path: '/merch',
+      name: 'LiQMerchandise',
+      /*this link is a copy of the on ein mediaLinks.json will need to find a way to get it from the file 
+        but this will work for now*/
+      beforeEnter() {location.href = 'https://shop.spreadshirt.com/liq-gaming/'}
+    },
     { path: '*', component: Home }
   ]
 })

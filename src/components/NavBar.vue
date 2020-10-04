@@ -8,6 +8,7 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text>Player Stats</v-btn>
                 </v-toolbar-items>
@@ -75,7 +76,8 @@ export default {
         // { title: 'Contact', icon: 'connect_without_contact', route: '' },
         { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
-        { title: 'Discord', icon: 'mdi-discord', route: '/discord' }
+        { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
+        { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' }
       ],
       mini: true,
       fab: false,
