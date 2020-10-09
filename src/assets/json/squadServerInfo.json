@@ -67,6 +67,10 @@
           "title": "!mapvote *Map Name Layer*",
           "description": "The !mapvote needs to be in the following format shown in this example.\n!mapvote Al Basrah AAS v1\n\nTo view all the current layers for squad please click here: ",
           "link": "https://docs.google.com/spreadsheets/d/1SiKtpNkOy3Gk52IFue5IacIeRDpB20ONmH3_p_B29_w/edit#gid=368118095"
+        },
+        {
+          "title": "!skipmap",
+          "description": "Use !skipmap to start the vote to skip the current map. The 5 minute countdown will begin and everyone can enter either '+' to vote YES or '-' to vote NO in all chat.\n\nThere needs to be at least 30 YES votes for the map to skip. A NO vote will counter a Yes vote. So if there are 2 No votes, you will need 32 YES votes for it to skip."
         }
       ],
       "rules":[

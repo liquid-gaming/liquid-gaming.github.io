@@ -5,7 +5,7 @@
       <v-row align="left" justify="left">
         <v-col>
           <div class="title mt-2 titleColour">{{server.name}}</div>
-          <div :class="{ preWrapped: containBreaks()}">{{server.description}}</div>
+          <div :class="{ preWrapped: containBreaks(server.description)}">{{server.description}}</div>
           <div v-if="server.mapRotationLink != null">
             <div class="title mt-2 titleColour">Map Rotation</div>
             <div>Click here to see this servers map rotation: <a target="_blank" :href="server.mapRotationLink">Map Rotation</a></div>
@@ -49,10 +49,10 @@
                   <v-card-title>
                     <h5 class="titleColour">{{index+1}}: {{command.title}}</h5>
                   </v-card-title>
-                  <v-card-subtitle v-if="command.description != null">
+                  <v-card-subtitle :class="{ preWrapped: containBreaks(command.description)}" v-if="command.description != null && command.link == null">
                     <p>{{command.description}}</p>
                   </v-card-subtitle>
-                  <v-card-subtitle v-if="command.description != null && command.link != null">
+                  <v-card-subtitle :class="{ preWrapped: containBreaks(command.description)}" v-if="command.description != null && command.link != null">
                     <p>{{command.description}} <a target="_blank" :href="command.link">Squad Layers</a></p>
                   </v-card-subtitle>
                 </v-card-text>
@@ -111,8 +111,8 @@ export default {
     screenSize(){
       return vuetify.breakpoint.smAndDown;
     },
-    containBreaks(){
-      return this.server.description.includes('\n');
+    containBreaks(descriptions){
+      return descriptions.includes('\n');
     }
   }
 };
