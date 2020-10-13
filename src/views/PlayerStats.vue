@@ -12,6 +12,20 @@
                 LiQ gaming player stats are updated on a weekly basis, showing your stats for the past month. 
                 Use the search bar to search your in game user name and click the top of a column that you want to sort.
             </div>
+            <v-container class="my-2">
+              <v-layout row wrap class="justify-center">
+                <v-flex xs12 sm6 md4 lg3 xl2  v-for="(total, index) in totals" :key="index">
+                    <v-hover v-slot:default="{ hover }">
+                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                            <v-card-text>
+                                <h2><AnimatedNumber :number="total.count"/></h2>     
+                                <div class="subheading">Total {{total.name}}</div>                                       
+                            </v-card-text>
+                        </v-card>
+                    </v-hover>
+                </v-flex>
+              </v-layout>
+          </v-container>
             <v-card>
               <v-card-title>
                 <v-text-field
@@ -46,15 +60,25 @@
 
 <script>
 // @ is an alias to /src
+import AnimatedNumber from "@/components/AnimatedNumber.vue"
 //Json files
 import topStats from "@/assets/json/top-stats.json"
+import totalStats from "@/assets/json/total-stats.json"
 
 export default {
   name: "seeding",
+  components: {
+    AnimatedNumber
+  },
   data () {
       return {
         search: '',
         pagination: {},
+        totals: totalStats,
+        // totalKills: totalStats.kills,
+        // totalDeaths: totalStats.deaths,
+        // totalWounds: totalStats.wounds,
+        // totalRevives: totalStats.revives,
         headers: [
           {
             text: 'Rank',
@@ -72,7 +96,7 @@ export default {
           { text: 'Wounds', value: 'Wounds' },
           { text: 'Revives', value: 'Revives' },
         ],
-        players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills))
+        players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills))        
       }
   },
   computed: {
@@ -85,6 +109,7 @@ export default {
     }
   }
 };
+
 </script>
 
 <style lang="css">
@@ -103,5 +128,11 @@ export default {
     margin-top: 75px !important;
     padding:35px !important; 
     background-color:rgb(34, 34, 34) !important;
+  }
+  .total-card{
+  text-align: center;
+    border-radius: 10px !important;
+    padding:10px !important; 
+    margin-bottom: 10px;
   }
 </style>
