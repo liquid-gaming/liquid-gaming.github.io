@@ -27,6 +27,11 @@
               </v-layout>
           </v-container>
             <v-card>
+              <v-row>
+                <div v-if="selectedItem">
+                  <h2>{{selectedItem.Name}}</h2>
+                </div>
+              </v-row>
               <v-card-title>
                 <v-text-field
                   v-model="search"
@@ -37,6 +42,7 @@
                 ></v-text-field>
               </v-card-title>
               <v-data-table
+                v-model="selected"
                 :headers="headers"
                 :items="itemsWithIndex"
                 :search="search"
@@ -49,7 +55,25 @@
                   lastIcon: 'mdi-arrow-collapse-right',
                   'items-per-page-options': [10, 25, 50, 100]
                 }">
-                </v-data-table>
+                <template v-slot:body="{ items }">
+                  <tbody>
+                    <tr
+                      v-for="item in items"
+                      :key="item.id"
+                      :search="search"
+                      @mouseover="selectItem(item)"
+                      @mouseleave="unSelectItem()">
+                        <td> {{ item.index }}</td>
+                        <td> {{ item.Name }}</td>
+                        <td> {{ item.Kills }}</td>
+                        <td> {{ item.Deaths }}</td>
+                        <td> {{ item.KD }}</td>
+                        <td> {{ item.Wounds }}</td>
+                        <td> {{ item.Revives }}</td>                      
+                      </tr>
+                    </tbody>
+                 </template>
+              </v-data-table>
             </v-card>
           </v-col>
         </v-row>
@@ -96,7 +120,8 @@ export default {
           { text: 'Wounds', value: 'Wounds' },
           { text: 'Revives', value: 'Revives' },
         ],
-        players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills))        
+        players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills)),
+        selectedItem: false     
       }
   },
   computed: {
@@ -106,6 +131,15 @@ export default {
           ...players,
           index: index + 1
         }))
+    }
+  },
+   methods: {
+     selectItem (item) {
+      this.selectedItem = item
+      console.log(item);
+    },
+    unSelectItem () {
+      this.selectedItem = false
     }
   }
 };
