@@ -25,13 +25,8 @@
                     </v-hover>
                 </v-flex>
               </v-layout>
-          </v-container>
+          </v-container>            
             <v-card>
-              <v-row>
-                <div v-if="selectedItem">
-                  <h2>{{selectedItem.Name}}</h2>
-                </div>
-              </v-row>
               <v-card-title>
                 <v-text-field
                   v-model="search"
@@ -61,8 +56,8 @@
                       v-for="item in items"
                       :key="item.id"
                       :search="search"
-                      @mouseover="selectItem(item)"
-                      @mouseleave="unSelectItem()">
+                      @click="selectItem(item)"
+                      >
                         <td> {{ item.index }}</td>
                         <td> {{ item.Name }}</td>
                         <td> {{ item.Kills }}</td>
@@ -79,6 +74,14 @@
         </v-row>
       </v-card>
     </v-container>
+    <modal name="stat-modal" draggable=".window-header">
+      <v-card style="background-color:#171717;padding:1px !important;text-align:center;">
+        <div class="window-header">DRAG ME HERE</div>
+      </v-card>
+      <div>
+        <h2>{{selectedItem.Name}}</h2>
+      </div>
+    </modal>
   </div>
 </template>
 
@@ -137,6 +140,10 @@ export default {
      selectItem (item) {
       this.selectedItem = item
       console.log(item);
+      this.$modal.show(
+        'stat-modal',
+        { draggable: true }
+      );
     },
     unSelectItem () {
       this.selectedItem = false
@@ -168,5 +175,9 @@ export default {
     border-radius: 10px !important;
     padding:10px !important; 
     margin-bottom: 10px;
+  }
+  .vm--modal {
+    background-color:rgb(34, 34, 34) !important;
+    box-shadow: 0 1px 10px 0 rgb(34, 34, 34) !important;
   }
 </style>

@@ -5,7 +5,15 @@ import VueAnalytics from 'vue-analytics';
 import vuetify from './plugins/vuetify';
 import VueLazyload from 'vue-lazyload'
 import VueNumber from 'vue-number-animation'
- 
+import VModal from 'vue-js-modal'
+
+Vue.use(VModal,
+  {dynamicDefaults: {
+    draggable: true,
+    resizable: true,
+    height: 'auto'
+  }
+})
 Vue.use(VueNumber)
 Vue.use(VueLazyload)
 Vue.config.productionTip = false
