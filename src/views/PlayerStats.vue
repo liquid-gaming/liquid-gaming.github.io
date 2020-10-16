@@ -57,6 +57,7 @@
                       :key="item.id"
                       :search="search"
                       @click="selectItem(item)"
+                      class="clicker"
                       >
                         <td> {{ item.index }}</td>
                         <td> {{ item.Name }}</td>
@@ -75,7 +76,7 @@
       </v-card>
     </v-container>
     <modal name="stat-modal" draggable=".window-header">
-      <v-card style="background-color:#171717;padding:1px !important;text-align:center;">
+      <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="window-header">DRAG ME HERE</div>
       </v-card>
       <div>
@@ -179,5 +180,17 @@ export default {
   .vm--modal {
     background-color:rgb(34, 34, 34) !important;
     box-shadow: 0 1px 10px 0 rgb(34, 34, 34) !important;
+  }
+  .dragger{
+    cursor:grab
+  }
+  .dragger:active{
+    cursor:grabbing
+  }
+  .clicker{
+    cursor:pointer
+  }
+  .clicker:active{
+    cursor: grabbing
   }
 </style>
