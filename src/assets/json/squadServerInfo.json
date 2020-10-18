@@ -45,6 +45,14 @@
         {
           "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
           "description":"When a squad is created and named with the intention of using a certain vehicle “ex. Helo” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad."
+        },
+        {
+          "title":"No intentional heli ramming",
+          "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
+        },
+        {
+          "title":"No unarmed kits on a full-pop server",
+          "description":"When the server is populated, you are not allowed to have an unarmed kit."
         }
       ]                  
     },
@@ -113,6 +121,14 @@
         {
           "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
           "description":"When a squad is created and named with the intention of using a certain vehicle “ex. Helo” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad."
+        },
+        {
+          "title":"No intentional heli ramming",
+          "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
+        },
+        {
+          "title":"No unarmed kits on a full-pop server",
+          "description":"When the server is populated, you are not allowed to have an unarmed kit."
         }
       ]                  
     }
