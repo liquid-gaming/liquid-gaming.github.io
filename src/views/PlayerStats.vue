@@ -75,12 +75,15 @@
         </v-row>
       </v-card>
     </v-container>
-    <modal name="stat-modal" draggable=".window-header">
+    <modal name="stat-modal" draggable=".window-header" :max-width="500" :max-height="740" width="30%" height="50%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="window-header">DRAG ME HERE</div>
       </v-card>
       <div>
         <h2>{{selectedItem.Name}}</h2>
+          <div width="70%" height="70%">
+            <doughnut-chart :player="selectedItem" :average="averageStats"></doughnut-chart>
+          </div>
       </div>
     </modal>
   </div>
@@ -89,6 +92,7 @@
 <script>
 // @ is an alias to /src
 import AnimatedNumber from "@/components/AnimatedNumber.vue"
+import DoughnutChart from '@/components/Doughnut'
 //Json files
 import topStats from "@/assets/json/top-stats.json"
 import totalStats from "@/assets/json/total-stats.json"
@@ -96,7 +100,8 @@ import totalStats from "@/assets/json/total-stats.json"
 export default {
   name: "seeding",
   components: {
-    AnimatedNumber
+    AnimatedNumber,
+    DoughnutChart
   },
   data () {
       return {
@@ -125,7 +130,8 @@ export default {
           { text: 'Revives', value: 'Revives' },
         ],
         players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills)),
-        selectedItem: false     
+        selectedItem: false,
+        averageStats: {}
       }
   },
   computed: {
@@ -137,10 +143,9 @@ export default {
         }))
     }
   },
-   methods: {
+  methods: {
      selectItem (item) {
       this.selectedItem = item
-      console.log(item);
       this.$modal.show(
         'stat-modal',
         { draggable: true }
@@ -148,7 +153,13 @@ export default {
     },
     unSelectItem () {
       this.selectedItem = false
-    }
+    },
+  },
+  mounted(){
+    this.averageStats.Kills = Math.round((((this.totals.find(o=>{return o.name === "Kills";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Deaths = Math.round((((this.totals.find(o=>{return o.name === "Deaths";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Wounds = Math.round((((this.totals.find(o=>{return o.name === "Wounds";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Revives = Math.round((((this.totals.find(o=>{return o.name === "Revives";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
   }
 };
 

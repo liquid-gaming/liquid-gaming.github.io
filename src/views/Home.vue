@@ -159,7 +159,6 @@ export default {
       let homePageImageJson = [];
       fileNames.keys().forEach(key => (homePageImage.push(fileNames(key))));
       homePageImage.forEach(image => {
-        console.log(image)
         const addImage = {
           src: image
         }
