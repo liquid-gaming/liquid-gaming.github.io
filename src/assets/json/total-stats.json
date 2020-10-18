@@ -1,18 +1,1 @@
-[
-    {
-        "name":"Kills",
-        "count":492199
-    },
-    {
-        "name":"Deaths",
-        "count":481165
-    },
-    {
-        "name":"Wounds",
-        "count":670805
-    },
-    {
-        "name":"Revives",
-        "count":8761
-    }
-]
+{"wounds": 769137, "kills": 558997, "deaths": 547325, "revives": 10240}
