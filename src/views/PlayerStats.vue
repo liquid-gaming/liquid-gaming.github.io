@@ -18,8 +18,8 @@
                     <v-hover v-slot:default="{ hover }">
                         <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
                             <v-card-text>
-                                <h2><AnimatedNumber :number="total.count"/></h2>     
-                                <div class="subheading">Total {{total.name}}</div>                                       
+                                <h2><AnimatedNumber :number="total"/></h2>
+                                <div class="subheading">Total {{index}}</div>
                             </v-card-text>
                         </v-card>
                     </v-hover>
