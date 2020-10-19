@@ -64,11 +64,6 @@
               }
             }
           }
-        //   scale: {
-        //         ticks: {
-        //             beginAtZero: true
-        //         }
-        //     }
         }
       }
     },

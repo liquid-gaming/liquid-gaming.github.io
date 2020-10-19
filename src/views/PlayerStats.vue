@@ -75,15 +75,14 @@
         </v-row>
       </v-card>
     </v-container>
-    <modal name="stat-modal" draggable=".window-header" :max-width="500" :max-height="740" width="30%" height="50%">
+    <modal name="stat-modal" draggable=".window-header" :resizable="true" :min-width="250" :min-height="450" :max-width="800" :max-height="740" width="30%" height="50%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="window-header">DRAG ME HERE</div>
       </v-card>
       <div>
-        <h2>{{selectedItem.Name}}</h2>
-          <div width="70%" height="70%">
-            <doughnut-chart :player="selectedItem" :average="averageStats"></doughnut-chart>
-          </div>
+        <div width="70%" height="70%">
+          <doughnut-chart :player="selectedItem" :average="averageStats"></doughnut-chart>
+        </div>
       </div>
     </modal>
   </div>
@@ -203,5 +202,14 @@ export default {
   }
   .clicker:active{
     cursor: grabbing
+  }
+  .chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+  }
+  .window-header{
+    color: grey !important
   }
 </style>
