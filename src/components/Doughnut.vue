@@ -59,8 +59,7 @@
           tooltips: {
             callbacks: {
               label: function(item, data) {
-              console.log(data.labels, item);
-                  return data.datasets[item.datasetIndex].label+ ": "+ data.labels[item.index]+ ": "+ data.datasets[item.datasetIndex].data[item.index];
+                return data.datasets[item.datasetIndex].label+ ": "+ data.labels[item.index]+ ": "+ data.datasets[item.datasetIndex].data[item.index];
               }
             }
           }

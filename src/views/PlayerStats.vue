@@ -18,8 +18,8 @@
                     <v-hover v-slot:default="{ hover }">
                         <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
                             <v-card-text>
-                                <h2><AnimatedNumber :number="total.count"/></h2>     
-                                <div class="subheading">Total {{total.name}}</div>                                       
+                                <h2><AnimatedNumber :number="total"/></h2>     
+                                <div class="subheading">Total {{index}}</div>                                       
                             </v-card-text>
                         </v-card>
                     </v-hover>
@@ -155,10 +155,10 @@ export default {
     },
   },
   mounted(){
-    this.averageStats.Kills = Math.round((((this.totals.find(o=>{return o.name === "Kills";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Deaths = Math.round((((this.totals.find(o=>{return o.name === "Deaths";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Wounds = Math.round((((this.totals.find(o=>{return o.name === "Wounds";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Revives = Math.round((((this.totals.find(o=>{return o.name === "Revives";}).count) / (this.players.length / 2)) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Kills = Math.round((this.totals.kills / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Deaths = Math.round((this.totals.deaths / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Wounds = Math.round((this.totals.wounds / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Revives = Math.round((this.totals.revives / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
   }
 };
 
