@@ -1,5 +1,6 @@
 <script>
   import { Doughnut } from 'vue-chartjs'
+  import Chart from "chart.js";
 
   export default {
     extends: Doughnut,
@@ -68,6 +69,30 @@
     },
     mounted () {
       this.renderChart(this.chartData, this.options)
+      this.textCenter(1000);
+    },
+    methods: {
+      textCenter(val) {
+        Chart.pluginService.register({
+          beforeDraw: function(chart) {
+            var width = chart.chart.width;
+            var height = chart.chart.height;
+            var ctx = chart.chart.ctx;
+
+            ctx.restore();
+            var fontSize = (height / 250).toFixed(2);
+            ctx.font = fontSize + "em sans-serif";
+            ctx.textBaseline = "middle";
+
+            var text = val + "%";
+            var textX = Math.round((width - ctx.measureText(text).width) / 2);
+            var textY = height / 1.9;
+
+            ctx.fillText(text, textX, textY);
+            ctx.save();
+          }
+        });
+      }
     }
   }
 </script>
