@@ -24,13 +24,13 @@
           </v-container>
         </v-layout>
     </v-parallax>
-      <v-container class="mt-5 dark black--background compontent-container" id="About">        
+      <v-container class="mt-5 dark black--background component-container" id="About">        
         <v-card :elevation="5" class="home-cards">
           <About :discord="dicord" :teamMembers="teamMembers"/>
         </v-card>
       </v-container>
       <v-parallax height="350" :src="firstCarousel" id="home-image"></v-parallax>
-    <v-container class="mt-5 dark black--background compontent-container">    
+    <v-container class="mt-5 dark black--background component-container">    
       <v-card :elevation="5" class="home-cards">
         <v-row align="center" justify="center">
           <v-container>
@@ -198,7 +198,7 @@ export default {
     background-image: url('~@/assets/escheresque_ste.png');
     background-repeat: repeat;
   }
-  .compontent-container{
+  .component-container{
     margin-bottom:20px !important;
   }
   .home-cards{
