@@ -14,7 +14,7 @@
               :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}"
               class="opacity-text">
               We are always looking for new members. If you are interest in joining please read the steps below on 
-              how to become a memeber or contact one of our recruiters in our discord.
+              how to become a member or contact one of our recruiters in our discord.
             </div>
           </v-card>
         </v-row>

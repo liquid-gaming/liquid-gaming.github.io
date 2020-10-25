@@ -128,7 +128,7 @@ export default {
 .Advisor{
     color: mix(purple, grey) !important;
 }
-.Director_of_Squad_Competiive{
+.Director_of_Squad_Competitive{
     color: #8f1c1c !important;
 }
 .Director_of_Recruitment{
