@@ -13,19 +13,19 @@
                 Use the search bar to search your in game user name and click the top of a column that you want to sort.
             </div>
             <v-container class="my-2">
-              <v-layout row wrap class="justify-center">
-                <v-flex xs12 sm6 md4 lg3 xl2  v-for="(total, index) in totals" :key="index">
-                    <v-hover v-slot:default="{ hover }">
-                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
-                            <v-card-text>
-                                <h2><AnimatedNumber :number="total"/></h2>
-                                <div class="subheading">Total {{index}}</div>
-                            </v-card-text>
-                        </v-card>
-                    </v-hover>
-                </v-flex>
-              </v-layout>
-          </v-container>            
+                <v-layout row wrap class="justify-center">
+                  <v-flex xs12 sm6 md4 lg3 xl2  v-for="(total, index) in totals" :key="index">
+                      <v-hover v-slot:default="{ hover }">
+                          <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                              <v-card-text>
+                                  <h2><AnimatedNumber :number="total"/></h2>
+                                  <div class="subheading">Total {{index}}</div>
+                              </v-card-text>
+                          </v-card>
+                      </v-hover>
+                  </v-flex>
+                </v-layout>
+            </v-container>            
             <v-card>
               <v-card-title>
                 <v-text-field
@@ -50,7 +50,24 @@
                   lastIcon: 'mdi-arrow-collapse-right',
                   'items-per-page-options': [10, 25, 50, 100]
                 }">
-                <template v-slot:body="{ items }">
+                <template v-if="$isMobile()" v-slot:body="{ items }">
+                  <tbody>
+                    <tr
+                      v-for="item in items"
+                      :key="item.id"
+                      :search="search"
+                      >
+                        <td> {{ item.index }}</td>
+                        <td> {{ item.Name }}</td>
+                        <td> {{ item.Kills }}</td>
+                        <td> {{ item.Deaths }}</td>
+                        <td> {{ item.KD }}</td>
+                        <td> {{ item.Wounds }}</td>
+                        <td> {{ item.Revives }}</td>                      
+                      </tr>
+                  </tbody>
+                </template>
+                <template v-else v-slot:body="{ items }">
                   <tbody>
                     <tr
                       v-for="item in items"
@@ -67,22 +84,53 @@
                         <td> {{ item.Wounds }}</td>
                         <td> {{ item.Revives }}</td>                      
                       </tr>
-                    </tbody>
-                 </template>
+                  </tbody>
+                </template>
               </v-data-table>
             </v-card>
           </v-col>
         </v-row>
       </v-card>
     </v-container>
-    <modal name="stat-modal" draggable=".window-header" :resizable="true" :min-width="250" :min-height="450" :max-width="800" :max-height="740" width="30%" height="50%">
+    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="250" :min-height="450" :max-width="800" :max-height="740" width="30%" height="65%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
-        <div class="window-header">DRAG ME HERE</div>
+        <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
       <div>
+        <v-layout row wrap class="justify-center">
+          <v-flex>
+            <div class="text-xl-center ma-1" style="text-align: center;">
+              <div class="font-weight-bold" style="color: rgba(255, 255, 255, 0.7);font-size:30px" >
+                {{selectedItem.Name}}
+              </div>
+            </div>
+          </v-flex>
+        </v-layout>
         <div width="70%" height="70%">
           <doughnut-chart :player="selectedItem" :average="averageStats"></doughnut-chart>
         </div>
+        <v-container class="my-2">
+            <v-layout row wrap class="justify-center">
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                    <v-card-text>
+                      <h3>Your KD: {{selectedItem.KD}}</h3>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                    <v-card-text>
+                      <h3>Average KD: {{averageStats.KD}}</h3>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+            </v-layout>
+        </v-container> 
       </div>
     </modal>
   </div>
@@ -155,10 +203,18 @@ export default {
     },
   },
   mounted(){
-    this.averageStats.Kills = Math.round((this.totals.kills / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Deaths = Math.round((this.totals.deaths / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Wounds = Math.round((this.totals.wounds / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
-    this.averageStats.Revives = Math.round((this.totals.revives / (this.players.length / 2) + Number.EPSILON) * 10) / 10;
+    let playersFiltered = [];
+    for (let i = 0; i < this.players.length; i++) {
+        if (this.players[i].Kills > 10) {
+          playersFiltered.push(this.players[i]);
+        }      
+    }
+    console.log(playersFiltered)
+    this.averageStats.Kills = Math.round((this.totals.kills / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Deaths = Math.round((this.totals.deaths / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Wounds = Math.round((this.totals.wounds / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.Revives = Math.round((this.totals.revives / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
+    this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
   }
 };
 
@@ -209,7 +265,7 @@ export default {
     height: 80vh;
     width: 80vw;
   }
-  .window-header{
+  .stat-card-text{
     color: grey !important
   }
 </style>

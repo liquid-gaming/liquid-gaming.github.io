@@ -6,7 +6,9 @@ import vuetify from './plugins/vuetify';
 import VueLazyload from 'vue-lazyload'
 import VueNumber from 'vue-number-animation'
 import VModal from 'vue-js-modal'
+import VueMobileDetection from 'vue-mobile-detection'
 
+Vue.use(VueMobileDetection)
 Vue.use(VModal,
   {dynamicDefaults: {
     draggable: true,
