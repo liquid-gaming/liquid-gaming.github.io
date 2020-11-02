@@ -96,7 +96,7 @@
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
-      <div>
+      <div class="DivWithScroll">
         <v-layout row wrap class="justify-center">
           <v-flex>
             <div class="text-xl-center ma-1" style="text-align: center;">
@@ -107,7 +107,7 @@
           </v-flex>
         </v-layout>
         <div width="70%" height="70%">
-          <doughnut-chart :player="selectedItem" :average="averageStats"></doughnut-chart>
+          <bar-chart :player="selectedItem" :average="averageStats"></bar-chart>
         </div>
         <v-container class="my-2">
             <v-layout row wrap class="justify-center">
@@ -139,7 +139,7 @@
 <script>
 // @ is an alias to /src
 import AnimatedNumber from "@/components/AnimatedNumber.vue"
-import DoughnutChart from '@/components/Doughnut'
+import BarChart from '@/components/BarChart'
 //Json files
 import topStats from "@/assets/json/top-stats.json"
 import totalStats from "@/assets/json/total-stats.json"
@@ -148,7 +148,7 @@ export default {
   name: "seeding",
   components: {
     AnimatedNumber,
-    DoughnutChart
+    BarChart
   },
   data () {
       return {
@@ -267,5 +267,11 @@ export default {
   }
   .stat-card-text{
     color: grey !important
+  }
+  
+  .DivWithScroll{
+      height:100%;
+      overflow:auto;
+      overflow-x:hidden;
   }
 </style>

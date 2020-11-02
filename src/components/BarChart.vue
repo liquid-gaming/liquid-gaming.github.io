@@ -1,8 +1,8 @@
 <script>
-  import { Doughnut } from 'vue-chartjs'
+  import { Bar } from 'vue-chartjs'
 
   export default {
-    extends: Doughnut,
+    extends: Bar,
     props: {
       player: {
         type: Object,
@@ -30,7 +30,7 @@
             {
               label: 'Your Stats',
               borderWidth: 1,
-              backgroundColor: ['rgba(245, 78, 66, 0.3)', 'rgba(66, 81, 245, 0.3)', 'rgba(176, 2, 250, 0.3)', 'rgba(44, 255, 20, 0.3)'],
+              backgroundColor: ['rgba(245, 78, 66, 0.4)', 'rgba(66, 81, 245, 0.4)', 'rgba(176, 2, 250, 0.4)', 'rgba(44, 255, 20, 0.4)'],
              
               data: [
                 this.player.Kills, 
@@ -42,7 +42,7 @@
             {
               label: 'Average Stats',
               borderWidth: 1,
-              backgroundColor: ['rgba(245, 78, 66, 0.2)', 'rgba(66, 81, 245, 0.2)', 'rgba(176, 2, 250, 0.2)', 'rgba(44, 255, 20, 0.2)'],
+              backgroundColor: ['rgba(200, 200, 200, 0.4)', 'rgba(200, 200, 200, 0.4)','rgba(200, 200, 200, 0.4)','rgba(200, 200, 200, 0.4)'],
              
               data: [
                 this.average.Kills, 
@@ -62,6 +62,9 @@
                 return data.datasets[item.datasetIndex].label+ ": "+ data.labels[item.index]+ ": "+ data.datasets[item.datasetIndex].data[item.index];
               }
             }
+          },
+          legend:{
+            display: false
           }
         }
       }
