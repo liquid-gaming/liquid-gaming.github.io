@@ -40,7 +40,7 @@
                   Servers
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                  LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming through out the year.
+                  LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming throughout the year.
                 </div>
               </v-col>
             </v-row>
@@ -64,6 +64,28 @@
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in squadServersList">
+                  <v-flex :key="i" xs12 sm6 md6 lg6 just style="margin-top:10px">
+                    <Servers :server="server"/>
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
+                <v-container>
+                  <v-row align="left" justify="left">
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
+                        Beyond The Wire
+                      </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                        "Beyond the Wire is a large scale multiplayer first-person shooter immersing players in the frantic and bloody Western Front of the Great War. In 
+                        battles with up to 100 real-world combatants, players will have to contend with large open maps and tight claustrophobic trenches. Utilizing both 
+                        period-appropriate guns and a more tactical close-quarters melee combat system, the action in Beyond the Wire is more comprehensive than 
+                        anything seen in a WW1 game to date." - <a target="_blank" href="https://playbtw.com/">Playbtw.com</a>
+                      </div>
+                    </v-col>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in beyondTheWireServersList">
                   <v-flex :key="i" xs12 sm6 md6 lg6 just style="margin-top:10px">
                     <Servers :server="server"/>
                   </v-flex>
@@ -109,6 +131,7 @@ import Recruitment from "@/components/Recruitment.vue"
 //Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
+import beyondTheWireServersListJson from "@/assets/json/beyondTheWireServerInfo.json"
 import discordJson from "@/assets/json/discordInfo.json"
 import teamMembersJson from "@/assets/json/teamMembers.json"
 import stepsForRecruitmentJson from "@/assets/json/stepsForRecruitment.json"
@@ -136,6 +159,7 @@ export default {
       dicord: discordJson,
       minecraftServersList: minecraftServersListJson,
       squadServersList: squadServersListJson,
+      beyondTheWireServersList: beyondTheWireServersListJson,
       teamMembers: teamMembersJson,
       stepsForRecruitment: stepsForRecruitmentJson,
       firstCarouselItems: [
