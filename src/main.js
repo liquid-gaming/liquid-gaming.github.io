@@ -8,6 +8,18 @@ import VueNumber from 'vue-number-animation'
 import VModal from 'vue-js-modal'
 import VueMobileDetection from 'vue-mobile-detection'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faJs, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import VueSocialSharing from 'vue-social-sharing'
+
+Vue.use(VueSocialSharing);
+library.add(faCoffee, faJs, faVuejs);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+Vue.config.productionTip = false
 Vue.use(VueMobileDetection)
 Vue.use(VModal,
   {dynamicDefaults: {
