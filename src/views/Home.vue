@@ -30,7 +30,7 @@
         </v-card>
       </v-container>
       <v-parallax height="350" :src="firstCarousel" id="home-image"></v-parallax>
-    <v-container class="mt-5 dark black--background component-container">    
+    <v-container class="mt-5 dark black--background component-container" id="Servers">    
       <v-card :elevation="5" class="home-cards">
         <v-row align="center" justify="center">
           <v-container>
@@ -116,7 +116,7 @@
       </v-card>
     </v-container>
     <v-parallax height="350" :src="secondCarousel" id="home-image"></v-parallax>
-    <v-container class="mt-5 dark black--background" style="margin-bottom:20px;">
+    <v-container class="mt-5 dark black--background" style="margin-bottom:20px;" id="Recruitment">
       <Recruitment :stepsForRecruitment="stepsForRecruitment"/>
     </v-container>
      <v-parallax height="350" :src="thirdCarousel" id="home-image"></v-parallax>

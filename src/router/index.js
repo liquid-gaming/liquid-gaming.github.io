@@ -28,14 +28,14 @@ export default new VueRouter({
     {
       path: '/discord',
       name: 'Discord',
-      /*this link is a copy of the on ein mediaLinks.json will need to find a way to get it from the file 
+      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
         but this will work for now*/
       beforeEnter() {location.href = 'https://discord.gg/5WrXn4a'}
     },
     {
       path: '/merch',
       name: 'LiQMerchandise',
-      /*this link is a copy of the on ein mediaLinks.json will need to find a way to get it from the file 
+      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
         but this will work for now*/
       beforeEnter() {location.href = 'https://shop.spreadshirt.com/liq-gaming/'}
     },
