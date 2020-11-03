@@ -92,7 +92,7 @@
         </v-row>
       </v-card>
     </v-container>
-    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="250" :min-height="450" :max-width="800" :max-height="740" width="30%" height="65%">
+    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="65%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
