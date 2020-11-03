@@ -50,24 +50,7 @@
                   lastIcon: 'mdi-arrow-collapse-right',
                   'items-per-page-options': [10, 25, 50, 100]
                 }">
-                <template v-if="$isMobile()" v-slot:body="{ items }">
-                  <tbody>
-                    <tr
-                      v-for="item in items"
-                      :key="item.id"
-                      :search="search"
-                      >
-                        <td> {{ item.index }}</td>
-                        <td> {{ item.Name }}</td>
-                        <td> {{ item.Kills }}</td>
-                        <td> {{ item.Deaths }}</td>
-                        <td> {{ item.KD }}</td>
-                        <td> {{ item.Wounds }}</td>
-                        <td> {{ item.Revives }}</td>                      
-                      </tr>
-                  </tbody>
-                </template>
-                <template v-else v-slot:body="{ items }">
+                <template v-slot:body="{ items }">
                   <tbody>
                     <tr
                       v-for="item in items"
@@ -93,6 +76,47 @@
       </v-card>
     </v-container>
     <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="65%">
+      <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
+        <div class="stat-card-text">DRAG ME HERE</div>
+      </v-card>
+      <div class="DivWithScroll">
+        <v-layout row wrap class="justify-center">
+          <v-flex>
+            <div class="text-xl-center ma-1" style="text-align: center;">
+              <div class="font-weight-bold" style="color: rgba(255, 255, 255, 0.7);font-size:30px" >
+                {{selectedItem.Name}}
+              </div>
+            </div>
+          </v-flex>
+        </v-layout>
+        <div width="70%" height="70%">
+          <bar-chart :player="selectedItem" :average="averageStats"></bar-chart>
+        </div>
+        <v-container class="my-2">
+            <v-layout row wrap class="justify-center">
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                    <v-card-text>
+                      <h3>Your KD: {{selectedItem.KD}}</h3>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                    <v-card-text>
+                      <h3>Average KD: {{averageStats.KD}}</h3>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+            </v-layout>
+        </v-container> 
+      </div>
+    </modal>
+    <modal name="stat-modal-mobile" draggable=".stat-card-text" width="70%" height="80%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
@@ -193,10 +217,17 @@ export default {
   methods: {
      selectItem (item) {
       this.selectedItem = item
-      this.$modal.show(
-        'stat-modal',
-        { draggable: true }
-      );
+      if(this.$isMobile()){
+        this.$modal.show(
+          'stat-modal-mobile',
+          { draggable: true }
+        );
+      }else{
+        this.$modal.show(
+          'stat-modal',
+          { draggable: true }
+        );
+      }      
     },
     unSelectItem () {
       this.selectedItem = false
