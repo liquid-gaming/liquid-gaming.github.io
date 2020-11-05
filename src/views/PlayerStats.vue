@@ -252,7 +252,6 @@ export default {
           playersFiltered.push(this.players[i]);
         }      
     }
-    console.log(playersFiltered)
     this.averageStats.Kills = Math.round((this.totals.kills / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.Deaths = Math.round((this.totals.deaths / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.Wounds = Math.round((this.totals.wounds / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
