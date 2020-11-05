@@ -114,28 +114,55 @@
               </v-flex>
             </v-layout>
         </v-container> 
-        <ShareNetwork
-          network="facebook"
-          url="https://news.vuejs.org/issues/180"
-          title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
-          description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
-          quote="The hot reload is so fast it\'s near instant. - Evan You"
-          hashtags="vuejs,vite,javascript"
-          twitterUser="youyuxi"
-        >
-          <img src="~@/assets/facebook.png" alt="Share To Twitter" width="50px" height="50px" style="margin: 0 20px 0 20px">
-        </ShareNetwork>
-        <ShareNetwork
-          network="twitter"
-          url="https://news.vuejs.org/issues/180"
-          title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
-          description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
-          quote="The hot reload is so fast it\'s near instant. - Evan You"
-          hashtags="vuejs,vite,javascript"
-          twitterUser="youyuxi"
-        >
-          <img src="~@/assets/Twitter.png" alt="Share To Twitter" width="50px" height="50px" style="margin: 0 20px 0 20px">
-        </ShareNetwork>
+        <v-container>
+            <v-layout row wrap class="justify-center">
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="facebook"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="twitter"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/twitterShare.png" alt="Share To Twitter">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="whatsapp"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/whatsAppShare.png" alt="Share To WhatsApps">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+            </v-layout>
+        </v-container> 
       </div>
     </modal>
     <modal name="stat-modal-mobile" draggable=".stat-card-text" width="70%" height="80%">
@@ -174,6 +201,55 @@
                     </v-card-text>
                   </v-card>
                 </v-hover>
+              </v-flex>
+            </v-layout>
+        </v-container> 
+        <v-container>
+            <v-layout row wrap class="justify-center">
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="facebook"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="twitter"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/twitterShare.png" alt="Share To Twitter">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="whatsapp"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/whatsAppShare.png" alt="Share To WhatsApps">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
               </v-flex>
             </v-layout>
         </v-container> 
@@ -224,7 +300,13 @@ export default {
         ],
         players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills)),
         selectedItem: false,
-        averageStats: {}
+        averageStats: {},
+        sharing: {
+          url: 'https://liqgaming.com/playerstats',
+          title: 'LiQ Gaming Player Stats',
+          description: 'Come check out my player stats for squad at LiQGaming.com!!',
+          hashtags: 'JoinSquad,LiQGaming,KD',
+        },
       }
   },
   computed: {
