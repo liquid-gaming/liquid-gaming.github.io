@@ -125,6 +125,7 @@
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
+                      :quote="sharing.quote"
                     >
                       <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
                     </ShareNetwork>
@@ -215,6 +216,7 @@
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
+                      :quote="sharing.quote"
                     >
                       <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
                     </ShareNetwork>
@@ -247,6 +249,21 @@
                       :hashtags="sharing.hashtags"
                     >
                       <img src="~@/assets/whatsAppShare.png" alt="Share To WhatsApps">
+                    </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-1">
+                  <v-layout row wrap class="justify-center">
+                    <ShareNetwork
+                      network="sms"
+                      :url="sharing.url"
+                      :title="sharing.title"
+                      :description="sharing.description"
+                      :hashtags="sharing.hashtags"
+                    >
+                      <img src="~@/assets/smsShare.png" alt="Share To sms">
                     </ShareNetwork>
                   </v-layout>
                 </div>
@@ -305,7 +322,8 @@ export default {
           url: 'https://liqgaming.com/playerstats',
           title: 'LiQ Gaming Player Stats',
           description: 'Come check out my player stats for squad at LiQGaming.com!!',
-          hashtags: 'JoinSquad,LiQGaming,KD',
+          quote: 'Come check out my player stats for squad at LiQGaming.com!!',
+          hashtags: 'JoinSquad,LiQGaming',
         },
       }
   },
