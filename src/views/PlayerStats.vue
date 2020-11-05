@@ -75,7 +75,7 @@
         </v-row>
       </v-card>
     </v-container>
-    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="65%">
+    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="70%">
       <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
@@ -114,18 +114,28 @@
               </v-flex>
             </v-layout>
         </v-container> 
-          <ShareNetwork
-      network="twitter"
-      url="https://news.vuejs.org/issues/180"
-      title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
-      description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
-      quote="The hot reload is so fast it\'s near instant. - Evan You"
-      hashtags="vuejs,vite,javascript"
-      twitterUser="youyuxi"
-    >
-    <i class="fab fah fa-lg fa-twitter"></i>
-    <span>Share on Twitter</span>
-  </ShareNetwork>
+        <ShareNetwork
+          network="facebook"
+          url="https://news.vuejs.org/issues/180"
+          title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
+          description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
+          quote="The hot reload is so fast it\'s near instant. - Evan You"
+          hashtags="vuejs,vite,javascript"
+          twitterUser="youyuxi"
+        >
+          <img src="~@/assets/facebook.png" alt="Share To Twitter" width="50px" height="50px" style="margin: 0 20px 0 20px">
+        </ShareNetwork>
+        <ShareNetwork
+          network="twitter"
+          url="https://news.vuejs.org/issues/180"
+          title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
+          description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
+          quote="The hot reload is so fast it\'s near instant. - Evan You"
+          hashtags="vuejs,vite,javascript"
+          twitterUser="youyuxi"
+        >
+          <img src="~@/assets/Twitter.png" alt="Share To Twitter" width="50px" height="50px" style="margin: 0 20px 0 20px">
+        </ShareNetwork>
       </div>
     </modal>
     <modal name="stat-modal-mobile" draggable=".stat-card-text" width="70%" height="80%">
