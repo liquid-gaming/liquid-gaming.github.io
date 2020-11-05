@@ -121,7 +121,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -137,7 +137,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -152,7 +152,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -212,7 +212,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -228,7 +228,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -243,7 +243,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -258,7 +258,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="sms"
-                      :url="sharing.url"
+                      :url="sharing.url + selectedItem.Name"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -295,10 +295,6 @@ export default {
         urlSearchParam: '',
         pagination: {},
         totals: totalStats,
-        // totalKills: totalStats.kills,
-        // totalDeaths: totalStats.deaths,
-        // totalWounds: totalStats.wounds,
-        // totalRevives: totalStats.revives,
         headers: [
           {
             text: 'Rank',
@@ -320,7 +316,7 @@ export default {
         selectedItem: false,
         averageStats: {},
         sharing: {
-          url: 'https://liqgaming.com/playerstats',
+          url: 'https://liqgaming.com/#/playerstats?username=',
           title: 'LiQ Gaming Player Stats',
           description: 'Come check out my player stats for squad at LiQGaming.com!!',
           quote: 'Come check out my player stats for squad at LiQGaming.com!!',
