@@ -7,12 +7,13 @@ import VueLazyload from 'vue-lazyload'
 import VueNumber from 'vue-number-animation'
 import VModal from 'vue-js-modal'
 import VueMobileDetection from 'vue-mobile-detection'
-
+import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
 
-Vue.use(VueSocialSharing);
-
 Vue.config.productionTip = false
+
+Vue.use(VueSocialSharing);
+Vue.use(VueRouter)
 Vue.use(VueMobileDetection)
 Vue.use(VModal,
   {dynamicDefaults: {

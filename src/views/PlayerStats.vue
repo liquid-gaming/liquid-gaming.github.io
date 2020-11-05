@@ -292,6 +292,7 @@ export default {
   data () {
       return {
         search: '',
+        urlSearchParam: '',
         pagination: {},
         totals: totalStats,
         // totalKills: totalStats.kills,
@@ -367,6 +368,10 @@ export default {
     this.averageStats.Wounds = Math.round((this.totals.wounds / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.Revives = Math.round((this.totals.revives / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
+    this.urlSearchParam = this.$route.query.username;
+    if(this.urlSearchParam != null || this.urlSearchParam != ''){
+      this.search = this.urlSearchParam
+    }
   }
 };
 
