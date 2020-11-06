@@ -9,9 +9,11 @@ import VModal from 'vue-js-modal'
 import VueMobileDetection from 'vue-mobile-detection'
 import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
-
+import VueClipboard from 'vue-clipboard2'
+ 
 Vue.config.productionTip = false
 
+Vue.use(VueClipboard)
 Vue.use(VueSocialSharing);
 Vue.use(VueRouter)
 Vue.use(VueMobileDetection)

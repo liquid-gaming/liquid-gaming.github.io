@@ -41,7 +41,6 @@
                 :headers="headers"
                 :items="itemsWithIndex"
                 :search="search"
-                item-key="name"
                 sort-by="Kills"
                 sort-desc
                 :footer-props="{
@@ -54,7 +53,7 @@
                   <tbody>
                     <tr
                       v-for="item in items"
-                      :key="item.id"
+                      :key="item.ID"
                       :search="search"
                       @click="selectItem(item)"
                       class="clicker"
@@ -65,7 +64,7 @@
                         <td> {{ item.Deaths }}</td>
                         <td> {{ item.KD }}</td>
                         <td> {{ item.Wounds }}</td>
-                        <td> {{ item.Revives }}</td>                      
+                        <td> {{ item.Revives }}</td>       
                       </tr>
                   </tbody>
                 </template>
@@ -117,48 +116,67 @@
         <v-container>
             <v-layout row wrap class="justify-center">
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                       :quote="sharing.quote"
                     >
-                      <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
+                    <v-btn medium color="#3b5998" dark>
+                      <v-img :src="facebookIcon" />
+                      Facebook
+                    </v-btn>
                     </ShareNetwork>
                   </v-layout>
                 </div>
               </v-flex>
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                     >
-                      <img src="~@/assets/twitterShare.png" alt="Share To Twitter">
+                    <v-btn medium color="#00acee" dark>
+                      <v-img :src="twitterIcon" />
+                      Twitter
+                    </v-btn>
                     </ShareNetwork>
                   </v-layout>
                 </div>
               </v-flex>
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                     >
-                      <img src="~@/assets/whatsAppShare.png" alt="Share To WhatsApps">
+                    <v-btn medium color="#25D366" dark>
+                      <v-img :src="whatsappIcon" />
+                      WhatsApp
+                    </v-btn>
                     </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-3">
+                  <v-layout row wrap class="justify-center">
+                    <v-btn medium color="#5c5c5c" dark @click="doCopy">
+                      <v-img :src="shareThisIcon" />
+                      Share
+                    </v-btn>
                   </v-layout>
                 </div>
               </v-flex>
@@ -205,66 +223,88 @@
               </v-flex>
             </v-layout>
         </v-container> 
-        <v-container>
+        <v-container class="my-2">
             <v-layout row wrap class="justify-center">
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                       :quote="sharing.quote"
                     >
-                      <img src="~@/assets/facebookShare.png" alt="Share To Facebook">
+                    <v-btn medium color="#3b5998" dark>
+                      <v-img :src="facebookIcon" />
+                      Facebook
+                    </v-btn>
                     </ShareNetwork>
                   </v-layout>
                 </div>
               </v-flex>
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                     >
-                      <img src="~@/assets/twitterShare.png" alt="Share To Twitter">
+                    <v-btn medium color="#00acee" dark>
+                      <v-img :src="twitterIcon" />
+                      Twitter
+                    </v-btn>
                     </ShareNetwork>
                   </v-layout>
                 </div>
               </v-flex>
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                     >
-                      <img src="~@/assets/whatsAppShare.png" alt="Share To WhatsApps">
+                    <v-btn medium color="#25D366" dark>
+                      <v-img :src="whatsappIcon" />
+                      WhatsApp
+                    </v-btn>
                     </ShareNetwork>
                   </v-layout>
                 </div>
               </v-flex>
               <v-flex>
-                <div class="text-xs-center ma-1">
+                <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="sms"
-                      :url="sharing.url + selectedItem.Name"
+                      :url="sharing.url + selectedItem.ID"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
                     >
-                      <img src="~@/assets/smsShare.png" alt="Share To sms">
+                    <v-btn medium color="green" dark>
+                      <v-img :src="smsIcon" />
+                      SMS
+                    </v-btn>
                     </ShareNetwork>
+                  </v-layout>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center ma-3">
+                  <v-layout row wrap class="justify-center">
+                    <v-btn medium color="#5c5c5c" dark @click="doCopy">
+                      <v-img :src="shareThisIcon" />
+                      Share
+                    </v-btn>
                   </v-layout>
                 </div>
               </v-flex>
@@ -279,6 +319,12 @@
 // @ is an alias to /src
 import AnimatedNumber from "@/components/AnimatedNumber.vue"
 import BarChart from '@/components/BarChart'
+//Svg's
+import FacebookSvg from "@/assets/ShareButtonIcons/facebook.svg"
+import ShareThisSvg from "@/assets/ShareButtonIcons/sharethis.svg"
+import SmsSvg from "@/assets/ShareButtonIcons/sms.svg"
+import TwitterSvg from "@/assets/ShareButtonIcons/twitter.svg"
+import WhatsappSvg from "@/assets/ShareButtonIcons/whatsapp.svg"
 //Json files
 import topStats from "@/assets/json/top-stats.json"
 import totalStats from "@/assets/json/total-stats.json"
@@ -291,6 +337,11 @@ export default {
   },
   data () {
       return {
+        facebookIcon: FacebookSvg,
+        shareThisIcon: ShareThisSvg,
+        smsIcon: SmsSvg,
+        twitterIcon: TwitterSvg,
+        whatsappIcon: WhatsappSvg,
         search: '',
         urlSearchParam: '',
         pagination: {},
@@ -311,6 +362,9 @@ export default {
           { text: 'K/D', value: 'KD' },
           { text: 'Wounds', value: 'Wounds' },
           { text: 'Revives', value: 'Revives' },
+          {
+            text: 'Id', value: 'ID', align: ' d-none' 
+          },
         ],
         players: topStats.sort((a, b) => parseFloat(b.Kills) - parseFloat(a.Kills)),
         selectedItem: false,
@@ -351,6 +405,9 @@ export default {
     unSelectItem () {
       this.selectedItem = false
     },
+    doCopy: function () {
+      this.$copyText(this.sharing.url + this.selectedItem.ID)
+    }
   },
   mounted(){
     let playersFiltered = [];
@@ -366,7 +423,7 @@ export default {
     this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
     this.urlSearchParam = this.$route.query.username;
     if(this.urlSearchParam != null || this.urlSearchParam != ''){
-      this.search = this.urlSearchParam
+      this.search = this.players.find(o=>o.ID == this.urlSearchParam).Name
     }
   }
 };
