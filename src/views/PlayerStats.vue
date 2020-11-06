@@ -113,7 +113,7 @@
               </v-flex>
             </v-layout>
         </v-container> 
-        <v-container>
+        <v-container class="my-2">
             <v-layout row wrap class="justify-center">
               <v-flex>
                 <div class="text-xs-center ma-3">
