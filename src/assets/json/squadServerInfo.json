@@ -61,7 +61,7 @@
       "description":
         "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
       "battlemetricId": 7894269,
-      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit?usp=sharing",
+      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit#gid=1466113834",
       "mapVoteCommands": [
         {
           "title": "!mapvote help",
