@@ -90,6 +90,15 @@
             ]
     },    
     {
+        "name": "Lorn",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Escape_From_Tarkov"
+                }
+            ]
+    },
+    {
         "name": "Mitron",
         "roles":
             [
