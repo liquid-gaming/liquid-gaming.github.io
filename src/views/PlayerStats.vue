@@ -173,10 +173,15 @@
               <v-flex>
                 <div class="text-xs-center ma-3">
                   <v-layout row wrap class="justify-center">
-                    <v-btn medium color="#5c5c5c" dark @click="doCopy">
-                      <v-img :src="shareThisIcon" />
-                      Share
-                    </v-btn>
+                    <v-tooltip bottom>
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn medium color="#5c5c5c" dark @click="doCopy" v-bind="attrs" v-on="on">
+                          <v-img :src="shareThisIcon" />
+                          Share
+                        </v-btn>
+                      </template>
+                      <span>Copy to Clipboard</span>
+                    </v-tooltip>
                   </v-layout>
                 </div>
               </v-flex>
