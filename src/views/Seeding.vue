@@ -21,7 +21,7 @@
                         Rules
                     </div>
                     <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                        • Admins will call the server goes LIVE after the server reaches 20 v 20 players.<br/>
+                        • Admins will call the server LIVE after the server reaches 20 v 20 players.<br/>
                         • Fighting is allowed over the middle objective.<br/>
                         • DO NOT attack the enemy FOB.<br/>
                         • No armed vehicles or emplacements are to be used (MG, mortar, etc).<br/>
