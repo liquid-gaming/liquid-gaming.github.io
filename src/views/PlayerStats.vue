@@ -26,7 +26,7 @@
                   </v-flex>
                 </v-layout>
             </v-container>            
-            <v-card>
+            <v-card v-resize="onResize">
               <v-card-title>
                 <v-text-field
                   v-model="search"
@@ -41,6 +41,8 @@
                 :headers="headers"
                 :items="itemsWithIndex"
                 :search="search"
+                :hide-headers="isMobile" 
+                :class="{mobile: isMobile}"
                 sort-by="Kills"
                 sort-desc
                 :footer-props="{
@@ -50,7 +52,7 @@
                   'items-per-page-options': [10, 25, 50, 100]
                 }">
                 <template v-slot:body="{ items }">
-                  <tbody>
+                  <tbody v-if="!isMobile">
                     <tr
                       v-for="item in items"
                       :key="item.ID"
@@ -58,14 +60,36 @@
                       @click="selectItem(item)"
                       class="clicker"
                       >
-                        <td> {{ item.index }}</td>
-                        <td> {{ item.Name }}</td>
-                        <td> {{ item.Kills }}</td>
-                        <td> {{ item.Deaths }}</td>
-                        <td> {{ item.KD }}</td>
-                        <td> {{ item.Wounds }}</td>
-                        <td> {{ item.Revives }}</td>       
+                        <td class="d-block d-sm-table-cell"> {{ item.index }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.Name }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.Kills }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.Deaths }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.KD }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.Wounds }}</td>
+                        <td class="d-block d-sm-table-cell"> {{ item.Revives }}</td>       
                       </tr>
+                  </tbody>
+                  <tbody v-else>
+                    <tr
+                      v-for="item in items"
+                      :key="item.ID"
+                      :search="search"
+                      @click="selectItem(item)"
+                      class="clicker"
+                      >
+                      <td>
+                        <ul class="flex-content">
+                          <li class="flex-item">Rank: {{ item.index }}</li>
+                          <li class="flex-item">Name: {{ item.Name }}</li>
+                          <br>
+                          <li class="flex-item">Kills: {{ item.Kills }}</li>
+                          <li class="flex-item">Deaths: {{ item.Deaths }}</li>
+                          <li class="flex-item">K/D: {{ item.KD }}</li>
+                          <li class="flex-item">Wounds: {{ item.Wounds }}</li>
+                          <li class="flex-item">Revives: {{ item.Revives }}</li>       
+                        </ul>
+                      </td>
+                    </tr>
                   </tbody>
                 </template>
               </v-data-table>
@@ -351,6 +375,7 @@ export default {
         urlSearchParam: '',
         pagination: {},
         totals: totalStats,
+        isMobile: false,
         headers: [
           {
             text: 'Rank',
@@ -393,7 +418,13 @@ export default {
     }
   },
   methods: {
-     selectItem (item) {
+    onResize() {
+      if (window.innerWidth < 769)
+        this.isMobile = true;
+      else
+        this.isMobile = false;
+    },
+    selectItem (item) {
       this.selectedItem = item
       if(this.$isMobile()){
         this.$modal.show(
@@ -489,4 +520,62 @@ export default {
       overflow:auto;
       overflow-x:hidden;
   }
+
+  @media screen and (max-width: 768px) {
+    .mobile table.v-table tr {
+      max-width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    .mobile table.v-table tr:nth-child(odd) {
+      border-left: 6px solid deeppink;
+    }
+
+    .mobile table.v-table tr:nth-child(even) {
+      border-left: 6px solid cyan;
+    }
+
+    .mobile table.v-table tr td {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid #f5f5f5;
+      height: auto;
+      padding: 10px;
+    }
+
+    .mobile table.v-table tr td ul li:before {
+      content: attr(data-label);
+      padding-right: .5em;
+      text-align: left;
+      display: block;
+      color: #999;
+
+    }
+    .v-datatable__actions__select
+    {
+      width: 50%;
+      margin: 0px;
+      justify-content: flex-start;
+    }
+    .mobile .theme--light.v-table tbody tr:hover:not(.v-datatable__expand-row) {
+      background: transparent;
+    }
+
+    .flex-content {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .flex-item {
+      padding: 5px;
+      width: 50%;
+      height: 40px;
+      font-weight: bold;
+    }
+    }
 </style>
