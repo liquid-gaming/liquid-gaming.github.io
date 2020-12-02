@@ -36,20 +36,20 @@
             ]
     },
     {
-        "name": "Got2bhockey",
-        "roles":
-            [
-                {
-                    "name": "Administrator"
-                }
-            ]
-    },
-    {
         "name": "SuperFlanker",
         "roles":
             [
                 {
                     "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Got2bhockey",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
                 }
             ]
     },
