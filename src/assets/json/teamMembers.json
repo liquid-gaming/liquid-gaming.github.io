@@ -72,6 +72,15 @@
             ]
     },
     {
+        "name": "Kibz",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
         "name": "Magical Girl",
         "roles":
             [
