@@ -69,6 +69,25 @@
                   </v-flex>
                 </template>
               </v-layout>
+              <v-layout wrap>
+                <v-container style="margin-top:15px;">
+                  <v-row align="left" justify="left">
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
+                        Minecraft
+                      </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                        To learn more about Minecraft and what it is, click <a target="_blank" :href="minecraftLink.link">here</a>.
+                      </div>
+                    </v-col>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in minecraftServersList">
+                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
+                    <Servers :server="server" />
+                  </v-flex>
+                </template>
+              </v-layout>
               <!-- <v-layout wrap>
                 <v-container>
                   <v-row align="left" justify="left">
@@ -91,25 +110,6 @@
                   </v-flex>
                 </template>
               </v-layout> -->
-              <v-layout wrap>
-                <v-container style="margin-top:15px;">
-                  <v-row align="left" justify="left">
-                    <v-col>
-                      <div class="display-1 font-weight-bold ">
-                        Minecraft
-                      </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                        To learn more about Minecraft and what it is, click <a target="_blank" :href="minecraftLink.link">here</a>.
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-                <template v-for="(server, i) in minecraftServersList">
-                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                    <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
             </v-flex>
           </v-layout>
         </v-row>

@@ -1,8 +1,8 @@
 [
     {
       "name": "LiQuid Gaming Minecraft Server!",
-      "description": "How to join the server:\n  •  Set your game version to 1.16.2 \n  •  Join the server with IP: 195.7.2.49",
-      "battlemetricId": 8198843,
+      "description": "How to join the server:\n  •  Set your game version to 1.16.4 \n  •  Join the server with IP: server2.liqgaming.com:7792",
+      "battlemetricId": 9328894,
       "rules":[
         {
           "title":"Don't be an AssHat"
@@ -24,6 +24,12 @@
         },
         {
           "title":"Be in the discord while playing"
+        },
+        {
+          "title":"Lets keep our server looking nice, please replant trees when you cut down"
+        },
+        {
+          "title":"Do not cause issues on the server"
         }
       ]                  
     }

@@ -128,6 +128,12 @@ export default {
 .Advisor{
     color: mix(purple, grey) !important;
 }
+.Director_of_Squad{
+    color: rgb(228, 107, 8) !important;
+}
+.Director_of_Minecraft{
+    color: rgba(9, 146, 4) !important;
+}
 .Director_of_Squad_Competitive{
     color: #8f1c1c !important;
 }

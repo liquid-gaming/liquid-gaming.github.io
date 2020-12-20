@@ -108,11 +108,29 @@
             ]
     },
     {
+        "name": "Spades",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Minecraft"
+                }
+            ]
+    },
+    {
         "name": "Mitron",
         "roles":
             [
                 {
                     "name": "Director_of_Recruitment"
+                }
+            ]
+    },
+    {
+        "name": "Outlast",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Squad"
                 }
             ]
     },

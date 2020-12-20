@@ -41,7 +41,7 @@
                 :headers="headers"
                 :items="itemsWithIndex"
                 :search="search"
-                :hide-headers="isMobile" 
+                :hide-default-headers="isMobile" 
                 :class="{mobile: isMobile}"
                 sort-by="Kills"
                 sort-desc
@@ -459,7 +459,10 @@ export default {
     this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
     this.urlSearchParam = this.$route.query.username;
     if(this.urlSearchParam != null || this.urlSearchParam != ''){
-      this.search = this.players.find(o=>o.ID == this.urlSearchParam).Name
+      var player = this.players.find(o=>o.ID == this.urlSearchParam);
+      if(player != undefined || player != null){
+        this.search = player.Name;
+      }
     }
   }
 };
