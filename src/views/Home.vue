@@ -69,7 +69,7 @@
                   </v-flex>
                 </template>
               </v-layout>
-              <v-layout wrap>
+              <!-- <v-layout wrap>
                 <v-container>
                   <v-row align="left" justify="left">
                     <v-col>
@@ -90,7 +90,7 @@
                     <Servers :server="server"/>
                   </v-flex>
                 </template>
-              </v-layout>
+              </v-layout> -->
               <v-layout wrap>
                 <v-container style="margin-top:15px;">
                   <v-row align="left" justify="left">
