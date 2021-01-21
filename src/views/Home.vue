@@ -74,6 +74,22 @@
                   <v-row align="left" justify="left">
                     <v-col>
                       <div class="display-1 font-weight-bold ">
+                        Rust
+                      </div>
+                    </v-col>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in rustServerList">
+                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
+                    <Servers :server="server" />
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
+                <v-container style="margin-top:15px;">
+                  <v-row align="left" justify="left">
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
                         Minecraft
                       </div>
                       <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
@@ -131,6 +147,7 @@ import Recruitment from "@/components/Recruitment.vue"
 //Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
+import rustServerListJson from "@/assets/json/rustServerInfo.json"
 import beyondTheWireServersListJson from "@/assets/json/beyondTheWireServerInfo.json"
 import discordJson from "@/assets/json/discordInfo.json"
 import teamMembersJson from "@/assets/json/teamMembers.json"
@@ -158,6 +175,7 @@ export default {
       }),
       dicord: discordJson,
       minecraftServersList: minecraftServersListJson,
+      rustServerList: rustServerListJson,
       squadServersList: squadServersListJson,
       beyondTheWireServersList: beyondTheWireServersListJson,
       teamMembers: teamMembersJson,

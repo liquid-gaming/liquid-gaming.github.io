@@ -1,0 +1,30 @@
+[
+    {
+      "name": "LiQ - LiQuid Gaming Community Rust",
+      "description": "PVP, Vanilla, Monthly wipes, server2.liqgaming.com - 195.7.2.117",
+      "battlemetricId": 9702955,
+      "rules":[
+        {
+          "title":"Don't be an AssHat."
+        },
+        {
+          "title":"No glitching, hacking, or other types of cheating."
+        },
+        {
+          "title":"Be respectful of all players (no toxicity, trolling, hate speech, etc)."
+        },
+        {
+          "title":"No real-life threats, doxing, or other type of malicious behavior."
+        },
+        {
+          "title":"No griefing - this includes intentionally blocking off bases or building players in."
+        },
+        {
+          "title":"No building to troll named locations. This including walling off access to public areas of interest (eg. sulfer quarry)."
+        },
+        {
+          "title":"Have fun!"
+        }
+      ]                  
+    }
+  ]
