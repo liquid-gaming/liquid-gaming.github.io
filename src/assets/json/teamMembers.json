@@ -126,6 +126,15 @@
             ]
     },
     {
+        "name": "Basa (Doc)",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Rust"
+                }
+            ]
+    },
+    {
         "name": "Outlast",
         "roles":
             [

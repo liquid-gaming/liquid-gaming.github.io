@@ -120,13 +120,13 @@ export default {
     flex-basis: 20% !important;
 }
 .Founder{
-    color: mix(#eb36d9, grey) !important;
+    color: mix(#f3482a, grey) !important;
 }
 .Administrator{
     color: mix(red, grey) !important;
 }
 .Advisor{
-    color: mix(purple, grey) !important;
+    color: mix(rgb(223, 58, 223), grey) !important;
 }
 .Director_of_Squad{
     color: rgb(228, 107, 8) !important;
@@ -142,5 +142,8 @@ export default {
 }
 .Director_of_Escape_From_Tarkov{
     color: mix(#2292ac, grey) !important;
+}
+.Director_of_Rust{
+    color: mix(#7a22ac, grey) !important;
 }
 </style>
