@@ -137,9 +137,6 @@ export default {
 .Director_of_Squad_Competitive{
     color: #8f1c1c !important;
 }
-.Director_of_Recruitment{
-    color: mix(#3b38dd, grey) !important;
-}
 .Director_of_Escape_From_Tarkov{
     color: mix(#2292ac, grey) !important;
 }
