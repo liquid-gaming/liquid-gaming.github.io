@@ -115,6 +115,15 @@
                     "name": "Director_of_Minecraft"
                 }
             ]
+    },    
+    {
+        "name": "Sloth",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Recruitment"
+                }
+            ]
     },
     {
         "name": "Basa (Doc)",
