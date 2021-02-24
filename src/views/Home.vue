@@ -13,7 +13,7 @@
                   LiQuid Gaming
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                  We are a high-level clan in various gaming platforms with a community of over 900 players. <br/>
+                  We are a high-level clan in various gaming platforms with a community of over 1800 players. <br/>
                   We currently host two servers in Squad and have plan for more in the future. <br/>
                   <br/>
                   We are eager to help new or returning players rediscover their passion for gaming. <br/>
@@ -40,12 +40,12 @@
                   Servers
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                  LiQuid Gaming currently hosts 3 servers for our community, Two Squad Servers and one Minecraft server. More will be coming throughout the year.
+                  LiQuid Gaming currently hosts 5 gaming servers for our community, which includes; Squad, Minecraft, Rust, and Valheim. More will be coming throughout the year.
                 </div>
               </v-col>
             </v-row>
           </v-container>
-          <v-layout wrap my-5>
+          <v-layout wrap>
             <v-flex justify-center class="mt-5">
               <v-layout wrap>
                 <v-container>
@@ -76,10 +76,32 @@
                       <div class="display-1 font-weight-bold ">
                         Rust
                       </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                        The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players
+                      </div>
                     </v-col>
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in rustServerList">
+                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
+                    <Servers :server="server" />
+                  </v-flex>
+                </template>
+              </v-layout>
+              <v-layout wrap>
+                <v-container style="margin-top:15px;">
+                  <v-row align="left" justify="left">
+                    <v-col>
+                      <div class="display-1 font-weight-bold ">
+                        Valheim
+                      </div>
+                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                        This is a new booming Viking survival sandbox multiplayer game! Launched on Feb. 2, 2021, this game has been rocking the Steam sale charts lately.
+                      </div>
+                    </v-col>
+                  </v-row>
+                </v-container>
+                <template v-for="(server, i) in valheimServerList">
                   <v-flex :key="i" xs12 sm4 md5 lg6 just>
                     <Servers :server="server" />
                   </v-flex>
@@ -147,6 +169,7 @@ import Recruitment from "@/components/Recruitment.vue"
 //Json files
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
+import valheimServerListJson from "@/assets/json/valheimServerInfo.json"
 import rustServerListJson from "@/assets/json/rustServerInfo.json"
 import beyondTheWireServersListJson from "@/assets/json/beyondTheWireServerInfo.json"
 import discordJson from "@/assets/json/discordInfo.json"
@@ -175,6 +198,7 @@ export default {
       }),
       dicord: discordJson,
       minecraftServersList: minecraftServersListJson,
+      valheimServerList: valheimServerListJson,
       rustServerList: rustServerListJson,
       squadServersList: squadServersListJson,
       beyondTheWireServersList: beyondTheWireServersListJson,

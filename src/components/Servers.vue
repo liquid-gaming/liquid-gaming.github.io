@@ -64,7 +64,7 @@
     </div>
     <div v-else style="padding:15px"></div>
     <div style="margin:3px">
-      <v-expansion-panels style="border-radius: 10px;">
+      <v-expansion-panels style="border-radius: 10px;" v-if="server.rules != undefined">
         <v-expansion-panel>
           <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
