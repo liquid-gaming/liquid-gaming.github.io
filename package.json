@@ -21,6 +21,7 @@
     "vue-number-animation": "^1.0.5",
     "vue-router": "^3.4.9",
     "vue-social-sharing": "^3.0.3",
+    "vue-youtube": "^1.4.0",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

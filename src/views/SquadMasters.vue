@@ -3,40 +3,41 @@
     <v-container >
       <v-card class="seeding-card">
         <v-col align="Left" justify="Left">
-        <v-row>
-          <template>
-            <v-flex xs12 sm5 md6 lg6 xl7 just>
-                <v-col>
-                    <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
-                        :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                        style="text-align: Left">
-                        Squad Masters!
-                    </div>
-                    <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: left; font-size:19px !important">
-                        We are excited to announce that this year we will be apart of the very first Squad Masters Tournament!
-                        This is a huge honor and we are very thankful for everyone over at Squad Masters. Our competitive team, along with Shift W, 
-                        will be challenging 16 other Squad competitive communities! Things will start up mid march and last 7-8 weeks of pure 
-                        thrilling action!
-                    </div>
-                    <v-col>
-                        <v-btn class="ma-2" :loading="loading" :disabled="loading" color="blue" @click="loader = 'loading'" href="https://squadmasters.com/" target="_blank">
-                            Click here to check out Squad Masters Website!
-                        </v-btn>
-                        <v-btn class="ma-2" :loading="loading2" :disabled="loading2" color="blue" @click="loader = 'loading2'" href="https://www.toornament.com/en_GB/tournaments/4376251278723604480/information" target="_blank">
-                            Click here to find out more about the Tournament!
-                        </v-btn>
-                    </v-col>
-                </v-col>
-            </v-flex>  
-            <v-flex xs12 sm7 md6 lg6 xl5 just>
-                <v-hover v-slot:default="{ hover }">
-                    <v-card :elevation="hover ? 10 : 5" class="seeding-map">
-                    <img class="image-fit" src="@/assets/SM_LOGO_LARGE.png" alt="">
-                    </v-card>  
-                </v-hover>
-            </v-flex>    
-          </template>     
-        </v-row>     
+          <v-row>
+            <template>
+              <v-flex xs12 sm12 md12 lg8 xl7 just>
+                  <v-col>
+                      <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                          :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                          style="text-align: Left">
+                          Squad Masters!
+                      </div>
+                      <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: left; font-size:19px !important">
+                          We are excited to announce that this year we will be apart of the very first Squad Masters Tournament!
+                          This is a huge honor and we are very thankful for everyone over at Squad Masters. Our competitive team, along with Shift W, 
+                          will be challenging 16 other Squad competitive communities! Things will start up mid march and last 7-8 weeks of pure 
+                          thrilling action!
+                      </div>
+                      <v-col>
+                          <youtube width="100%" :video-id="videoId" :player-vars="playerVars" @playing="playing"></youtube>
+                          <v-btn class="ma-2" :loading="loading" :disabled="loading" color="blue" @click="loader = 'loading'" href="https://squadmasters.com/" target="_blank">
+                              Check out Squad Masters Website!
+                          </v-btn>
+                          <v-btn class="ma-2" :loading="loading2" :disabled="loading2" color="blue" @click="loader = 'loading2'" href="https://www.toornament.com/en_GB/tournaments/4376251278723604480/information" target="_blank">
+                              Find out more about the Tournament!
+                          </v-btn>
+                      </v-col>
+                  </v-col>
+              </v-flex>  
+              <v-flex xs12 sm12 md12 lg4 xl5 just>
+                  <v-hover v-slot:default="{ hover }">
+                      <v-card :elevation="hover ? 10 : 5" class="seeding-map">
+                      <img class="image-fit" src="@/assets/SM_LOGO_LARGE.png" alt="">
+                      </v-card>  
+                  </v-hover>
+              </v-flex>    
+            </template>     
+          </v-row>     
         </v-col>
       </v-card>
     </v-container>
@@ -50,22 +51,26 @@
 export default {
   name: "SquadMasters",
   data () {
-      return {
-        loader: null,
-        loading: false,
-        loading2: false
+    return {
+      loader: null,
+      loading: false,
+      loading2: false,
+      videoId: 'HtNcanDDx6c',
+      playerVars: {
+        autoplay: 1
       }
-    },
-    watch: {
-      loader () {
-        const l = this.loader
-        this[l] = !this[l]
+    }
+  },
+  watch: {
+    loader () {
+      const l = this.loader
+      this[l] = !this[l]
 
-        setTimeout(() => (this[l] = false), 3000)
+      setTimeout(() => (this[l] = false), 3000)
 
-        this.loader = null
-      },
+      this.loader = null
     },
+  },
 };
 </script>
 
