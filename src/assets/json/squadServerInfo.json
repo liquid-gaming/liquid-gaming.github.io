@@ -131,5 +131,21 @@
           "description":"When the server is populated, you are not allowed to have an unarmed kit."
         }
       ]                  
+    },
+    {
+      "name": "『LiQ』Liquid Gaming: Jensens Test Range",
+      "description":
+        "Our very own Jensens Test Range! Find this server in the Customer Server browser! Have fun!",
+      "battlemetricId": 10425293,
+      "rules":[
+        {
+          "title":"RACIAL SLURS Are Strictly FORBIDDEN",
+          "description":"Any racist terms, propaganda, slang, gestures and/or other sayings deemed by a LiQ admin to be offensive or hindering the experience of any player on a LiQuid Gaming Server. Will result in a ban determined by the LiQ admin."
+        },
+        {
+          "title":"DON'T BE AN ASSHAT or TROLL.",
+          "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        }
+      ]                  
     }
   ]

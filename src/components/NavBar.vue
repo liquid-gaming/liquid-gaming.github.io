@@ -11,6 +11,7 @@
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text>Player Stats</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/squadMasters" text><sub style="margin: 0 5px 13px 0;color: aquamarine">NEW</sub>Squad Masters</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -64,6 +65,7 @@
 
 <script>
 // import * as easings from "vuetify/es5/services/goto/easing-patterns";
+import { mdiTrophyAward } from '@mdi/js';
 export default {
   data() {
     return {
@@ -76,6 +78,7 @@ export default {
         // { title: 'Contact', icon: 'connect_without_contact', route: '' },
         { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
+        { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
         { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
         { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' }
       ],
