@@ -46,8 +46,8 @@
             class="competitive-card">
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">Want more of challenge?</div>
             <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="opacity-text">
-              Think you have what it takes to compete in the Squad World Championship? Consider joining our competitive team! Learn more about 
-              our competitive team in Squad Competitive channels in our discord. Wanna learn more about Squad World Championship?
+              Think you have what it takes to compete in the Squad Masters? Consider joining our competitive team! 
+              Learn more about our competitive team in Squad Competitive channels in our discord. Wanna learn more about Squad Masters?
               Click <a target="_blank" :href="squadCompetitiveLink.link">here</a> for more info.
             </div>
           </v-card>
