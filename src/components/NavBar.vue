@@ -53,9 +53,9 @@
             v-scroll="onScroll"
             v-show="fab"
             fab
-            dark
             fixed bottom right
             @click="toTop"
+            style="background-color: #20cc92 !important"
           >
             <v-icon>expand_less</v-icon>
           </v-btn>
