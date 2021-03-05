@@ -69,44 +69,50 @@
                   </v-flex>
                 </template>
               </v-layout>
-              <v-layout wrap>
-                <v-container style="margin-top:15px;">
-                  <v-row align="left" justify="left">
-                    <v-col>
-                      <div class="display-1 font-weight-bold ">
-                        Rust
-                      </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                        The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-                <template v-for="(server, i) in rustServerList">
-                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                    <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
-              <v-layout wrap>
-                <v-container style="margin-top:15px;">
-                  <v-row align="left" justify="left">
-                    <v-col>
-                      <div class="display-1 font-weight-bold ">
-                        Valheim
-                      </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                        This is a new booming Viking survival sandbox multiplayer game! Launched on Feb. 2, 2021, this game has been rocking the Steam sale charts lately.
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-                <template v-for="(server, i) in valheimServerList">
-                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                    <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
+              <v-row>
+                <v-flex xs12 sm6 md6 lg6 style="padding:10px">
+                  <v-layout wrap>
+                    <v-container style="margin-top:15px;">
+                      <v-row align="left" justify="left">
+                        <v-col>
+                          <div class="display-1 font-weight-bold ">
+                            Rust
+                          </div>
+                          <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                            The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players
+                          </div>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                    <template v-for="(server, i) in rustServerList">
+                      <v-flex :key="i" just>
+                        <Servers :server="server" />
+                      </v-flex>
+                    </template>
+                  </v-layout>
+                </v-flex>
+                <v-flex xs12 sm6 md6 lg6 style="padding:10px">
+                  <v-layout wrap>
+                    <v-container style="margin-top:15px;">
+                      <v-row align="left" justify="left">
+                        <v-col>
+                          <div class="display-1 font-weight-bold ">
+                            Valheim
+                          </div>
+                          <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
+                            This is a new booming Viking survival sandbox multiplayer game! Launched on Feb. 2, 2021, this game has been rocking the Steam sale charts lately.
+                          </div>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                    <template v-for="(server, i) in valheimServerList">
+                      <v-flex :key="i" just>
+                        <Servers :server="server" />
+                      </v-flex>
+                    </template>
+                  </v-layout>
+                </v-flex>
+              </v-row>
               <v-layout wrap>
                 <v-container style="margin-top:15px;">
                   <v-row align="left" justify="left">
