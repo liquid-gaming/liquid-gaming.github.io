@@ -134,9 +134,6 @@ export default {
 .Director_of_Minecraft{
     color: rgba(9, 146, 4) !important;
 }
-.Director_of_Squad_Competitive{
-    color: #8f1c1c !important;
-}
 .Director_of_Escape_From_Tarkov{
     color: mix(#2292ac, grey) !important;
 }

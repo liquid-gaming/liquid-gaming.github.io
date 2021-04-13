@@ -142,14 +142,5 @@
                     "name": "Director_of_Squad"
                 }
             ]
-    },
-    {
-        "name": "KFCAPOCALYPSE",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Squad_Competitive"
-                }
-            ]
     }
 ]
