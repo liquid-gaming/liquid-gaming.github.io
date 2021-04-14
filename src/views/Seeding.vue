@@ -21,7 +21,7 @@
         <v-row>
           <template>
             <v-flex xs12 sm7 md6 lg4 xl4 just>
-              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+              <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
                     style="text-align: center">
                   Al Basrah
@@ -51,9 +51,19 @@
                   • Only one FOB and HAB allowed per side.<br/>
                   • FOBs placed on the main capture point are subject to attack.
               </div>
+              <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                    :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                    style="text-align: center; margin-top:15px">
+                  How To Read Map
+              </div>
+              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px; text-align: center">
+                  Based on what side of the map your main is:<br/>
+                  • Red castle is where to place raido.<br/>
+                  • Red lines are where you cannot cross.<br/>
+              </div>
             </v-flex>
             <v-flex xs12 sm7 md6 lg4 xl4 just>
-              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+              <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
                     style="text-align: center">
                   Mutaha
