@@ -20,35 +20,55 @@
         </v-col>
         <v-row>
           <template>
-              <v-flex xs12 sm7 md6 lg4 xl4 just>
-                <v-hover v-slot:default="{ hover }">
-                  <v-card :elevation="hover ? 10 : 5" class="seeding-map">
-                    <img class="image-fit" src="@/assets/seeding1.png" alt="">
-                  </v-card>  
-                </v-hover>
-              </v-flex>
-              <v-flex xs12 sm7 md6 lg4 xl4 just>
-                <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
-                      :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                      style="text-align: center">
-                    Rules
-                </div>
-                <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px; text-align: center">
-                    • Admins will call the server LIVE after the server reaches 20 v 20 players.<br/>
-                    • Fighting is allowed over the center objective or two middle objective, whichever applies.<br/>
-                    • DO NOT attack, dig, or IED HABs and/or FOBs.<br/>
-                    • No armed vehicles or emplacements are to be used (MG, mortar, etc).<br/>
-                    • Only one FOB and HAB allowed per side.<br/>
-                    • FOBs placed on the main capture point are subject to attack.
-                </div>
-              </v-flex>
-              <v-flex xs12 sm7 md6 lg4 xl4 just>
-                <v-hover v-slot:default="{ hover }">
-                  <v-card :elevation="hover ? 10 : 5" class="seeding-map">
-                    <img class="image-fit" src="@/assets/seeding2.png" alt="">
-                  </v-card>  
-                </v-hover>
-              </v-flex>
+            <v-flex xs12 sm7 md6 lg4 xl4 just>
+              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                    :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                    style="text-align: center">
+                  Al Basrah
+              </div>
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 10 : 5" class="seeding-map">
+                  <img class="image-fit" src="@/assets/seeding1.png" alt="">
+                </v-card>  
+              </v-hover>
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 10 : 5" class="seeding-map">
+                  <img class="image-fit" src="@/assets/seeding2.png" alt="">
+                </v-card>  
+              </v-hover>
+            </v-flex>
+            <v-flex xs12 sm7 md6 lg4 xl4 just>
+              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                    :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                    style="text-align: center">
+                  Rules
+              </div>
+              <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px; text-align: center">
+                  • Admins will call the server LIVE after the server reaches 20 v 20 players.<br/>
+                  • Fighting is allowed over the center objective or two middle objective, whichever applies.<br/>
+                  • DO NOT attack, dig, or IED HABs and/or FOBs.<br/>
+                  • No armed vehicles or emplacements are to be used (MG, mortar, etc).<br/>
+                  • Only one FOB and HAB allowed per side.<br/>
+                  • FOBs placed on the main capture point are subject to attack.
+              </div>
+            </v-flex>
+            <v-flex xs12 sm7 md6 lg4 xl4 just>
+              <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                    :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                    style="text-align: center">
+                  Fallujah
+              </div>
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 10 : 5" class="seeding-map">
+                  <img class="image-fit" src="@/assets/fallujah_seeding_1.png" alt="">
+                </v-card>  
+              </v-hover>
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 10 : 5" class="seeding-map">
+                  <img class="image-fit" src="@/assets/fallujah_seeding_2.png" alt="">
+                </v-card>  
+              </v-hover>
+            </v-flex>
           </template>
         </v-row>
       </v-card>
