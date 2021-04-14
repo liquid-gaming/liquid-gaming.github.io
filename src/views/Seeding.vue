@@ -56,16 +56,16 @@
               <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
                     style="text-align: center">
-                  Fallujah
+                  Mutaha
               </div>
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 10 : 5" class="seeding-map">
-                  <img class="image-fit" src="@/assets/fallujah_seeding_1.png" alt="">
+                  <img class="image-fit" src="@/assets/mutaha_seeding_1.png" alt="">
                 </v-card>  
               </v-hover>
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 10 : 5" class="seeding-map">
-                  <img class="image-fit" src="@/assets/fallujah_seeding_2.png" alt="">
+                  <img class="image-fit" src="@/assets/mutaha_seeding_2.png" alt="">
                 </v-card>  
               </v-hover>
             </v-flex>
