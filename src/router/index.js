@@ -45,6 +45,13 @@ export default new VueRouter({
         but this will work for now*/
       beforeEnter() {location.href = 'https://shop.spreadshirt.com/liq-gaming/'}
     },
+    {
+      path: '/bugs',
+      name: 'LiQModdedBugs',
+      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
+        but this will work for now*/
+      beforeEnter() {location.href = 'https://forms.gle/hzZwuGSj2YHEBAQq8'}
+    },
     { path: '*', component: Home }
   ]
 })
