@@ -43,8 +43,8 @@ export default new VueRouter({
       beforeEnter() {location.href = RouterLinks.MERCH}
     },
     {
-      path: '/bugs',
-      name: 'LiQModdedBugs',
+      path: '/feedback',
+      name: 'LiQModdedFeedback',
       beforeEnter() {location.href = RouterLinks.BUGS_FORM}
     },
     { path: '*', component: Home }
