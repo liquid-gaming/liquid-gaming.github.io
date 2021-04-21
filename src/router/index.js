@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Seeding from '../views/Seeding.vue'
 import SquadMasters from '../views/SquadMasters.vue'
 import PlayerStats from '../views/PlayerStats.vue'
+import RouterLinks from '../constants/RouterLinks.js'
 
 Vue.use(VueRouter)
 
@@ -34,23 +35,17 @@ export default new VueRouter({
     {
       path: '/discord',
       name: 'Discord',
-      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
-        but this will work for now*/
-      beforeEnter() {location.href = 'https://discord.gg/5WrXn4a'}
+      beforeEnter() {location.href = RouterLinks.DISCORD}
     },
     {
       path: '/merch',
       name: 'LiQMerchandise',
-      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
-        but this will work for now*/
-      beforeEnter() {location.href = 'https://shop.spreadshirt.com/liq-gaming/'}
+      beforeEnter() {location.href = RouterLinks.MERCH}
     },
     {
       path: '/bugs',
       name: 'LiQModdedBugs',
-      /*this link is a copy of the on in mediaLinks.json will need to find a way to get it from the file 
-        but this will work for now*/
-      beforeEnter() {location.href = 'https://forms.gle/hzZwuGSj2YHEBAQq8'}
+      beforeEnter() {location.href = RouterLinks.BUGS_FORM}
     },
     { path: '*', component: Home }
   ]
