@@ -40,7 +40,7 @@
                   Servers
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                  LiQuid Gaming currently hosts 5 gaming servers for our community, which includes; Squad, Minecraft, Rust, and Valheim. More will be coming throughout the year.
+                  LiQuid Gaming currently hosts 7 gaming servers for our community, which includes; Squad, Minecraft, Rust, and Valheim. More will be coming throughout the year.
                 </div>
               </v-col>
             </v-row>
