@@ -11,21 +11,8 @@ import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
 import VueClipboard from 'vue-clipboard2'
 import VueYoutube from 'vue-youtube'
-import VueLoading from 'vuejs-loading-plugin'
-import Loading from "./components/Loading";
-
-
+ 
 Vue.config.productionTip = false
-
-// using default options
-Vue.use(VueLoading, {
-  dark: true, // default false
-  text: 'Loading...', // default 'Loading'
-  loading: true, // default false
-  customLoader: Loading,
-  background: '#272727', // set custom background
-  classes: ['myclass'] // array, object or string
-})
 
 Vue.use(VueYoutube)
 Vue.use(VueClipboard)

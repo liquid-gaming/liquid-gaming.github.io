@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <NavBar />
-    <v-content v-if="!loading" style="background-color: white">
+    <v-content style="background-color: white">
       <router-view />
     </v-content>
     <Footer id="Contact" />
@@ -22,16 +22,7 @@ export default {
 
   data: () => ({
     //
-    loading: true
   }),
-  
-  mounted () {
-    this.$loading(true)
-    setTimeout(() => {
-      this.loading = false;
-      this.$loading(false)
-    }, 2000)
-  }
 };
 </script>
 <style>
