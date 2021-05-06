@@ -29,6 +29,9 @@
                       <v-card dark>
                           <v-card-title>{{item.title}}</v-card-title>
                           <v-card-text class="#272727 text--primary preWrapped">{{item.content}}</v-card-text>
+                        <div v-if="item.images != null">
+                          <img class="image-fit" :src="getImgUrl(item.images)" alt="">
+                        </div>
                       </v-card>
                     </v-timeline-item>
                 </v-timeline>
@@ -65,6 +68,11 @@ export default {
       this.loader = null
     },
   },
+  methods:{
+    getImgUrl(pic) {
+      return require('../assets/'+pic)
+    }
+  }
 };
 </script>
 

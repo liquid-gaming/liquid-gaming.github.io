@@ -1,9 +1,9 @@
 <template>
   <v-app id="app">
     <NavBar />
-    <v-content style="background-color: white">
+    <v-main style="background-color: white">
       <router-view />
-    </v-content>
+    </v-main>
     <Footer id="Contact" />
   </v-app>
 </template>
