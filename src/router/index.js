@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Seeding from '../views/Seeding.vue'
 import SquadMasters from '../views/SquadMasters.vue'
 import PlayerStats from '../views/PlayerStats.vue'
+import Announcements from '../views/Announcements.vue'
 import RouterLinks from '../constants/RouterLinks.js'
 
 Vue.use(VueRouter)
@@ -46,6 +47,11 @@ export default new VueRouter({
       path: '/feedback',
       name: 'LiQModdedFeedback',
       beforeEnter() {location.href = RouterLinks.BUGS_FORM}
+    },
+    {
+      path: '/announcements',
+      name: 'Announcements',
+      component: Announcements
     },
     { path: '*', component: Home }
   ]

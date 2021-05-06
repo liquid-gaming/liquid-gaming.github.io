@@ -11,7 +11,7 @@
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text>Player Stats</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/squadMasters" text><sub style="margin: 0 5px 13px 0;color: aquamarine">NEW</sub>Squad Masters</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text><sub style="margin: 0 5px 13px 0;color: aquamarine">NEW</sub>Announcements</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -75,7 +75,7 @@ export default {
         { title: 'About', icon: 'mdi-account-group-outline', route: '' },
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
-        // { title: 'Contact', icon: 'connect_without_contact', route: '' },
+        { title: 'Announcements', icon: 'connect_without_contact', route: '/announcements' },
         { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
         { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
