@@ -44,6 +44,11 @@ export default new VueRouter({
       beforeEnter() {location.href = RouterLinks.MERCH}
     },
     {
+      path: '/patreon',
+      name: 'Patreon',
+      beforeEnter() {location.href = RouterLinks.PATREON}
+    },
+    {
       path: '/feedback',
       name: 'LiQModdedFeedback',
       beforeEnter() {location.href = RouterLinks.BUGS_FORM}
