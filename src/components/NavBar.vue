@@ -80,7 +80,8 @@ export default {
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
         { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
         { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
-        { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' }
+        { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' },
+        { title: 'Patreon', icon: 'mdi-patreon', route: '/patreon' }
       ],
       mini: true,
       fab: false,
