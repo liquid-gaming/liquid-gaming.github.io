@@ -28,6 +28,7 @@
                     fill-dot>
                       <v-card dark>
                           <v-card-title>{{item.title}}</v-card-title>
+                          <v-card-subtitle>{{item.date}}</v-card-subtitle>
                           <v-card-text class="#272727 text--primary preWrapped">{{item.content}}</v-card-text>
                         <div v-if="item.images != null">
                           <img class="image-fit" :src="getImgUrl(item.images)" alt="">
