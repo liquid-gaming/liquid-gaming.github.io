@@ -4,7 +4,7 @@
             <v-layout justify-center>
             <v-container>
                 <v-layout>
-                    <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
+                    <v-app-bar-nav-icon class="white--text icon_transparent" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
@@ -91,14 +91,19 @@ export default {
   methods: {
       onScroll (e) {
         let header = document.querySelector(".v-toolbar");
+        let icon = document.querySelector(".v-app-bar__nav-icon");
         if (typeof window === 'undefined') return
         const top = window.pageYOffset ||   e.target.scrollTop || 0
         if(top > 300){
           header.classList.remove("transparent")
+          icon.classList.remove("icon_transparent")
         }
         if(top<300){
           if (!header.classList.contains("transparent")){
             header.classList.add("transparent")
+          }
+          if(!icon.classList.contains("icon_transparent")){
+            icon.classList.add("icon_transparent")
           }
         }
         this.fab = top > 500
@@ -125,5 +130,8 @@ export default {
     border-bottom: solid;
     border-width: thin;
     border-color: rgb(43, 43, 43);
+  }
+  .icon_transparent{
+    background-color: #0cf1a43d !important;
   }
 </style>
