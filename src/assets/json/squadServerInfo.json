@@ -133,7 +133,10 @@
         {
           "title":"No unarmed kits on a full-pop server",
           "description":"When the server is populated, you are not allowed to have an unarmed kit."
-        }
+        },
+        {
+          "title":"Intentional Teamkilling will not be tollerated",
+          "description":"Apologize for all teamkills in all chat."
       ]                  
     },
     {
