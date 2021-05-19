@@ -17,13 +17,9 @@
         <div class="video-container">
           <div class="story-vuetube-container">
             <vue-tube
-              videoId="PLh7PdX_1wyHGY3BQhmds8WxQDnSr_xXUt" 
-              :isPlaylist="true"
-              :aspectRatio="1.7777777777777777"
-              :enableCookies="false"
-              :playerVars='{"enablejsapi":1}'
-              :disableWarming="false"
-              :disableWebp="false"
+              :videoId="videoId" 
+              :isPlaylist="isPlaylist"
+              :playerVars='playerVars'
               iframeAllow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"
             >
               <template #thumbnail>
@@ -36,6 +32,22 @@
     </v-container>
   </div>
 </template>
+
+<script>
+
+export default {
+  name: "LiqWeekly",
+  data() {
+    return {
+      videoId: 'PLh7PdX_1wyHGY3BQhmds8WxQDnSr_xXUt',
+      isPlaylist: true,
+      playerVars: {
+        autoplay: 1
+      }
+    }
+  },
+};
+</script>
 
 <style lang="css">
   .background-image{
