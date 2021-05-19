@@ -1,18 +1,17 @@
 <template>
   <div class="home background-image">
     <v-container >
-      <v-card class="sm-card">
+      <v-card class="seeding-card">
         <v-col align="Left" justify="Left">
-          <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
-            :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-            style="text-align: Left">
-              Squad Masters!
-          </div>
           <v-row>
             <template>
               <v-flex xs12 sm12 md12 lg8 xl7 just>
                   <v-col>
-                      
+                      <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
+                          :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
+                          style="text-align: Left">
+                          Squad Masters!
+                      </div>
                       <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: left; font-size:19px !important">
                           We are excited to announce that this year we will be apart of the very first Squad Masters Tournament!
                           This is a huge honor and we are very thankful for everyone over at Squad Masters. Our competitive team, along with Shift W, 
@@ -20,7 +19,7 @@
                           thrilling action!
                       </div>
                       <v-col>
-                          <vue-tube :videoId="videoId" :playerVars="playerVars"></vue-tube>
+                          <youtube width="100%" :video-id="videoId" :player-vars="playerVars" @playing="playing"></youtube>
                           <v-btn class="ma-2" :loading="loading" :disabled="loading" color="blue" @click="loader = 'loading'" href="https://squadmasters.com/" target="_blank">
                               Check out Squad Masters Website!
                           </v-btn>
@@ -32,7 +31,7 @@
               </v-flex>  
               <v-flex xs12 sm12 md12 lg4 xl5 just>
                   <v-hover v-slot:default="{ hover }">
-                      <v-card :elevation="hover ? 10 : 5" class="sm-logo">
+                      <v-card :elevation="hover ? 10 : 5" class="seeding-map">
                       <img class="image-fit" src="@/assets/SM_LOGO_LARGE.png" alt="">
                       </v-card>  
                   </v-hover>
@@ -51,9 +50,9 @@
 
 export default {
   name: "SquadMasters",
-  data() {
+  data () {
     return {
-      playerInstance: null,
+      loader: null,
       loading: false,
       loading2: false,
       videoId: 'HtNcanDDx6c',
@@ -62,14 +61,16 @@ export default {
       }
     }
   },
+  watch: {
+    loader () {
+      const l = this.loader
+      this[l] = !this[l]
 
-  methods: {
-    onPlayerReady(event) {
-      console.log(event);
-      this.playerInstance = event.target
-      this.playerInstance.playVideo()
-    }
-  }
+      setTimeout(() => (this[l] = false), 3000)
+
+      this.loader = null
+    },
+  },
 };
 </script>
 
@@ -84,13 +85,13 @@ export default {
     width: 100%;
     object-fit: cover;
   }
-  .sm-card{
+  .seeding-card{
     border-radius: 20px !important;
     margin-top: 75px !important;
     padding:35px !important; 
     background-color:rgb(34, 34, 34) !important;
   }
-  .sm-logo{
+  .seeding-map{
     border-radius: 20px !important;
     padding:10px 10px 5px 10px !important;
   }
