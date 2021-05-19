@@ -10,11 +10,13 @@ import VueMobileDetection from 'vue-mobile-detection'
 import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
 import VueClipboard from 'vue-clipboard2'
-import VueYoutube from 'vue-youtube'
+import { VueTube } from 'vuetube';
+import 'vuetube/dist/vuetube.css'
  
 Vue.config.productionTip = false
 
-Vue.use(VueYoutube)
+
+Vue.component('VueTube', VueTube)
 Vue.use(VueClipboard)
 Vue.use(VueSocialSharing);
 Vue.use(VueRouter)

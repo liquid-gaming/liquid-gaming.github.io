@@ -1,22 +1,39 @@
 ---
+- color: rgb(255 0 0)
+  icon: mdi-youtube
+  title: Introducing LiQ Weekly!
+  date: 2021-05-18
+  content: |-
+    We are proud to announce a new LiQ community initiative, LiQ Weekly!
+
+    This weekly montage will be posted to our official LiQ YouTube Channel that you can find here:
+    
+    https://www.youtube.com/channel/UC30Q0MNu38abdwl0PIQ-pNA
+
+    The montage is a series of clips featuring some of the most interesting things that players have experienced across our servers. Each weekly montage consists of clips from the previous week. We encourage you to participate by submitting your very own clip!
+
+    You can submit a clip by sending it to Akuma, the individual leading this initiative.
+
+  images: liq-weekly.png
 - color: rgb(0 135 66)
   icon: celebration
   title: French Faction
   date: 2021-05-13
   content: |-
-    LiQ is changing the modded server away from GA and over to the French Faction. With this we are also adding Two new maps 
+    LiQ is changing the modded server away from GA and over to the French Faction. Along with the French Faction, we are also adding two new maps! 
 
-    Panjwai
-    Wake Island
+    The new maps are:
+     - Panjwai
+     - Wake Island
 
-    You will need to subscribe to 3 Mods listed below.
+    You will need to subscribe to 3 mods listed below.
 
     https://steamcommunity.com/sharedfiles/filedetails/?id=2198088821
     https://steamcommunity.com/sharedfiles/filedetails/?id=2129480878
     https://steamcommunity.com/sharedfiles/filedetails/?id=2010827510
 
 
-    Lets Go and have fun!
+    Enjoy!
 
     『LiQ』 - New MAPS - Panjwai  - Wake - FR Faction - Liquid Gaming
   images: french.jpg
@@ -25,8 +42,8 @@
   title: Galactic Contention
   date: 2021-05-06
   content: |-
-    We are proud to announce that LIQ has been included in the Whitelist mod test with OWI, and for this we have chosen to run Galactic Contention! this mod is a little large as it is a rewrite of a lot of the core functions, it sits about 30 GB.
-    This is the rotation we are running with
+    We are proud to announce that LiQ has been included in the whitelist mod test with OWI, and we have chosen to run Galactic Contention! This mod is a little large as it is a rewrite of a lot of the core functions, it sits at about 30 GB.
+    This is the rotation we are running with:
 
     GC_BespinPlatforms_AAS_V2
     GC_Kashyyyk_INV_V1
@@ -45,13 +62,13 @@
     GC_Miniosis_AAS_V1
     GC_Mygeeto_AAS_V1
 
-    We have been advised not to run some layers due to small issues that effect game play, so ADMINS do not manually swop maps 
+    We have been advised not to run some layers due to small issues that effect game play, so ADMINS do not manually swap maps.
 
-    We hope you will be able to help us pop and play on this over the next few weeks.
+    We hope you will be able to help us populate the server and play on this over the next few weeks.
 
-    For added info The potato fields and 56th is running a new map called Panjwia and the French Fraction (French Fraction from Friday). So keep an eye out in the main server browser for that.
+    Additionally, The Potato Fields and 56th is running a new map called Panjwia and the French Faction (French Faction from Friday), so keep an eye out in the main server browser for that.
 
-    Thanks again and if this goes well we hope OWI will allow us to run any mods on a live Licensed Servers.
+    Thanks again and if this goes well we hope OWI will allow us to run any mods on a live licensed server.
 
     『LiQ』 - Galactic Contention NA - Liquid Gaming - OWI Official
 
