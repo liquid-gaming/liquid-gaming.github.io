@@ -34,7 +34,6 @@
 </template>
 
 <script>
-
 export default {
   name: "LiqWeekly",
   data() {
@@ -75,8 +74,4 @@ export default {
     width: 50%;
     height: 100%;
   }
-
-  @media screen and (max-width: 768px) {
-   
-    }
 </style>
