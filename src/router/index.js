@@ -61,7 +61,7 @@ export default new VueRouter({
     },
     {
       path: '/liqweekly',
-      name: 'LiQ Weekly',
+      name: 'LiqWeekly',
       component: LiqWeekly
     },
     { path: '*', component: Home }
