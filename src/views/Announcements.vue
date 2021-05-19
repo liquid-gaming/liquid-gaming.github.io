@@ -31,7 +31,7 @@
                           <v-card-subtitle>{{item.date}}</v-card-subtitle>
                           <v-card-text class="#272727 text--primary preWrapped">{{item.content}}</v-card-text>
                         <div v-if="item.images != null">
-                          <img class="image-fit" :src="getImgUrl(item.images)" alt="">
+                          <img class="announcement-image image-fit" :src="getImgUrl(item.images)" alt="">
                         </div>
                       </v-card>
                     </v-timeline-item>
@@ -87,6 +87,11 @@ export default {
     border-radius: 20px !important;
     margin-top: 45px !important;
     padding:35px !important; 
+  }
+  .announcement-image {
+    max-height: 600px;
+    width: 100%;
+    object-fit: contain;
   }
   .v-card__text,
 .v-card__title {
