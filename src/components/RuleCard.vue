@@ -1,42 +1,13 @@
 <template>
 <v-hover v-slot:default="{ hover }">
-  <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;padding:5px" max-width="950px" >
+  <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;padding:5px">
     <v-card-text>
       <v-row align="left" justify="left">
         <v-col>
           <div class="title mt-2 titleColour">{{server.name}}</div>
           <div :class="{ preWrapped: containBreaks(server.description)}">{{server.description}}</div>
-          <div v-if="server.mapRotationLink != null">
-            <div class="title mt-2 titleColour">Map Rotation</div>
-            <div>Click here to see this servers map rotation: <a target="_blank" :href="server.mapRotationLink">Map Rotation</a></div>
-          </div>
-          <div class="title mt-2 titleColour">Battmetrics</div>
         </v-col>
       </v-row>
-      <v-layout>
-        <template>
-          <div v-if="$vuetify.breakpoint.mdAndDown">
-            <!-- <iframe
-              :src="'https://cdn.battlemetrics.com/b/horizontal500x80px/' + server.battlemetricId + '.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700'"
-              frameborder="0"
-              style="border:0"
-              :name="server.battlemetricId"
-            ></iframe> -->
-            <a target="_blank" :href="'https://www.battlemetrics.com/servers/squad/'+ server.battlemetricId"><img :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.png?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'" /></a>
-          </div>
-          <div v-else></div>
-          <div v-if="$vuetify.breakpoint.lgAndUp">
-            <!-- <iframe
-              :src="'https://cdn.battlemetrics.com/b/standardVertical/' + server.battlemetricId + '.html?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300'"
-              frameborder="0"
-              style="border:0"
-              :name="server.battlemetricId"
-            ></iframe> -->
-            <a target="_blank" :href="'https://www.battlemetrics.com/servers/squad/'+ server.battlemetricId"><img :src="'https://cdn.battlemetrics.com/b/horizontal500x80px/' + server.battlemetricId + '.png?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700'" /></a>
-          </div>
-          <div v-else></div>
-        </template>
-      </v-layout>
     </v-card-text>
     <div v-if="server.mapVoteCommands != null" style="margin:3px">
       <v-expansion-panels style="border-radius: 10px;">
@@ -87,16 +58,6 @@
   </v-card>
 </v-hover>
 </template>
-
-<script type="application/javascript">
-  window.addEventListener("message", function (e) {
-    if (e.data.uid && e.data.type === "sizeUpdate") {
-      var i = document.querySelector('iframe[name="' + e.data.uid + '"]');
-      i.style.width = e.data.payload.width;
-      i.style.height = e.data.payload.height;
-    }
-  });
-</script>
 <script>
 export default {
   props: {
@@ -108,9 +69,6 @@ export default {
     },
   },
   methods: {
-    screenSize(){
-      return vuetify.breakpoint.smAndDown;
-    },
     containBreaks(descriptions){
       return descriptions.includes('\n');
     }

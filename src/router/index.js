@@ -6,6 +6,7 @@ import SquadMasters from '../views/SquadMasters.vue'
 import PlayerStats from '../views/PlayerStats.vue'
 import Announcements from '../views/Announcements.vue'
 import LiqWeekly from '../views/LiqWeekly.vue'
+import Rules from '../views/Rules.vue'
 import RouterLinks from '../constants/RouterLinks.js'
 
 Vue.use(VueRouter)
@@ -63,6 +64,11 @@ export default new VueRouter({
       path: '/liqweekly',
       name: 'LiqWeekly',
       component: LiqWeekly
+    },
+    {
+      path: '/rules',
+      name: 'Rules',
+      component: Rules
     },
     { path: '*', component: Home }
   ]

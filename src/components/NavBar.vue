@@ -77,6 +77,7 @@ export default {
         { title: 'Servers', icon: 'mdi-dns', route: '' },
         { title: 'Recruitment', icon: 'assignment', route: '' },
         { title: 'Announcements', icon: 'connect_without_contact', route: '/announcements' },
+        { title: 'Rules', icon: 'mdi-format-list-bulleted', route: '/rules' },
         { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
         { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
