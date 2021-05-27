@@ -40,7 +40,7 @@
                 <v-hover v-slot:default="{ hover }">
                     <v-card :elevation="hover ? 10 : 5" style="border-radius: 20px;">
                         <v-card-text>
-                            <v-layout wrap my-5 style="margin: 0 !important;">
+                            <v-layout wrap my-5 style="margin: 0 !important; height: 400px; width:300px" >
                                 <v-flex justify-center class="mt-2">
                                     <v-layout wrap>
                                         <div>
