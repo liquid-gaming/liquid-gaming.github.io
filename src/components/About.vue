@@ -137,6 +137,9 @@ export default {
 .Director_of_Rust{
     color: mix(#7a22ac, grey) !important;
 }
+.Director_of_Arma{
+    color: mix(#4b0772, grey) !important;
+}
 .Director_of_Recruitment{
     color: mix(#3b38dd, grey) !important;
 }

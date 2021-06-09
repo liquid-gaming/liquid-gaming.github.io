@@ -133,5 +133,14 @@
                     "name": "Director_of_Squad"
                 }
             ]
+    },
+    {
+        "name": "Too Many Cooks",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Arma"
+                }
+            ]
     }
 ]
