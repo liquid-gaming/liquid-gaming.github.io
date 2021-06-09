@@ -1,4 +1,15 @@
 ---
+- color: rgb(35 135 255)
+  icon: local_shipping
+  title: Armor Claim Rule Change
+  date: 2021-06-08
+  content: |-
+    Hello all we've made a change to our vehicle claim rules on all of our squad servers effective immediately.
+    The new rule reads:
+    Squads NAMED after a vehicle get PRIORITY for that vehicle. Only ONE vehicle type allowed per squad. Armor (generic) gets leftovers.
+
+
+    With this rule change, we will no longer allow for double vehicle claims such as BRAD/TANK, BMP/TANK, STRYKER/MRAP, etc. As another reminder, squads named ARMOR will lose claim if any other squad has a more specific claim over the vehicle.
 - color: rgb(255 0 0)
   icon: mdi-youtube
   title: Introducing LiQ Weekly!
