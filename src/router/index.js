@@ -7,6 +7,7 @@ import PlayerStats from '../views/PlayerStats.vue'
 import Announcements from '../views/Announcements.vue'
 import LiqWeekly from '../views/LiqWeekly.vue'
 import Rules from '../views/Rules.vue'
+import MapRotation from '../views/MapRotation.vue'
 import RouterLinks from '../constants/RouterLinks.js'
 
 Vue.use(VueRouter)
@@ -69,6 +70,11 @@ export default new VueRouter({
       path: '/rules',
       name: 'Rules',
       component: Rules
+    },
+    {
+      path: '/mapRotation',
+      name: 'MapRotation',
+      component: MapRotation
     },
     { path: '*', component: Home }
   ]
