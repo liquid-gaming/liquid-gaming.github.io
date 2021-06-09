@@ -42,7 +42,7 @@
                                     >
                                     <template v-slot:label>
                                         <div>
-                                        User Name <small>Required</small>
+                                        Username <small>Required</small>
                                         </div>
                                     </template>
                                     </v-text-field>
