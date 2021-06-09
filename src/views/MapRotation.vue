@@ -36,7 +36,7 @@
                                 >
                                     <v-text-field
                                     v-model="form.userName"
-                                    :rules="rules.name"
+                                    :rules="rules.userName"
                                     color="teal"
                                     required
                                     >
@@ -50,6 +50,7 @@
                                 <v-col cols="12">
                                     <v-textarea
                                     v-model="form.description"
+                                    :rules="rules.description"
                                     color="teal"
                                     required
                                     >
@@ -121,7 +122,8 @@
           age: [
             val => val > 10 || `Be older...`,
           ],
-          name: [val => (val || '').length > 0 || 'This field is required'],
+          userName: [val => (val || '').length > 0 || 'This field is required'],
+          description: [val => (val || '').length > 0 || 'This field is required'],
         },
         conditions: false,
         snackbar: false,
