@@ -51,6 +51,7 @@
                                     <v-textarea
                                     v-model="form.description"
                                     color="teal"
+                                    required
                                     >
                                     <template v-slot:label>
                                         <div>
