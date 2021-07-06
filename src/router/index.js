@@ -57,6 +57,11 @@ export default new VueRouter({
       beforeEnter() {location.href = RouterLinks.BUGS_FORM}
     },
     {
+      path: '/weeklyvideo',
+      name: 'WeeklyVideo',
+      beforeEnter() {location.href = RouterLinks.BUGS_FORM}
+    },
+    {
       path: '/announcements',
       name: 'Announcements',
       component: Announcements
