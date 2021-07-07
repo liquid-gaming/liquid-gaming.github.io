@@ -12,7 +12,7 @@
           Whether funny, strange, or just downright exciting, please send us your clips for a chance to be featured in next weeks video.
         </div>
         <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
-          To submit a video, please send clips to <strong>Akuma</strong> in our LiQ Community Discord!
+          To submit a video, please fill out our form here: <a href="https://docs.google.com/forms/d/e/1FAIpQLScaWvGKMrVxq__zt4zBbkHC0wZlsHqAbG_7sJkewIKcCWmUUQ/viewform">Google Form</a>
         </div>
         <div class="video-container">
           <iframe 
