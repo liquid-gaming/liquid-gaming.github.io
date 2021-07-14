@@ -51,8 +51,8 @@
           "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
         },
         {
-          "title":"No unarmed kits on a full-pop server",
-          "description":"When the server is populated, you are not allowed to have an unarmed kit."
+          "title":"No unarmed kits on a live server",
+          "description":"When the server is live, you are not allowed to have an unarmed kit."
         },
         {
           "title":"Intentional Teamkilling will not be tollerated",
