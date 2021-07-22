@@ -1,4 +1,4 @@
-const DISCORD = "https://discord.gg/5WrXn4a"
+const DISCORD = "https://discord.gg/adSpN7CV6F"
 const MERCH = "https://shop.spreadshirt.com/liq-gaming/"
 const PATREON = "https://www.patreon.com/bePatron?u=38350579"
 const FEEDBACK_FORM = "https://forms.gle/hzZwuGSj2YHEBAQq8"
