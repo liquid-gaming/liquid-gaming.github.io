@@ -19,7 +19,7 @@
           "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
         },
         {
-          "title":"LOCKED Squads With 4 Or Less Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
           "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
         },
         {
@@ -99,7 +99,7 @@
           "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
         },
         {
-          "title":"LOCKED Squads With 4 Or Less Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
           "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
         },
         {
@@ -159,7 +159,7 @@
           "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
         },
         {
-          "title":"LOCKED Squads With 4 Or Less Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
           "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
         },
         {
