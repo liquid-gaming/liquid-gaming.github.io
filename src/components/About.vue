@@ -138,7 +138,13 @@ export default {
 .Director_of_Arma{
     color: mix(#4b0772, grey) !important;
 }
+.Assistant_Director_of_Arma{
+    color: mix(#4b0772, grey) !important;
+}
 .Director_of_Recruitment{
     color: mix(#3b38dd, grey) !important;
+}
+.Director_of_Competitive{
+    color: mix(#7a031f, grey) !important;
 }
 </style>

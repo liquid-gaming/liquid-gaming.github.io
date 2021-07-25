@@ -135,11 +135,29 @@
             ]
     },
     {
+        "name": "Nostradumbass [ween]",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Competitive"
+                }
+            ]
+    },
+    {
         "name": "Too Many Cooks",
         "roles":
             [
                 {
                     "name": "Director_of_Arma"
+                }
+            ]
+    },
+    {
+        "name": "MoraJ22",
+        "roles":
+            [
+                {
+                    "name": "Assistant_Director_of_Arma"
                 }
             ]
     }
