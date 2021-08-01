@@ -14,7 +14,7 @@
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                   We are a high-level clan in various gaming platforms with a community of over 2500 players. <br/>
-                  We currently host two servers in Squad and have plan for more in the future. <br/>
+                  We currently host two servers in Squad and have plans for more in the future. <br/>
                   <br/>
                   We are eager to help new or returning players rediscover their passion for gaming. <br/>
                   Please scroll down and take a look, we would love for you to join us! <br/>
