@@ -17,46 +17,46 @@
                         <v-card flat>
                             <v-card-text>
                                 <v-layout row wrap class="justify-center">
-                  <v-flex xs12 sm6 md4 lg3 xl2>
-                                    <v-hover v-slot:default="{ hover }">
-                                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
-                                            <v-card-text>
-                                                <h2>{{item.KillsCount}}</h2>
-                                                <div class="subheading">Top Kills {{item.TopKills}}</div>
-                                            </v-card-text>
-                                        </v-card>
-                                    </v-hover>
-                  </v-flex>
-                  <v-flex xs12 sm6 md4 lg3 xl2>
-                                    <v-hover v-slot:default="{ hover }">
-                                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
-                                            <v-card-text>
-                                                <h2>{{item.DeathsCount}}</h2>
-                                                <div class="subheading">Top Deaths {{item.TopDeaths}}</div>
-                                            </v-card-text>
-                                        </v-card>
-                                    </v-hover>
-                  </v-flex>
-                  <v-flex xs12 sm6 md4 lg3 xl2>
-                                    <v-hover v-slot:default="{ hover }">
-                                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
-                                            <v-card-text>
-                                                <h2>{{item.RevivesCount}}</h2>
-                                                <div class="subheading">Top Revives {{item.TopRevives}}</div>
-                                            </v-card-text>
-                                        </v-card>
-                                    </v-hover>
-                  </v-flex>
-                  <v-flex xs12 sm6 md4 lg3 xl2>
-                                    <v-hover v-slot:default="{ hover }">
-                                        <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
-                                            <v-card-text>
-                                                <h2>{{item.TimeplayedCount}}</h2>
-                                                <div class="subheading">Top Time Played {{item.TopTimePlayed}}</div>
-                                            </v-card-text>
-                                        </v-card>
-                                    </v-hover>
-                  </v-flex>
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{item.KillsCount}}</h2>
+                                                    <div class="subheading">Top Kills {{item.TopKills}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{item.DeathsCount}}</h2>
+                                                    <div class="subheading">Top Deaths {{item.TopDeaths}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{item.RevivesCount}}</h2>
+                                                    <div class="subheading">Top Revives {{item.TopRevives}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{item.TimeplayedCount}}</h2>
+                                                    <div class="subheading">Top Time Played {{item.TopTimePlayed}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
                                 </v-layout>
                             </v-card-text>
                         </v-card>
