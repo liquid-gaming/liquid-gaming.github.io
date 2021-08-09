@@ -12,6 +12,7 @@
                 LiQ gaming player stats are updated on a weekly basis, showing your stats for the past month. 
                 Use the search bar to search your in game user name and click the top of a column that you want to sort.
             </div>
+            <Seasons />
             <v-container class="my-2">
                 <v-layout row wrap class="justify-center">
                   <v-flex xs12 sm6 md4 lg3 xl2  v-for="(total, index) in totals" :key="index">
@@ -348,6 +349,7 @@
 // @ is an alias to /src
 import AnimatedNumber from "@/components/AnimatedNumber.vue"
 import BarChart from '@/components/BarChart'
+import Seasons from '@/components/Seasons.vue'
 //Svg's
 import FacebookSvg from "@/assets/ShareButtonIcons/facebook.svg"
 import ShareThisSvg from "@/assets/ShareButtonIcons/sharethis.svg"
@@ -362,7 +364,8 @@ export default {
   name: "seeding",
   components: {
     AnimatedNumber,
-    BarChart
+    BarChart,
+    Seasons
   },
   data () {
       return {
