@@ -50,10 +50,12 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
+                                    
+                                <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStat"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
-                    <v-tab-item v-for="item in seasons" :key="item.Season">
+                    <v-tab-item v-for="(item, index) in seasons" :key="item.Season">
                         <v-card flat>
                             <v-card-text>
                                 <v-layout row wrap class="justify-center">
@@ -98,6 +100,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
+                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
@@ -108,36 +111,57 @@
 
 <script>
 import seasons from "@/assets/yamls/seasons.yaml"
+import StatsTables from '@/components/StatsTable.vue'
+//Json files
+import topStats1 from "@/assets/json/SeasonOne/top-stats.json"
+import totalStats1 from "@/assets/json/SeasonOne/total-stats.json"
 export default {
     name: "Seasons",
     props: { 
-        player: {}
+        topStat: {},
+        totalStat: {}
         },
+    components: {
+        StatsTables
+    },
     data: function () {
         return {
+            topStatsOne: topStats1,
+            totalStatsOne: totalStats1,
             seasons: seasons,
-            tab: null
+            tab: null,
+            seasonsList: [
+                    {
+                        topStats: this.topStat,
+                        totalStat: this.totalStat
+                    }
+                ]
         };
     },
 
     computed:{
         highestKills(){
-            if (this.player.length == 0) return 
-            return this.player.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
+            console.log(this.seasonsList)
+            if (this.topStat.length == 0) return 
+            return this.topStat.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
         },
         highestDeaths(){
-            if (this.player.length == 0) return 
-            return this.player.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
+            if (this.topStat.length == 0) return 
+            return this.topStat.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
         },
         highestRevives(){
-            if (this.player.length == 0) return 
-            return this.player.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
+            if (this.topStat.length == 0) return 
+            return this.topStat.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         }
     },
- 
-    ready: function () {
-        this.displayNumber = this.number ? this.number : 0;
-    },
+    mounted(){
+        this.seasonsList.push(
+            {
+                topStats: this.topStatsOne,
+                totalStat: this.totalStatsOne
+            }
+        );
+    }
 }
 </script>
 
