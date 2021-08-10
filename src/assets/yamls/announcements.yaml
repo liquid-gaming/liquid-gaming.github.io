@@ -1,4 +1,39 @@
 ---
+- color: rgb(66, 245, 242)
+  icon: group
+  title: Squad Server Whitelist Giveaway!
+  date: 2021-08-10
+  content: |-
+    Today LiQ Administration and staff are proud to announce the start of Liquid Gaming's Squad SEASONS!
+
+    Seasons will begin Aug 10th and will run for 3 months. During this time we will be tracking the all statistics listed below and the top performers of each category will be eligible for prizes.
+
+    The Following stats will be tracked:
+    - Kills
+    - Deaths
+    - Revives
+    - Time played!
+
+    Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!!
+
+    At the end of the season an announcement will be made on our website (changes coming soon) and in discord, listing all the winners. The winners will need to contact the Squad community managers for prizes. In addition to this the winners will get special discord tags and will be promoted on the server so they can brag about how good they are.
+
+    You will be able to track your status in our discord #player-stats and on our website (updated weekly)
+
+    More information will be announced in the coming weeks!
+
+    Get out there and have fun! and enjoy the first season!
+- color: rgb(35 135 255)
+  icon: local_shipping
+  title: Armor Claim Rule Change
+  date: 2021-06-08
+  content: |-
+    Hello all we've made a change to our vehicle claim rules on all of our squad servers effective immediately.
+    The new rule reads:
+
+    "Squads NAMED after a vehicle get PRIORITY for that vehicle. Only ONE vehicle type allowed per squad. Armor (generic) gets leftovers."
+
+    With this rule change, we will no longer allow for double vehicle claims such as BRAD/TANK, BMP/TANK, STRYKER/MRAP, etc. As another reminder, squads named ARMOR will lose claim if any other squad has a more specific claim over the vehicle.
 - color: rgb(255, 196, 0)
   icon: groups
   title: Squad Server Whitelist Giveaway!
