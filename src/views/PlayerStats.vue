@@ -17,7 +17,7 @@
                 winners will get Discord tags and be promoted on the server so they can brag about how good they are.
             </div>
             <Seasons :topStat="players" :totalStat="totals"/>
-            <StatsTables :topStat="players" :totalStat="totals"/><!-- This will be for the total of them all -->
+            <!-- <StatsTables :topStat="players" :totalStat="totals"/>--><!-- This will be for the total of them all -->
           </v-col>
         </v-row>
       </v-card>
@@ -28,7 +28,7 @@
 <script>
 // @ is an alias to /src
 import Seasons from '@/components/Seasons.vue'
-import StatsTables from '@/components/StatsTable.vue'
+// import StatsTables from '@/components/StatsTable.vue'
 //Json files
 import topStats from "@/assets/json/ArchivedStats/top-stats.json"
 import totalStats from "@/assets/json/ArchivedStats/total-stats.json"
@@ -37,7 +37,7 @@ export default {
   name: "seeding",
   components: {
     Seasons,
-    StatsTables
+    // StatsTables
   },
   data () {
       return {

@@ -8,8 +8,11 @@
                             <v-tab>
                                 Current Season
                             </v-tab>
-                            <v-tab v-for="index in seasons" :key="index.Season">
+                            <!-- <v-tab v-for="index in seasons" :key="index.Season">
                                 Season {{ index.Season }}
+                            </v-tab> -->
+                            <v-tab>
+                                Before Times
                             </v-tab>
                         </v-tabs>
                     </template>
@@ -51,11 +54,11 @@
                                     </v-flex>
                                 </v-layout>
                                     
-                                <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStat"/>
+                                <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStats"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
-                    <v-tab-item v-for="(item, index) in seasons" :key="item.Season">
+                    <!-- <v-tab-item v-for="(item, index) in seasons" :key="item.Season">
                         <v-card flat>
                             <v-card-text>
                                 <v-layout row wrap class="justify-center">
@@ -103,6 +106,55 @@
                                 <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat"/>
                             </v-card-text>
                         </v-card>
+                    </v-tab-item> -->
+                    <v-tab-item>
+                        <v-card flat>
+                            <v-card-text>
+                                <v-layout row wrap class="justify-center">
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{archivedHighestKills.Kills}}</h2>
+                                                    <div class="subheading">Top Kills {{archivedHighestKills.Name}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg3 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{archivedHighestDeaths.Deaths}}</h2>
+                                                    <div class="subheading">Top Deaths {{archivedHighestDeaths.Name}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg2 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text>
+                                                    <h2>{{archivedHighestRevives.Revives}}</h2>
+                                                    <div class="subheading">Top Revives {{archivedHighestRevives.Name}}</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md4 lg5 xl2>
+                                        <v-hover v-slot:default="{ hover }">
+                                            <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
+                                                <v-card-text style="padding-left: 5px;padding-right: 5px;">
+                                                    <h2>1,676.97 Hours</h2>
+                                                    <div class="subheading">Top Time Played 『LiQ』HarshDonkey</div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-hover>
+                                    </v-flex>
+                                </v-layout>
+                                <StatsTables :topStat="this.topStat" :totalStat="this.totalStat"/>
+                            </v-card-text>
+                        </v-card>
                     </v-tab-item>
                 </v-tabs-items>
             </v-card>
@@ -130,26 +182,32 @@ export default {
             totalStatsOne: totalStats1,
             seasons: seasons,
             tab: null,
-            seasonsList: [
-                    {
-                        topStats: this.topStat,
-                        totalStat: this.totalStat
-                    }
-                ]
+            seasonsList: []
         };
     },
 
     computed:{
         highestKills(){
-            console.log(this.seasonsList)
+            if (this.topStatsOne.length == 0) return 
+            return this.topStatsOne.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
+        },
+        highestDeaths(){
+            if (this.topStatsOne.length == 0) return 
+            return this.topStatsOne.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
+        },
+        highestRevives(){
+            if (this.topStatsOne.length == 0) return 
+            return this.topStatsOne.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
+        },
+        archivedHighestKills(){
             if (this.topStat.length == 0) return 
             return this.topStat.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
         },
-        highestDeaths(){
+        archivedHighestDeaths(){
             if (this.topStat.length == 0) return 
             return this.topStat.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
         },
-        highestRevives(){
+        archivedHighestRevives(){
             if (this.topStat.length == 0) return 
             return this.topStat.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         }
@@ -158,7 +216,7 @@ export default {
         this.seasonsList.push(
             {
                 topStats: this.topStatsOne,
-                totalStat: this.totalStatsOne
+                totalStats: this.totalStatsOne
             }
         );
     }
