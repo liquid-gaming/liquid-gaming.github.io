@@ -15,7 +15,7 @@
                 Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
                 winners will get Discord tags and be promoted on the server so they can brag about how good they are.
             </div>
-            <Seasons :topStat="players" :totalStat="totals"/>
+            <Seasons/>
             <!-- <StatsTables :topStat="players" :totalStat="totals"/>--><!-- This will be for the total of them all -->
           </v-col>
         </v-row>
@@ -29,8 +29,6 @@
 import Seasons from '@/components/Seasons.vue'
 // import StatsTables from '@/components/StatsTable.vue'
 //Json files
-import topStats from "@/assets/json/ArchivedStats/top-stats.json"
-import totalStats from "@/assets/json/ArchivedStats/total-stats.json"
 
 export default {
   name: "seeding",
@@ -40,8 +38,7 @@ export default {
   },
   data () {
       return {
-        totals: totalStats,
-        players: topStats
+        
       }
   }
 };

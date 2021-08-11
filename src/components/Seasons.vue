@@ -26,8 +26,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{highestKills.Kills}}</h2>
-                                                    <div class="subheading">Top Kills {{highestKills.Name}}</div>
+                                                    <h2>{{highestKills(0).Kills}}</h2>
+                                                    <div class="subheading">Top Kills {{highestKills(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -36,8 +36,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{highestDeaths.Deaths}}</h2>
-                                                    <div class="subheading">Top Deaths {{highestDeaths.Name}}</div>
+                                                    <h2>{{highestDeaths(0).Deaths}}</h2>
+                                                    <div class="subheading">Top Deaths {{highestDeaths(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -46,14 +46,14 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{highestRevives.Revives}}</h2>
-                                                    <div class="subheading">Top Revives {{highestRevives.Name}}</div>
+                                                    <h2>{{highestRevives(0).Revives}}</h2>
+                                                    <div class="subheading">Top Revives {{highestRevives(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                    
+                                
                                 <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStats"/>
                             </v-card-text>
                         </v-card>
@@ -152,7 +152,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="this.topStat" :totalStat="this.totalStat"/>
+                                <StatsTables :topStat="archivedTopStats" :totalStat="archivedTotalStats"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
@@ -165,58 +165,75 @@
 import seasons from "@/assets/yamls/seasons.yaml"
 import StatsTables from '@/components/StatsTable.vue'
 //Json files
-import topStats1 from "@/assets/json/SeasonOne/top-stats.json"
-import totalStats1 from "@/assets/json/SeasonOne/total-stats.json"
+import archivedTopStats from "@/assets/json/ArchivedStats/top-stats.json"
+import archivedTotalStats from "@/assets/json/ArchivedStats/total-stats.json"
+
+import currentTopStats from "@/assets/json/top-stats.json"
+import currentTotalStats from "@/assets/json/total-stats.json"
+
+// import topStats1 from "@/assets/json/SeasonOne/top-stats.json"
+// import totalStats1 from "@/assets/json/SeasonOne/total-stats.json"
 export default {
     name: "Seasons",
-    props: { 
-        topStat: {},
-        totalStat: {}
-        },
     components: {
         StatsTables
     },
     data: function () {
         return {
-            topStatsOne: topStats1,
-            totalStatsOne: totalStats1,
+            archivedTopStats: archivedTopStats,
+            archivedTotalStats: archivedTotalStats,
+            
+            currentTopStats: currentTopStats,
+            currentTotalStats: currentTotalStats,
+            
+            // topStatsOne: topStats1,
+            // totalStatsOne: totalStats1,
+
             seasons: seasons,
             tab: null,
-            seasonsList: []
+            seasonsList: [
+                {
+                    topStats: currentTopStats,
+                    totalStats: currentTotalStats
+                }
+            ]
         };
     },
 
-    computed:{
-        highestKills(){
-            if (this.topStatsOne.length == 0) return 
-            return this.topStatsOne.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
+    methods:{
+        highestKills(index){
+            let season = this.seasonsList[index];
+            if (season.topStats.length == 0) return 
+            return season.topStats.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
         },
-        highestDeaths(){
-            if (this.topStatsOne.length == 0) return 
-            return this.topStatsOne.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
+        highestDeaths(index){
+            let season = this.seasonsList[index];
+            if (season.topStats.length == 0) return 
+            return season.topStats.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
         },
-        highestRevives(){
-            if (this.topStatsOne.length == 0) return 
-            return this.topStatsOne.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
+        highestRevives(index){
+            let season = this.seasonsList[index];
+            if (season.topStats.length == 0) return 
+            return season.topStats.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         },
         archivedHighestKills(){
-            if (this.topStat.length == 0) return 
-            return this.topStat.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
+            if (this.archivedTopStats.length == 0) return 
+            return this.archivedTopStats.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
         },
         archivedHighestDeaths(){
-            if (this.topStat.length == 0) return 
-            return this.topStat.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
+            if (this.archivedTopStats.length == 0) return 
+            return this.archivedTopStats.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
         },
         archivedHighestRevives(){
-            if (this.topStat.length == 0) return 
-            return this.topStat.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
+            if (this.archivedTopStats.length == 0) return 
+            return this.archivedTopStats.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         }
     },
     mounted(){
         this.seasonsList.push(
             {
-                topStats: this.topStatsOne,
-                totalStats: this.totalStatsOne
+                // topStats: this.currentTopStats,
+                // totalStats: this.currentTotalStats
             }
         );
     }
