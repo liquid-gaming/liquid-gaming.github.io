@@ -115,8 +115,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{archivedHighestKills.Kills}}</h2>
-                                                    <div class="subheading">Top Kills {{archivedHighestKills.Name}}</div>
+                                                    <h2>{{archivedHighestKills().Kills}}</h2>
+                                                    <div class="subheading">Top Kills {{archivedHighestKills().Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -125,8 +125,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{archivedHighestDeaths.Deaths}}</h2>
-                                                    <div class="subheading">Top Deaths {{archivedHighestDeaths.Name}}</div>
+                                                    <h2>{{archivedHighestDeaths().Deaths}}</h2>
+                                                    <div class="subheading">Top Deaths {{archivedHighestDeaths().Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -135,8 +135,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{archivedHighestRevives.Revives}}</h2>
-                                                    <div class="subheading">Top Revives {{archivedHighestRevives.Name}}</div>
+                                                    <h2>{{archivedHighestRevives().Revives}}</h2>
+                                                    <div class="subheading">Top Revives {{archivedHighestRevives().Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -152,7 +152,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="archivedTopStats" :totalStat="archivedTotalStats"/>
+                                <StatsTables :topStat="archivedTopStat" :totalStat="archivedTotalStat"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
@@ -180,12 +180,9 @@ export default {
     },
     data: function () {
         return {
-            archivedTopStats: archivedTopStats,
-            archivedTotalStats: archivedTotalStats,
-            
-            currentTopStats: currentTopStats,
-            currentTotalStats: currentTotalStats,
-            
+            archivedTopStat: archivedTopStats,
+            archivedTotalStat: archivedTotalStats,
+                        
             // topStatsOne: topStats1,
             // totalStatsOne: totalStats1,
 
@@ -217,16 +214,16 @@ export default {
             return season.topStats.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         },
         archivedHighestKills(){
-            if (this.archivedTopStats.length == 0) return 
-            return this.archivedTopStats.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
+            if (this.archivedTopStat.length == 0) return 
+            return this.archivedTopStat.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
         },
         archivedHighestDeaths(){
-            if (this.archivedTopStats.length == 0) return 
-            return this.archivedTopStats.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
+            if (this.archivedTopStat.length == 0) return 
+            return this.archivedTopStat.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
         },
         archivedHighestRevives(){
-            if (this.archivedTopStats.length == 0) return 
-            return this.archivedTopStats.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
+            if (this.archivedTopStat.length == 0) return 
+            return this.archivedTopStat.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         }
     },
     mounted(){
