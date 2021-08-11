@@ -3,13 +3,13 @@
         "color": "grey",
         "icon": "assignment",
         "title": "First",
-        "content": "To join liquid gaming you must first join our discord! When you join you must then navigate to the new recruit channel and type !liqrecruit.\nDisclaimer: YOU MUST BE 18 TO JOIN THE LIQUID COMMUNITY AS A MEMBER"
+        "content": "To join liquid gaming you must first join our discord! When you join you must then navigate to the #new-recruit-channel and type !liqapply.\nDisclaimer: YOU MUST BE 18 TO JOIN THE LIQUID COMMUNITY AS A MEMBER"
     },
     {
         "color": "#8a6617",
         "icon": "alarm",
         "title": "Second",
-        "content": "You should receive an application from one of our recruiters in a direct message after you typed in the !liqrecruit. Please fill in the application and send a message that you completed it to the recruiter who sent you the application."
+        "content": "You should receive an application from one of our recruiters in a direct message after you typed in the !liqapply. Please fill in the application and send a message that you completed it to the recruiter who sent you the application."
     },
     {
         "color": "#bf5204",
