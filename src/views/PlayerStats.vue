@@ -9,7 +9,7 @@
               Squad Player Stats
             </div>
             <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0">
-                LiQ gaming player stats are updated daily at 6 AM CST. okUse the search bar to search your in game user name and click the top of a column that you want to sort.
+                LiQ gaming player stats are updated daily at 7 AM EST. Use the search bar to search your in game user name and click the top of a column that you want to sort.
                 
                 Seasons will begin Aug 10th 2021 and will run for 3 months. During this time, we will be tracking the statistics listed below and we will be giving out various prizes!
                 Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
