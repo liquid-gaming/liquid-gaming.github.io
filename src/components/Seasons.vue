@@ -114,9 +114,9 @@
                                     <v-flex xs12 sm6 md4 lg3 xl2>
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
-                                                <v-card-text>
-                                                    <h2>{{archivedHighestKills().Kills}}</h2>
-                                                    <div class="subheading">Top Kills {{archivedHighestKills().Name}}</div>
+                                                <v-card-text style="padding-left: 5px;padding-right: 5px;">
+                                                    <h2>7475</h2>
+                                                    <div class="subheading">Top Kills 『LiQ』HarshDonkey</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -125,8 +125,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{archivedHighestDeaths().Deaths}}</h2>
-                                                    <div class="subheading">Top Deaths {{archivedHighestDeaths().Name}}</div>
+                                                    <h2>4858</h2>
+                                                    <div class="subheading">Top Deaths Kossy</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -135,8 +135,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#262626 !important;">
                                                 <v-card-text>
-                                                    <h2>{{archivedHighestRevives().Revives}}</h2>
-                                                    <div class="subheading">Top Revives {{archivedHighestRevives().Name}}</div>
+                                                    <h2>4817</h2>
+                                                    <div class="subheading">Top Revives 0xd34df00d</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -212,18 +212,6 @@ export default {
             let season = this.seasonsList[index];
             if (season.topStats.length == 0) return 
             return season.topStats.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
-        },
-        archivedHighestKills(){
-            if (this.archivedTopStat.length == 0) return 
-            return this.archivedTopStat.reduce((a,b) => Number(a.Kills) > Number(b.Kills) ? a : b)
-        },
-        archivedHighestDeaths(){
-            if (this.archivedTopStat.length == 0) return 
-            return this.archivedTopStat.reduce((a,b) => Number(a.Deaths) > Number(b.Deaths) ? a : b)
-        },
-        archivedHighestRevives(){
-            if (this.archivedTopStat.length == 0) return 
-            return this.archivedTopStat.reduce((a,b) => Number(a.Revives) > Number(b.Revives) ? a : b)
         }
     },
     mounted(){
