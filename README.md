@@ -28,6 +28,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # First is in src/assets/json/mediaLinks.json in the discord object
 # Second is in src/router/index.js and switch it for the discord router
 # Third is in public/discord.html and update it in the meta tag
+# If need be do a search to make sure we didn't miss any
+
+### Updating Team Members
+# Go into the assets/json and open the teamMembers.json
+# this file is written in a certain order to follow the chain of command. It goes like so.
+# Founders, Administration, Advisors, Staff
+# then order them alphabetically.
+# Follow the already written naming for their titles, examples: Administrator, Director_of_Recruitment, Director_of_Rust.
+# Go to the About.vue in the components folder and check the styles to see if there is one there already for the new member's role. If not add a new one with the same name you used for their role
 
 
 ### Updating Player stats
