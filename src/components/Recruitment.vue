@@ -21,7 +21,7 @@
       </v-container>
     </v-flex>
     <v-flex just>
-      <v-row align="left" justify="left" style="margin:0 10px 0 10px">
+      <v-row align="left" justify="left" class="contentRow">
         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
             <v-timeline-item
             v-for="(item, index) in stepsForRecruitment"
@@ -104,5 +104,8 @@ export default {
 .opacity-text{
   opacity: 0.75 !important; 
   margin-top:10px !important;
+}
+.contentRow{
+  margin:0 10px 0 10px !important;
 }
 </style>

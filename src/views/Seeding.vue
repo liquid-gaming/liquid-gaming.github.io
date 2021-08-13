@@ -7,7 +7,7 @@
             <v-flex xs12 sm5 md6 lg8 just>
               <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                   :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                  style="text-align: center">
+                  class="seeding-Center">
                 Seeding
               </div>
               <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
@@ -23,7 +23,7 @@
             <v-flex xs12 sm7 md6 lg4 xl4 just>
               <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                    style="text-align: center">
+                    class="seeding-Center">
                   Al Basrah
               </div>
               <v-hover v-slot:default="{ hover }">
@@ -40,7 +40,7 @@
             <v-flex xs12 sm7 md6 lg4 xl4 just>
               <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                    style="text-align: center">
+                    class="seeding-Center">
                   Rules
               </div>
               <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px; text-align: center">
@@ -65,7 +65,7 @@
             <v-flex xs12 sm7 md6 lg4 xl4 just>
               <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                     :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-                    style="text-align: center">
+                    class="seeding-Center">
                   Mutaha
               </div>
               <v-hover v-slot:default="{ hover }">
@@ -116,5 +116,8 @@ export default {
   .seeding-map{
     border-radius: 20px !important;
     padding:10px 10px 5px 10px !important;
+  }
+  .seeding-Center{
+    text-align: center;
   }
 </style>

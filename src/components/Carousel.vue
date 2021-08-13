@@ -1,5 +1,5 @@
 <template>
-    <div style="background:rgba(100,100,100);">
+    <div class="carouselDiv">
         <v-carousel 
             hide-delimiters 
             cycle
@@ -10,7 +10,7 @@
                 v-for="(item, i) in randomizeArray()"
                 :key="i"
                 :src="item.src"
-                style="opacity: 0.6; background: rgba(100,100,100)"
+                class="carouselItem"
             ></v-carousel-item>
         </v-carousel>
     </div>
@@ -41,4 +41,11 @@ export default {
 }
 </script>
 <style lang="scss">
+.carouselItem{
+  opacity: 0.6; 
+  background: rgba(100,100,100)
+}
+.carouselDiv{
+  background:rgba(100,100,100);
+}
 </style>

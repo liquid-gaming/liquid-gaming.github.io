@@ -64,15 +64,15 @@
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in squadServersList">
-                  <v-flex :key="i" xs12 sm6 md6 lg6 just style="margin-top:10px">
+                  <v-flex :key="i" xs12 sm6 md6 lg6 just class="marginInbetweenSmaller">
                     <Servers :server="server"/>
                   </v-flex>
                 </template>
               </v-layout>
               <v-row>
-                <v-flex xs12 sm6 md6 lg6 style="padding:10px">
+                <v-flex xs12 sm6 md6 lg6 class="paddingInbetween">
                   <v-layout wrap>
-                    <v-container style="margin-top:15px;">
+                    <v-container class="marginInbetween">
                       <v-row align="left" justify="left">
                         <v-col>
                           <div class="display-1 font-weight-bold ">
@@ -91,9 +91,9 @@
                     </template>
                   </v-layout>
                 </v-flex>
-                <v-flex xs12 sm6 md6 lg6 style="padding:10px">
+                <v-flex xs12 sm6 md6 lg6 class="paddingInbetween">
                   <v-layout wrap>
-                    <v-container style="margin-top:15px;">
+                    <v-container class="marginInbetween">
                       <v-row align="left" justify="left">
                         <v-col>
                           <div class="display-1 font-weight-bold ">
@@ -114,7 +114,7 @@
                 </v-flex>
               </v-row>
               <v-layout wrap>
-                <v-container style="margin-top:15px;">
+                <v-container class="marginInbetween">
                   <v-row align="left" justify="left">
                     <v-col>
                       <div class="display-1 font-weight-bold ">
@@ -149,7 +149,7 @@
                   </v-row>
                 </v-container>
                 <template v-for="(server, i) in beyondTheWireServersList">
-                  <v-flex :key="i" xs12 sm6 md6 lg6 just style="margin-top:10px">
+                  <v-flex :key="i" xs12 sm6 md6 lg6 just class="marginInbetweenSmaller">
                     <Servers :server="server"/>
                   </v-flex>
                 </template>
@@ -160,7 +160,7 @@
       </v-card>
     </v-container>
     <v-parallax height="350" :src="secondCarousel" id="home-image"></v-parallax>
-    <v-container class="mt-5 dark black--background" style="margin-bottom:20px;" id="Recruitment">
+    <v-container class="mt-5 dark black--background marginInbetweenBigger" id="Recruitment">
       <Recruitment :stepsForRecruitment="stepsForRecruitment"/>
     </v-container>
      <v-parallax height="350" :src="thirdCarousel" id="home-image"></v-parallax>
@@ -281,5 +281,17 @@ export default {
   .home-text{
     opacity: 0.75 !important; 
     margin-top:10px !important;
+  }
+  .paddingInbetween{
+    padding:10px;
+  }
+  .marginInbetween{
+    margin-top:15px;
+  }
+  .marginInbetweenSmaller{
+    margin-top:10px;
+  }
+  .marginInbetweenBigger{
+    margin-top:20px;
   }
 </style>

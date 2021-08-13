@@ -17,7 +17,7 @@
           </v-flex>
           <v-flex just>
             <template v-for="(server, i) in squadServersList">
-                <v-flex :key="i"  style="margin-top:10px">
+                <v-flex :key="i" class="rulesMargin">
                 <RuleCard :server="server"/>
                 </v-flex>
             </template>
@@ -73,5 +73,8 @@ export default {
   border-radius: 10px !important;
   margin:0 10px 0 10px !important;
   width:100% !important;
+}
+.rulesMargin{
+  margin-top:10px;
 }
 </style>

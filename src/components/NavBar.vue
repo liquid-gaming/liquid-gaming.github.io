@@ -8,10 +8,10 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text><sub style="margin: 0 5px 13px 0;color: aquamarine">UPDATED</sub>Announcements</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text><sub class="updateBadge">UPDATED</sub>Announcements</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/rules" text>Rules</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text><sub style="margin: 0 5px 13px 0;color: aquamarine">UPDATED</sub>Player Stats</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text><sub class="updateBadge">UPDATED</sub>Player Stats</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/liqweekly" text>LiQ Weekly</v-btn>
                 </v-toolbar-items>
@@ -57,7 +57,7 @@
             fab
             fixed bottom right
             @click="toTop"
-            style="background-color: #20cc92 !important"
+            class="backToTop"
           >
             <v-icon>expand_less</v-icon>
           </v-btn>
@@ -137,5 +137,11 @@ export default {
   }
   .icon_transparent{
     background-color: #0cf1a43d !important;
+  }
+  .updateBadge{
+    margin: 0 5px 13px 0;color: aquamarine !important;
+  }
+  .backToTop{
+    background-color: #20cc92 !important;
   }
 </style>

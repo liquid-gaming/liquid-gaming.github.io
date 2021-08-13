@@ -3,7 +3,7 @@
     <v-card
       target="_blank"
       :elevation="hover ? 10 : 5"
-      style="border-radius: 20px; margin:20px 5px 0px 5px;"
+      class="parteonCard"
     >
       <v-row align="left" justify="left">
         <v-flex xs12 sm12 md12 lg6 just>
@@ -48,5 +48,9 @@ export default {
 <style lang="scss" scoped>
 .titleColour {
   color: #e6e6e6;
+}
+.parteonCard{
+  border-radius: 20px; 
+  margin:20px 5px 0px 5px;
 }
 </style>

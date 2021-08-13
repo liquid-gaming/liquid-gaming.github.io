@@ -5,7 +5,7 @@
                 <v-layout row wrap class="justify-center">
                   <v-flex xs12 sm6 md4 lg3 xl2  v-for="(total, index) in totals" :key="index">
                       <v-hover v-slot:default="{ hover }">
-                          <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;background:#303030 !important;">
+                          <v-card class="text-xs-center ma-2 totalNameCard" :elevation="hover ? 5 : 2">
                               <v-card-text>
                                   <h2><AnimatedNumber :number="total"/></h2>
                                   <div class="subheading">Total {{index}}</div>
@@ -85,14 +85,14 @@
     </v-card>
     </v-col>
     <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="70%">
-      <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
+      <v-card class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
       <div class="DivWithScroll">
         <v-layout row wrap class="justify-center">
           <v-flex>
-            <div class="text-xl-center ma-1" style="text-align: center;">
-              <div class="font-weight-bold" style="color: rgba(255, 255, 255, 0.7);font-size:30px" >
+            <div class="text-xl-center ma-1 centerTable">
+              <div class="font-weight-bold dragMeHarder">
                 {{selectedItem.Name}}
               </div>
             </div>
@@ -105,7 +105,7 @@
             <v-layout row wrap class="justify-center">
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
-                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                  <v-card class="text-xs-center ma-2 centerTable" :elevation="hover ? 5 : 2">
                     <v-card-text>
                       <h3>Your KD: {{selectedItem.KD}}</h3>
                     </v-card-text>
@@ -114,7 +114,7 @@
               </v-flex>
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
-                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                  <v-card class="text-xs-center ma-2 centerTable" :elevation="hover ? 5 : 2">
                     <v-card-text>
                       <h3>Average KD: {{averageStats.KD}}</h3>
                     </v-card-text>
@@ -200,14 +200,14 @@
       </div>
     </modal>
     <modal name="stat-modal-mobile" draggable=".stat-card-text" width="70%" height="80%">
-      <v-card style="background-color:#171717;padding:1px !important;text-align:center;" class="dragger">
+      <v-card class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
       <div class="DivWithScroll">
         <v-layout row wrap class="justify-center">
           <v-flex>
-            <div class="text-xl-center ma-1" style="text-align: center;">
-              <div class="font-weight-bold" style="color: rgba(255, 255, 255, 0.7);font-size:30px" >
+            <div class="text-xl-center ma-1 centerTable">
+              <div class="font-weight-bold dragMeHarder">
                 {{selectedItem.Name}}
               </div>
             </div>
@@ -220,7 +220,7 @@
             <v-layout row wrap class="justify-center">
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
-                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                  <v-card class="text-xs-center ma-2 centerTable" :elevation="hover ? 5 : 2">
                     <v-card-text>
                       <h3>Your KD: {{selectedItem.KD}}</h3>
                     </v-card-text>
@@ -229,7 +229,7 @@
               </v-flex>
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
-                  <v-card class="text-xs-center ma-2" :elevation="hover ? 5 : 2" style="text-align: center;">
+                  <v-card class="text-xs-center ma-2 centerTable" :elevation="hover ? 5 : 2">
                     <v-card-text>
                       <h3>Average KD: {{averageStats.KD}}</h3>
                     </v-card-text>
@@ -484,7 +484,10 @@ export default {
     box-shadow: 0 1px 10px 0 rgb(34, 34, 34) !important;
   }
   .dragger{
-    cursor:grab
+    cursor:grab;
+    background-color:#171717;
+    padding:1px !important;
+    text-align:center;
   }
   .dragger:active{
     cursor:grabbing
@@ -511,6 +514,17 @@ export default {
       overflow-x:hidden;
   }
 
+  .centerTable{
+    text-align: center;
+  }
+  .dragMeHarder{
+    color: rgba(255, 255, 255, 0.7);
+    font-size:30px;
+  }
+  .totalNameCard{
+    text-align: center;
+    background:#303030 !important;
+  }
   @media screen and (max-width: 768px) {
     .mobile table.v-table tr {
       max-width: 100%;

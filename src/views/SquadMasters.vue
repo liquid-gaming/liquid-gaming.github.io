@@ -5,14 +5,14 @@
         <v-col align="Left" justify="Left">
           <div :class="{'display-4 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
             :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" 
-            style="text-align: Left">
+            class="mastersAlign">
               Squad Masters!
           </div>
           <v-row>
             <template>
               <v-flex xs12 sm12 md12 lg8 xl7 just>
                 <v-col>
-                  <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: left; font-size:19px !important">
+                  <div class="subtitle-1 mastersText">
                     We are excited to announce that this year we will be apart of the very first Squad Masters Tournament!
                     This is a huge honor and we are very thankful for everyone over at Squad Masters. Our competitive team, along with Shift W, 
                     will be challenging 16 other Squad competitive communities! Things will start up mid march and last 7-8 weeks of pure 
@@ -118,7 +118,12 @@ export default {
     width: 100%;
     height: 100%;
   }
-
+  .mastersAlign{
+    text-align: Left;
+  }
+  .mastersText{
+    opacity: 0.75; margin:10px 0 40px 0; text-align: left; font-size:19px !important;
+  }
 @media screen and (max-width: 750px) {
   .video-container {
     padding-bottom: 75%

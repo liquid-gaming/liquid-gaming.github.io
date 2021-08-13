@@ -7,11 +7,11 @@
           style="text-align: center">
           LiQ Weekly
         </div>
-        <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
+        <div class="subtitle-1 infoText">
           LiQ Gaming wishes to feature user-submitted clips from our game servers. Videos will be uploaded on a weekly basis featuring the previous week's clips. 
           Whether funny, strange, or just downright exciting, please send us your clips for a chance to be featured in next weeks video.
         </div>
-        <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
+        <div class="subtitle-1 infoText">
           To submit a video, please fill out our form here: <a href="https://docs.google.com/forms/d/e/1FAIpQLScaWvGKMrVxq__zt4zBbkHC0wZlsHqAbG_7sJkewIKcCWmUUQ/viewform">Google Form</a>
         </div>
         <div class="video-container">
@@ -55,6 +55,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .infoText{
+    opacity: 0.75; margin:10px 0 40px 0; text-align: center;
   }
 
 @media screen and (max-width: 750px) {

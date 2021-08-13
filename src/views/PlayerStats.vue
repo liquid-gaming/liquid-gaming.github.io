@@ -8,7 +8,7 @@
                  :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
               Squad Player Stats
             </div>
-            <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0">
+            <div class="subtitle-1 playerStat-Text">
                 LiQ gaming player stats are updated daily at 7 AM EST. Use the search bar to search your in game user name and click the top of a column that you want to sort.
                 
                 Seasons will begin Aug 10th 2021 and will run for 3 months. During this time, we will be tracking the statistics listed below and we will be giving out various prizes!
@@ -100,6 +100,9 @@ export default {
       overflow-x:hidden;
   }
 
+  .playerStat-Text{
+    opacity: 0.75; margin:10px 0 40px 0;
+  }
   @media screen and (max-width: 768px) {
     .mobile table.v-table tr {
       max-width: 100%;
@@ -156,5 +159,5 @@ export default {
       height: 40px;
       font-weight: bold;
     }
-    }
+  }
 </style>

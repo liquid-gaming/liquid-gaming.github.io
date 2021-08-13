@@ -1,6 +1,6 @@
 <template>
 <v-hover v-slot:default="{ hover }">
-  <v-card target="_blank" :elevation="hover ? 10 : 5" style="border-radius: 20px; margin:5px;padding:5px" max-width="950px" >
+  <v-card target="_blank" :elevation="hover ? 10 : 5" class="serverCard" max-width="950px" >
     <v-card-text>
       <v-row align="left" justify="left">
         <v-col>
@@ -38,8 +38,8 @@
         </template>
       </v-layout>
     </v-card-text>
-    <div v-if="server.mapVoteCommands != null" style="margin:3px">
-      <v-expansion-panels style="border-radius: 10px;">
+    <div v-if="server.mapVoteCommands != null" class="serverInfoCard">
+      <v-expansion-panels class="serverExpantionCard">
         <v-expansion-panel>
           <v-expansion-panel-header class="titleColour">Map Vote Commands</v-expansion-panel-header>
           <v-expansion-panel-content>
@@ -62,9 +62,9 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </div>
-    <div v-else style="padding:15px"></div>
-    <div style="margin:3px">
-      <v-expansion-panels style="border-radius: 10px;" v-if="server.rules != undefined">
+    <div v-else class="serverNothingCard"></div>
+    <div class="serverInfoCard">
+      <v-expansion-panels class="serverExpantionCard" v-if="server.rules != undefined">
         <v-expansion-panel>
           <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
@@ -136,5 +136,19 @@ export default {
 }
  ::v-deep.v-expansion-panel{
   background:#262626 !important;
+}
+.serverCard{
+  border-radius: 20px; 
+  margin:5px;
+  padding:5px
+}
+.serverInfoCard{
+  margin:3px
+}
+.serverExpantionCard{
+  border-radius: 10px;
+}
+.serverNothingCard{
+  padding:15px;
 }
 </style>

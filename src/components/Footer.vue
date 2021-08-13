@@ -21,10 +21,10 @@
                 <v-icon size="24px">{{ media.icon }}</v-icon>
               </v-btn>
               <div>
-                <a target="_blank" :href="squadLink.link" width="75px !important"><img src="@/assets/squad_white.png" class="justify-center" style="margin:3px 10px 0 10px" width="75px"></a>
+                <a target="_blank" :href="squadLink.link" width="75px !important"><img src="@/assets/squad_white.png" class="justify-center squadLink" width="75px"></a>
               </div>              
               <div>
-                <a target="_blank" :href="minecraftLink.link" width="75px !important"><img src="@/assets/minecraft_logo.jpg" class="justify-center" style="margin:5px 10px 0 10px" width="45px"></a>
+                <a target="_blank" :href="minecraftLink.link" width="75px !important"><img src="@/assets/minecraft_logo.jpg" class="justify-center minecraftLink" width="45px"></a>
               </div>              
             </v-row>
           </v-flex>
@@ -35,12 +35,12 @@
 
       <v-divider></v-divider>
 
-      <v-card-text class="white--text" style="padding-bottom:0;">
+      <v-card-text class="white--text footerName">
         <strong>LiQ Gaming</strong>
       </v-card-text>
-      <v-card-text class="white--text" style="opacity:0.3;font-size:12px">
+      <v-card-text class="rights white--text">
         @Copyright 2019-{{ new Date().getFullYear() }}<br>
-        <span style="font-style: italic;">
+        <span class="italicFooter">
           All rights reserved. Powered by these fists. Like the website? Contact our Technical Support on our discord for more info.
         </span>
       </v-card-text>
@@ -75,5 +75,22 @@ export default {
 <style>
   .link{
     color:#FFFFFF !important
+  }
+
+  .squadLink{
+    margin:3px 10px 0 10px !important;
+  }
+  .minecraftLink{
+    margin:5px 10px 0 10px !important;
+  }
+  .footerName{
+    padding-bottom:0 !important;
+  }
+  .rights{
+    opacity:0.3 !important;
+    font-size:12px !important;
+  }
+  .italicFooter{
+    font-style: italic;
   }
 </style>

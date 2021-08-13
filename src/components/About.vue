@@ -37,9 +37,9 @@
         <v-spacer></v-spacer>
         <template>
             <v-flex xs12 sm7 md6 lg4 xl3 just>
-                <v-card style="border-radius: 20px;">
+                <v-card class="discordCard">
                     <div>
-                        <v-layout wrap my-5 style="margin: 15px 0 0 0 !important; height: 400px; width:300px;">
+                        <v-layout wrap my-5 class="discordLayout">
                             <v-flex justify-center class="mt-2">
                                 <v-layout wrap>
                                     <div>
@@ -67,7 +67,7 @@
                                     <v-icon color="primary">gavel</v-icon>
                                 </template>
                                 <v-flex v-for="(rule, index) in discord.rules" :key="index">
-                                    <v-card class="card-container" style="margin:7px;background:#262626;">
+                                    <v-card class="card-container discordRules">
                                         <v-card-text class="px-4">
                                             <v-card-title>
                                                 <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
@@ -117,6 +117,19 @@ export default {
 .flex.xl3{
     flex-basis: 20% !important;
 }
+.discordCard{
+    border-radius: 20px;
+}
+.discordLayout{
+    margin: 15px 0 0 0 !important; 
+    height: 400px; 
+    width:300px;
+}
+.discordRules{
+    margin:7px;
+    background:#262626;
+}
+
 .Founder{
     color: mix(#f3482a, grey) !important;
 }
