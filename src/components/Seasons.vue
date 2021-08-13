@@ -217,8 +217,8 @@ export default {
     mounted(){
         this.seasonsList.push(
             {
-                // topStats: this.currentTopStats,
-                // totalStats: this.currentTotalStats
+                // topStats: this.topStatsOne,
+                // totalStats: this.totalStatsOne
             }
         );
     }
