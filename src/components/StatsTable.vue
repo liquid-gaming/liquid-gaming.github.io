@@ -130,7 +130,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -149,7 +149,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -167,7 +167,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -245,7 +245,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -264,7 +264,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -282,7 +282,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -300,7 +300,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="sms"
-                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
+                      :url="sharing.url + selectedItem.ID + '&tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -396,9 +396,18 @@ export default {
         },
       }
   },
+  created()
+  {
+    this.urlSearchParam = this.$route.query.username;
+    if(this.urlSearchParam != null || this.urlSearchParam != ''){
+      var player = this.players.find(o=>o.ID == this.urlSearchParam);
+      if(player != undefined || player != null){
+        this.search = player.Name;
+      }
+    }
+  },
   computed: {
     itemsWithIndex() {
-      console.log(this.tab)
       return this.players.map(
         (players, index) => ({
           ...players,
@@ -431,7 +440,7 @@ export default {
       this.selectedItem = false
     },
     doCopy: function () {
-      this.$copyText(this.sharing.url + this.selectedItem.ID + '?tab=' + this.tab)
+      this.$copyText(this.sharing.url + this.selectedItem.ID + '&tab=' + this.tab)
     }
   },
   mounted(){
@@ -446,13 +455,6 @@ export default {
     this.averageStats.Wounds = Math.round((this.totals.wounds / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.Revives = Math.round((this.totals.revives / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
-    this.urlSearchParam = this.$route.query.username;
-    if(this.urlSearchParam != null || this.urlSearchParam != ''){
-      var player = this.players.find(o=>o.ID == this.urlSearchParam);
-      if(player != undefined || player != null){
-        this.search = player.Name;
-      }
-    }
   }
 };
 
