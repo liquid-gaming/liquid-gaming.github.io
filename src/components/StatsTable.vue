@@ -399,7 +399,7 @@ export default {
   created()
   {
     this.urlSearchParam = this.$route.query.username;
-    if(this.urlSearchParam != null || this.urlSearchParam != ''){
+    if(this.tab == parseInt(this.$route.query.tab) && (this.urlSearchParam != null || this.urlSearchParam != '')){
       var player = this.players.find(o=>o.ID == this.urlSearchParam);
       if(player != undefined || player != null){
         this.search = player.Name;

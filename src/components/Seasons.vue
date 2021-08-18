@@ -5,13 +5,13 @@
                     <template>
                         <v-tabs grow center-active v-model="tab" align-with-title>
                         <v-tabs-slider></v-tabs-slider>
-                            <v-tab>
+                            <v-tab v-model="tab">
                                 Current Season
                             </v-tab>
                             <!-- <v-tab v-for="index in seasons" :key="index.Season">
                                 Season {{ index.Season }}
                             </v-tab> -->
-                            <v-tab>
+                            <v-tab v-model="tab">
                                 Before Times
                             </v-tab>
                         </v-tabs>
@@ -221,7 +221,7 @@ export default {
                 // totalStats: this.totalStatsOne
             }
         );
-        this.tab = this.$route.query.tab;
+        this.tab = parseInt(this.$route.query.tab);
     }
 }
 </script>
