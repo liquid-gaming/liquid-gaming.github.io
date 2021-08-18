@@ -130,7 +130,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -149,7 +149,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -167,7 +167,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -245,7 +245,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="facebook"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -264,7 +264,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="twitter"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -282,7 +282,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="whatsapp"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -300,7 +300,7 @@
                   <v-layout row wrap class="justify-center">
                     <ShareNetwork
                       network="sms"
-                      :url="sharing.url + selectedItem.ID"
+                      :url="sharing.url + selectedItem.ID + '?tab=' + this.tab"
                       :title="sharing.title"
                       :description="sharing.description"
                       :hashtags="sharing.hashtags"
@@ -345,7 +345,8 @@ export default {
   name: "seeding",
     props: { 
         topStat: {},
-        totalStat: {}
+        totalStat: {},
+        tab: Number
         },
   components: {
     BarChart,
@@ -397,6 +398,7 @@ export default {
   },
   computed: {
     itemsWithIndex() {
+      console.log(this.tab)
       return this.players.map(
         (players, index) => ({
           ...players,
@@ -429,7 +431,7 @@ export default {
       this.selectedItem = false
     },
     doCopy: function () {
-      this.$copyText(this.sharing.url + this.selectedItem.ID)
+      this.$copyText(this.sharing.url + this.selectedItem.ID + '?tab=' + this.tab)
     }
   },
   mounted(){

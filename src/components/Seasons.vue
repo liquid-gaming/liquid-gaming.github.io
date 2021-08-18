@@ -54,7 +54,7 @@
                                     </v-flex>
                                 </v-layout>
                                 
-                                <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStats"/>
+                                <StatsTables :topStat="seasonsList[0].topStats" :totalStat="seasonsList[0].totalStats" :tab="tab"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
@@ -103,7 +103,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat"/>
+                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat" :tab="tab"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item> -->
@@ -152,7 +152,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="archivedTopStat" :totalStat="archivedTotalStat"/>
+                                <StatsTables :topStat="archivedTopStat" :totalStat="archivedTotalStat" :tab="tab"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
@@ -187,7 +187,7 @@ export default {
             // totalStatsOne: totalStats1,
 
             seasons: seasons,
-            tab: null,
+            tab: 0,
             seasonsList: [
                 {
                     topStats: currentTopStats,
@@ -221,6 +221,7 @@ export default {
                 // totalStats: this.totalStatsOne
             }
         );
+        this.tab = this.$route.query.tab;
     }
 }
 </script>
