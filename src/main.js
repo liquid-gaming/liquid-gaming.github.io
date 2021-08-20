@@ -10,6 +10,7 @@ import VueMobileDetection from 'vue-mobile-detection'
 import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
 import VueClipboard from 'vue-clipboard2'
+import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.use(VueClipboard)
@@ -30,6 +31,8 @@ Vue.use(VueAnalytics, {
   id: 'UA-177609629-1',
   router
 })
+
+Vue.prototype.$axios = axios
 
 new Vue({
   router,

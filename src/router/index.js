@@ -8,6 +8,8 @@ import Announcements from '../views/Announcements.vue'
 import LiqWeekly from '../views/LiqWeekly.vue'
 import Rules from '../views/Rules.vue'
 import MapRotation from '../views/MapRotation.vue'
+import SquadMaps from '../views/SquadMaps.vue'
+
 import RouterLinks from '../constants/RouterLinks.js'
 
 Vue.use(VueRouter)
@@ -80,6 +82,11 @@ export default new VueRouter({
       path: '/mapRotation',
       name: 'MapRotation',
       component: MapRotation
+    },
+    {
+      path: '/squadMaps',
+      name: 'SquadMaps',
+      component: SquadMaps
     },
     { path: '*', component: Home }
   ]

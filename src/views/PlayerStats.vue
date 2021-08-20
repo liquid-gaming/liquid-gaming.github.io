@@ -31,7 +31,7 @@ import Seasons from '@/components/Seasons.vue'
 //Json files
 
 export default {
-  name: "seeding",
+  name: "PlayerStats",
   components: {
     Seasons,
     // StatsTables

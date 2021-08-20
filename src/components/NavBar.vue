@@ -12,8 +12,7 @@
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/rules" text>Rules</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text><sub class="updateBadge">UPDATED</sub>Player Stats</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/merch" text>Merch</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/liqweekly" text>LiQ Weekly</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/squadMaps" text>Maps</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
@@ -82,6 +81,7 @@ export default {
         { title: 'Seeding', icon: 'trending_up', route: '/seeding' },
         // { title: 'Map Rotation', icon: 'mdi-map-legend', route: '/mapRotation' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
+        { title: 'Squad Maps', icon: 'map', route: '/squadMaps' },
         { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
         { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
         { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' },

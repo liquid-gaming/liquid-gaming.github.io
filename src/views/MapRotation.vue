@@ -108,7 +108,7 @@
 </template>
 <script>
   export default {
-    name: 'Rules',
+    name: 'MapRotation',
     data () {
       const defaultForm = Object.freeze({
         userName: '',
