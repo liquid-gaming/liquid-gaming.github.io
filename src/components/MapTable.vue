@@ -95,8 +95,9 @@
                       <h3>Team 1 Vehicles</h3>
                       <div v-for="(vic, index) in selectedItem.team1.vehicles" :key="index">
                         <v-row align="center" justify="center">
-                          <p>{{vic.count}}</p>
+                          <p class="vicMargin">{{vic.count}}</p>
                           <img :src="getImgUrl(vic.icon)" v-bind:alt="vic.icon" width="35px">
+                          <p class="vicMargin">{{timeConverter(vic.delay)}}</p>
                         </v-row>
                       </div>
                     </v-card-text>
@@ -111,8 +112,9 @@
                       <h3>Team 2 Vehicles</h3>
                       <div v-for="(vic, index) in selectedItem.team2.vehicles" :key="index">
                         <v-row align="center" justify="center">
-                          <p>{{vic.count}}</p>
+                          <p class="vicMargin">{{vic.count}}</p>
                           <img :src="getImgUrl(vic.icon)" v-bind:alt="vic.icon" width="35px">
+                          <p class="vicMargin">{{timeConverter(vic.delay)}}</p>
                         </v-row>
                       </div>
                     </v-card-text>
@@ -275,6 +277,9 @@ export default {
     getImgUrlJpg(pic) {
       if(pic != undefined)
         return require('../assets/maps/thumbnails/'+pic+".jpg")
+    },
+    timeConverter(n) { 
+      return ((n < 10 ? '0' : '') + n) + ":00";   
     }
   },
 };
@@ -341,6 +346,9 @@ export default {
 
   .vics{
     height:100%;
+  }
+  .vicMargin{
+    margin-bottom: 0px !important;
   }
 
   .centerTable{

@@ -9,7 +9,7 @@
               Squad Maps
             </div>
             <div class="subtitle-1 playerStat-Text">
-                Use the search field to explor the different maps from Squad and click on them to get more information.
+                Use the search field to explore the different maps from Squad and click on them to get more information.
             </div>
             <MapTable />
           </v-col>
