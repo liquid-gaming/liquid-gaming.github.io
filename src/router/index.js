@@ -88,6 +88,11 @@ export default new VueRouter({
       name: 'SquadMaps',
       component: SquadMaps
     },
+    {
+      path: '/mortarCalculator',
+      name: 'MortarCalculator',
+      beforeEnter() {location.href = RouterLinks.MORTAR_CALCULATOR}
+    },
     { path: '*', component: Home }
   ]
 })

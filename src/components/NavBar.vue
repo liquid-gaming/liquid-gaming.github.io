@@ -67,6 +67,7 @@
 <script>
 // import * as easings from "vuetify/es5/services/goto/easing-patterns";
 import { mdiTrophyAward } from '@mdi/js';
+import { mdiCalculator } from '@mdi/js';
 export default {
   data() {
     return {
@@ -82,6 +83,7 @@ export default {
         // { title: 'Map Rotation', icon: 'mdi-map-legend', route: '/mapRotation' },
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
         { title: 'Squad Maps', icon: 'map', route: '/squadMaps' },
+        { title: 'Mortar Calculator', icon: mdiCalculator, route: '/mortarCalculator' },
         { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
         { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
         { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' },
