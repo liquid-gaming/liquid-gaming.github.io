@@ -72,7 +72,7 @@
         </v-data-table>
     </v-card>
     </v-col>
-    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="1200" :max-height="740" width="60%" height="80%">
+    <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="1200" :max-height="740" width="55%" height="70%">
       <v-card class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
@@ -103,7 +103,7 @@
                   </v-card>
                 </v-hover>
               </v-flex>
-              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName">
+              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName" class="imagewidth" width="40%">
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
                   <v-card class="text-xs-center ma-2 centerTable vics" :elevation="hover ? 5 : 2">
@@ -154,7 +154,7 @@
                   </v-card>
                 </v-hover>
               </v-flex>
-              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName">
+              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName" width="60%">
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
                   <v-card class="text-xs-center ma-2 centerTable vics" :elevation="hover ? 5 : 2">
@@ -353,6 +353,10 @@ export default {
   .totalNameCard{
     text-align: center;
     background:#303030 !important;
+  }
+
+  .imagewidth{
+    min-width:300px !important;
   }
   @media screen and (max-width: 768px) {
     .mobile table.v-table tr {
