@@ -35,9 +35,10 @@
                 @click="selectItem(item)"
                 class="clicker"
                 >
+                  <td class="d-block d-sm-table-cell" style="padding-top:6px;"> <img :src="getImgUrlJpg(item.levelName)" v-bind:alt="item.levelName" width="150px"> </td>
                   <td class="d-block d-sm-table-cell"> {{ item.mapName }}</td>
                   <td class="d-block d-sm-table-cell"> {{ item.gamemode + " " + item.layerVersion }}</td>
-                  <td class="d-block d-sm-table-cell"> {{ item.rawName }}</td>
+                  <td class="d-block d-sm-table-cell"> {{ item.levelName }}</td>
                   <td class="d-block d-sm-table-cell"> {{ item.team1.faction }}</td>   
                   <td class="d-block d-sm-table-cell"> {{ item.team1.tickets }}</td>   
                   <td class="d-block d-sm-table-cell"> {{ item.team2.faction }}</td>   
@@ -54,10 +55,11 @@
                 >
                 <td>
                 <ul class="flex-content">
+                    <li class="flex-item"><img :src="getImgUrlJpg(item.levelName)" v-bind:alt="item.levelName"></li>
                     <li class="flex-item">Name: {{ item.mapName }}</li>
                     <br>
                     <li class="flex-item">Game Mode: {{ item.gamemode + " " + item.layerVersion }}</li>
-                    <li class="flex-item">Raw Name: {{ item.rawName }}</li>
+                    <li class="flex-item">Level Name: {{ item.levelName }}</li>
                     <li class="flex-item">Team 1:  {{ item.team1.faction }}</li>   
                     <li class="flex-item">T1 Tickets:  {{ item.team1.tickets }}</li>   
                     <li class="flex-item">Team 2:  {{ item.team2.faction }}</li>   
@@ -101,7 +103,7 @@
                   </v-card>
                 </v-hover>
               </v-flex>
-              <img :src="getImgUrlJpg(selectedItem.rawName)" v-bind:alt="selectedItem.rawName">
+              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName">
               <v-flex>
                 <v-hover v-slot:default="{ hover }">
                   <v-card class="text-xs-center ma-2 centerTable vics" :elevation="hover ? 5 : 2">
@@ -135,6 +137,41 @@
             </div>
           </v-flex>
         </v-layout>
+        <v-container class="my-2">
+            <v-layout row wrap class="justify-center">
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2 centerTable vics" :elevation="hover ? 5 : 2">
+                    <v-card-text>
+                      <h3>Team 1 Vehicles</h3>
+                      <div v-for="(vic, index) in selectedItem.team1.vehicles" :key="index">
+                        <v-row align="center" justify="center">
+                          <p>{{vic.count}}</p>
+                          <img :src="getImgUrl(vic.icon)" v-bind:alt="vic.icon" width="35px">
+                        </v-row>
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+              <img :src="getImgUrlJpg(selectedItem.levelName)" v-bind:alt="selectedItem.levelName">
+              <v-flex>
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="text-xs-center ma-2 centerTable vics" :elevation="hover ? 5 : 2">
+                    <v-card-text>
+                      <h3>Team 2 Vehicles</h3>
+                      <div v-for="(vic, index) in selectedItem.team2.vehicles" :key="index">
+                        <v-row align="center" justify="center">
+                          <p>{{vic.count}}</p>
+                          <img :src="getImgUrl(vic.icon)" v-bind:alt="vic.icon" width="35px">
+                        </v-row>
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-flex>
+            </v-layout>
+        </v-container> 
       </div>
     </modal>
     </div>
@@ -155,9 +192,10 @@ export default {
         pagination: {},
         isMobile: false,
         headers: [
+          { text: 'Image', value: 'image' },
           { text: 'Layer Name', value: 'mapName' },
           { text: 'Game Mode', value: 'gamemode' },
-          { text: 'Raw Name', value: 'rawName' },
+          { text: 'Level Name', value: 'levelName' },
           { text: 'Team 1', value: 'team1.faction' },
           { text: 'Tickets', value: 'team1.tickets' },
           { text: 'Team 2', value: 'team2.faction' },
@@ -172,7 +210,10 @@ export default {
     this.$axios
         .get('https://raw.githubusercontent.com/Squad-Wiki-Editorial/squad-wiki-pipeline-map-data/master/completed_output/_Current%20Version/finished.json')
         .then(response => {
-          this.layers = response.data.Maps
+          this.layers = response.data.Maps.filter(function (el) {
+            return el != null;
+          });
+
           for (let layer = 0; layer < this.layers.length; layer++) {
             const element = this.layers[layer];
 
