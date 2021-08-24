@@ -213,8 +213,12 @@ export default {
         .get('https://raw.githubusercontent.com/Squad-Wiki-Editorial/squad-wiki-pipeline-map-data/master/completed_output/_Current%20Version/finished.json')
         .then(response => {
           this.layers = response.data.Maps.filter(function (el) {
-            return el != null;
+            return el != null && el.levelName != "Helicopter_Tutorial" && el.levelName != "Infantry_Tutorial";
           });
+
+          // for (let index = 0; index < this.layers.length; index++) {
+          //   const element = this.layers[index];
+          // }
 
           for (let layer = 0; layer < this.layers.length; layer++) {
             const element = this.layers[layer];
@@ -275,8 +279,27 @@ export default {
       return require('../assets/icons/'+pic+".png")
     },
     getImgUrlJpg(pic) {
-      if(pic != undefined)
-        return require('../assets/maps/thumbnails/'+pic+".jpg")
+      if(pic != undefined){
+        if(pic.includes("Fools_Road") && !pic.includes("CAF")){
+            pic = pic.slice(0,5) + pic.slice(6);
+        }
+        if(pic.includes("FoolsRoad_Invasion") && !pic.includes("CAF")){
+            pic = pic.slice(0,19) + pic.slice(20);
+        }
+        if(pic.includes("Jensens_Range_v1")){
+            pic = "JensensRange_GB-MIL";
+        }
+        if(pic.includes("Jensens_Range_v2")){
+            pic = "JensensRange_MEA-INS";
+        }
+        if(pic.includes("Jensens_Range_v3")){
+            pic = "JensensRange_US-RUS";
+        }
+        if(pic.includes("Kokan_Valley") && !pic.includes("CAF")){
+            pic = pic.slice(0,5) + pic.slice(12);
+        }
+        return 'https://raw.githubusercontent.com/Squad-Wiki-Editorial/squad-wiki-pipeline-map-data/master/completed_output/_Current%20Version/images/'+pic+".jpg";
+      }
     },
     timeConverter(n) { 
       return ((n < 10 ? '0' : '') + n) + ":00";   
