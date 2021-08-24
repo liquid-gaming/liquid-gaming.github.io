@@ -292,11 +292,33 @@ export default {
         if(pic.includes("Jensens_Range_v2")){
             pic = "JensensRange_MEA-INS";
         }
-        if(pic.includes("Jensens_Range_v3")){
-            pic = "JensensRange_US-RUS";
+        if(pic.includes("Jensens_Range_v4")){
+            pic = "CAF_JensensRange_CAF-RUS";
+        }
+        if(pic.includes("Logar_Valley") && !pic.includes("CAF")){
+            pic = pic.slice(0,5) + pic.slice(12);
         }
         if(pic.includes("Kokan_Valley") && !pic.includes("CAF")){
             pic = pic.slice(0,5) + pic.slice(12);
+        }
+        if(pic.includes("CAF_Al_Basrah")){
+            pic = pic.slice(0,6) + pic.slice(7);
+        }
+        if(pic.includes("Tallil_Outskirts") && !pic.includes("CAF")){
+            pic = pic.slice(0,7) + pic.slice(17);
+        }
+        if(pic.includes("CAF_Manic-5")){
+            pic = pic.slice(0,9) + pic.slice(11);
+            console.log(pic)
+        }
+        if(pic.includes("Lashkar_Valley") && !pic.includes("CAF")){
+            pic = pic.slice(0,7) + pic.slice(8);
+        }
+        if(pic.includes("Logar_Valley") && !pic.includes("CAF")){
+            pic = pic.slice(0,5) + pic.slice(12);
+        }
+        if(pic.includes("CAF_Goose_Bay")){
+            pic = pic.slice(0,9) + pic.slice(10);
         }
         return 'https://raw.githubusercontent.com/Squad-Wiki-Editorial/squad-wiki-pipeline-map-data/master/completed_output/_Current%20Version/images/'+pic+".jpg";
       }
