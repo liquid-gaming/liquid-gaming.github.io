@@ -19,6 +19,9 @@
   </div>
 </template>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5066396905611685"
+     crossorigin="anonymous"></script>
+
 <script>
 // @ is an alias to /src
 import MapTable from '@/components/MapTable.vue'
