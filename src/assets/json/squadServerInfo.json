@@ -57,6 +57,10 @@
         {
           "title":"Intentional Teamkilling will not be tollerated",
           "description":"Apologize for all teamkills in all chat."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
         }
       ]                  
     },
@@ -137,6 +141,10 @@
         {
           "title":"Intentional Teamkilling will not be tollerated",
           "description":"Apologize for all teamkills in all chat."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
         }
       ]                  
     },
@@ -193,6 +201,10 @@
         {
           "title":"No unarmed kits on a full-pop server",
           "description":"When the server is populated, you are not allowed to have an unarmed kit."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
         }
       ]                  
     },
@@ -209,6 +221,10 @@
         {
           "title":"DON'T BE AN ASSHAT or TROLL.",
           "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
         }
       ]                  
     }

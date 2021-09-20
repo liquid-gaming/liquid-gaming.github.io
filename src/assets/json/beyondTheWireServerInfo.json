@@ -51,6 +51,10 @@
       {
         "title":"No unarmed kits on a full-pop server",
         "description":"When the server is populated, you are not allowed to have an unarmed kit."
+      },
+      {
+        "title":"No Self Promoting",
+        "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
       }
     ]                  
   }
