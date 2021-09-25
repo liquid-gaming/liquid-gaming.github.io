@@ -104,13 +104,7 @@
             [
                 {
                     "name": "Director_of_Rust"
-                }
-            ]
-    },
-    {
-        "name": "Binx",
-        "roles":
-            [
+                },
                 {
                     "name": "Director_of_Squad"
                 }
