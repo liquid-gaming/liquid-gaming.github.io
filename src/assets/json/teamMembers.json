@@ -99,6 +99,15 @@
             ]
     },  
     {
+        "name": "Too Many Cooks",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Arma"
+                }
+            ]
+    },
+    {
         "name": "Basa (Doc)",
         "roles":
             [
@@ -111,11 +120,20 @@
             ]
     },
     {
-        "name": "IAmUBro",
+        "name": "E10",
         "roles":
             [
                 {
-                    "name": "Director_of_Recruitment"
+                    "name": "Assistant_Director_of_Squad"
+                }
+            ]
+    },
+    {
+        "name": "Tiberius",
+        "roles":
+            [
+                {
+                    "name": "Assistant_Director_of_Recruitment"
                 }
             ]
     },
@@ -129,20 +147,11 @@
             ]
     },
     {
-        "name": "Too Many Cooks",
+        "name": "IAmUBro",
         "roles":
             [
                 {
-                    "name": "Director_of_Arma"
-                }
-            ]
-    },
-    {
-        "name": "Tiberius",
-        "roles":
-            [
-                {
-                    "name": "Assistant_Director_of_Recruitment"
+                    "name": "Assistant_Director_of_Competitive"
                 }
             ]
     }

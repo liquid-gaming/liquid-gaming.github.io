@@ -160,6 +160,12 @@ export default {
 .Assistant_Director_of_Recruitment{
     color: mix(#4b0772, grey) !important;
 }
+.Assistant_Director_of_Competitive{
+    color: mix(#7a031f, grey) !important;
+}
+.Assistant_Director_of_Squad{
+    color: rgb(228, 107, 8) !important;
+}
 .Director_of_Competitive{
     color: mix(#7a031f, grey) !important;
 }
