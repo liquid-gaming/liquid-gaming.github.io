@@ -85,7 +85,8 @@
     </v-card>
     </v-col>
     <modal name="stat-modal" draggable=".stat-card-text" :resizable="true" :min-width="350" :min-height="450" :max-width="800" :max-height="740" width="30%" height="70%">
-      <v-card class="dragger">
+      <Pixi />
+      <!-- <v-card class="dragger">
         <div class="stat-card-text">DRAG ME HERE</div>
       </v-card>
       <div class="DivWithScroll">
@@ -197,7 +198,7 @@
               </v-flex>
             </v-layout>
         </v-container> 
-      </div>
+      </div> -->
     </modal>
     <modal name="stat-modal-mobile" draggable=".stat-card-text" width="70%" height="80%">
       <v-card class="dragger">
@@ -334,6 +335,7 @@
 // @ is an alias to /src
 import AnimatedNumber from "@/components/AnimatedNumber.vue"
 import BarChart from '@/components/BarChart'
+import Pixi from "@/components/Pixi.vue"
 //Svg's
 import FacebookSvg from "@/assets/ShareButtonIcons/facebook.svg"
 import ShareThisSvg from "@/assets/ShareButtonIcons/sharethis.svg"
@@ -350,7 +352,8 @@ export default {
         },
   components: {
     BarChart,
-    AnimatedNumber
+    AnimatedNumber,
+    Pixi
   },
   data () {
       return {
