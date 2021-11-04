@@ -63,6 +63,15 @@
             ]
     },
     {
+        "name": "Binx",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
         "name": "CeeJay",
         "roles":
             [
@@ -90,15 +99,6 @@
             ]
     },  
     {
-        "name": "Too Many Cooks",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Arma"
-                }
-            ]
-    },
-    {
         "name": "Basa (Doc)",
         "roles":
             [
@@ -111,11 +111,11 @@
             ]
     },
     {
-        "name": "E10",
+        "name": "Nostradumbass [ween]",
         "roles":
             [
                 {
-                    "name": "Assistant_Director_of_Squad"
+                    "name": "Director_of_Competitive"
                 }
             ]
     },
@@ -129,11 +129,11 @@
             ]
     },
     {
-        "name": "Nostradumbass [ween]",
+        "name": "Too Many Cooks",
         "roles":
             [
                 {
-                    "name": "Director_of_Competitive"
+                    "name": "Director_of_Arma"
                 }
             ]
     }
