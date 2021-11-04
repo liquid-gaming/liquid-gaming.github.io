@@ -8,9 +8,9 @@
                             <v-tab v-model="tab">
                                 Current Season
                             </v-tab>
-                            <!-- <v-tab v-for="index in seasons" :key="index.Season">
+                            <v-tab v-for="index in seasons" :key="index.Season">
                                 Season {{ index.Season }}
-                            </v-tab> -->
+                            </v-tab>
                             <v-tab v-model="tab">
                                 Before Times
                             </v-tab>
@@ -58,7 +58,7 @@
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
-                    <!-- <v-tab-item v-for="(item, index) in seasons" :key="item.Season">
+                    <v-tab-item v-for="(item, index) in seasons" :key="item.Season">
                         <v-card flat>
                             <v-card-text>
                                 <v-layout row wrap class="justify-center">
@@ -66,8 +66,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{item.KillsCount}}</h2>
-                                                    <div class="subheading">Top Kills {{item.TopKills}}</div>
+                                                    <h2>{{highestKills(0).Kills}}</h2>
+                                                    <div class="subheading">Top Kills {{highestKills(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -76,8 +76,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{item.DeathsCount}}</h2>
-                                                    <div class="subheading">Top Deaths {{item.TopDeaths}}</div>
+                                                    <h2>{{highestDeaths(0).Deaths}}</h2>
+                                                    <div class="subheading">Top Deaths {{highestDeaths(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -86,8 +86,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{item.RevivesCount}}</h2>
-                                                    <div class="subheading">Top Revives {{item.TopRevives}}</div>
+                                                    <h2>{{highestRevives(0).Revives}}</h2>
+                                                    <div class="subheading">Top Revives {{highestRevives(0).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -106,7 +106,7 @@
                                 <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat" :tab="tab"/>
                             </v-card-text>
                         </v-card>
-                    </v-tab-item> -->
+                    </v-tab-item>
                     <v-tab-item>
                         <v-card flat>
                             <v-card-text>
@@ -171,8 +171,8 @@ import archivedTotalStats from "@/assets/json/ArchivedStats/total-stats.json"
 import currentTopStats from "@/assets/json/top-stats.json"
 import currentTotalStats from "@/assets/json/total-stats.json"
 
-// import topStats1 from "@/assets/json/SeasonOne/top-stats.json"
-// import totalStats1 from "@/assets/json/SeasonOne/total-stats.json"
+import topStats1 from "@/assets/json/Season1/top-stats.json"
+import totalStats1 from "@/assets/json/Season1/total-stats.json"
 export default {
     name: "Seasons",
     components: {
@@ -183,8 +183,8 @@ export default {
             archivedTopStat: archivedTopStats,
             archivedTotalStat: archivedTotalStats,
                         
-            // topStatsOne: topStats1,
-            // totalStatsOne: totalStats1,
+            topStatsOne: topStats1,
+            totalStatsOne: totalStats1,
 
             seasons: seasons,
             tab: 0,
@@ -217,8 +217,8 @@ export default {
     mounted(){
         this.seasonsList.push(
             {
-                // topStats: this.topStatsOne,
-                // totalStats: this.totalStatsOne
+                topStats: this.topStatsOne,
+                totalStats: this.totalStatsOne
             }
         );
         this.tab = parseInt(this.$route.query.tab);
