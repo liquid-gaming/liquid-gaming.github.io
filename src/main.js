@@ -14,7 +14,13 @@ import axios from 'axios'
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
 Vue.component('loading-overlay', Loading)
+import Ads from 'vue-google-adsense'
 
+Vue.use(require('vue-script2'))
+
+Vue.use(Ads.Adsense)
+Vue.use(Ads.InArticleAdsense)
+Vue.use(Ads.InFeedAdsense)
 Vue.config.productionTip = false
 Vue.use(VueClipboard)
 Vue.use(VueSocialSharing);
