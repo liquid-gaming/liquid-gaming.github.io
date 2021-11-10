@@ -15,14 +15,6 @@
                 Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
                 winners will get Discord tags and be promoted on the server so they can brag about how good they are.
             </div>
-            <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-5066396905611685"
-                data-ad-slot="2156216515"
-                data-auto-format="rspv"
-                data-full-width="">
-              <div overflow=""></div>
-            </amp-ad>
             <Seasons/>
             <!-- <StatsTables :topStat="players" :totalStat="totals"/>--><!-- This will be for the total of them all -->
           </v-col>
