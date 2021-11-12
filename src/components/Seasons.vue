@@ -66,8 +66,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{highestKills(0).Kills}}</h2>
-                                                    <div class="subheading">Top Kills {{highestKills(0).Name}}</div>
+                                                    <h2>{{highestKills(index + 1).Kills}}</h2>
+                                                    <div class="subheading">Top Kills {{highestKills(index + 1).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -76,8 +76,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{highestDeaths(0).Deaths}}</h2>
-                                                    <div class="subheading">Top Deaths {{highestDeaths(0).Name}}</div>
+                                                    <h2>{{highestDeaths(index + 1).Deaths}}</h2>
+                                                    <div class="subheading">Top Deaths {{highestDeaths(index + 1).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -86,8 +86,8 @@
                                         <v-hover v-slot:default="{ hover }">
                                             <v-card class="text-xs-center ma-2 topCards" :elevation="hover ? 5 : 2">
                                                 <v-card-text>
-                                                    <h2>{{highestRevives(0).Revives}}</h2>
-                                                    <div class="subheading">Top Revives {{highestRevives(0).Name}}</div>
+                                                    <h2>{{highestRevives(index + 1).Revives}}</h2>
+                                                    <div class="subheading">Top Revives {{highestRevives(index + 1).Name}}</div>
                                                 </v-card-text>
                                             </v-card>
                                         </v-hover>
@@ -103,7 +103,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStat" :tab="tab"/>
+                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStats" :tab="tab"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
