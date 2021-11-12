@@ -1,5 +1,6 @@
 <template>
 <div>
+    <loading :active="isLoading" :is-full-page="true"/>
     <v-col> 
             <v-container class="my-2">
                 <v-layout row wrap class="justify-center">
@@ -26,7 +27,6 @@
         ></v-text-field>
         </v-card-title>
         <v-data-table
-        v-model="selected"
         :headers="headers"
         :items="itemsWithIndex"
         :search="search"
@@ -341,6 +341,7 @@ import SmsSvg from "@/assets/ShareButtonIcons/sms.svg"
 import TwitterSvg from "@/assets/ShareButtonIcons/twitter.svg"
 import WhatsappSvg from "@/assets/ShareButtonIcons/whatsapp.svg"
 
+
 export default {
   name: "seeding",
     props: { 
@@ -354,6 +355,7 @@ export default {
   },
   data () {
       return {
+        isLoading: true,
         facebookIcon: FacebookSvg,
         shareThisIcon: ShareThisSvg,
         smsIcon: SmsSvg,
@@ -444,6 +446,7 @@ export default {
     }
   },
   mounted(){
+    this.isLoading = true;
     let playersFiltered = [];
     for (let i = 0; i < this.players.length; i++) {
         if (this.players[i].Kills > 10) {
@@ -455,6 +458,7 @@ export default {
     this.averageStats.Wounds = Math.round((this.totals.wounds / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.Revives = Math.round((this.totals.revives / (playersFiltered.length / 2) + Number.EPSILON) * 10) / 10;
     this.averageStats.KD = Math.round((this.averageStats.Kills / this.averageStats.Deaths + Number.EPSILON) * 1000) / 1000;
+    this.isLoading = false;
   }
 };
 

@@ -1,5 +1,19 @@
 ---
 - color: rgb(255 0 0)
+  icon: shield
+  title: Veterans Day
+  date: 2021-11-11
+  content: |-
+    "The veterans of our military services have put their lives on the line to protect the freedoms that we enjoy. 
+    They have dedicated their lives to their country and deserve to be recognized for their commitment."— Judd Gregg. 
+    
+    On this Veterans Day, let us remember the service of our veterans, and their families. We thank you for your 
+    service to our country and you will not be forgotten! To the veterans in the discord, you can access the vets-info 
+    once you obtain the @Military Veteran role, we won't leave you behind on the battlefield and we wont forget you at home, 
+    thank you! 
+
+  images: airforce1.png
+- color: rgb(255 0 0)
   icon: group
   title: Squad Stats Season 2!
   date: 2021-11-03
