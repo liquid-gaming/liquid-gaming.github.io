@@ -103,7 +103,7 @@
                                         </v-hover>
                                     </v-flex>
                                 </v-layout>
-                                <StatsTables :topStat="seasonsList[index + 1].topStats" :totalStat="seasonsList[index + 1].totalStats" :tab="tab"/>
+                                <StatsTables :topStat="seasonsList[item.Season].topStats" :totalStat="seasonsList[item.Season].totalStats" :tab="tab"/>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>

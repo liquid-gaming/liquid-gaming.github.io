@@ -2,8 +2,8 @@
   <div class="home background-image">
     <v-container >
       <v-card class="playerstats-card">
-        <v-row align="left" justify="left">
-          <v-col>
+        <v-row align="center" justify="center">
+          <v-col align="center" justify="center">
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                  :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
               Squad Player Stats
@@ -11,9 +11,13 @@
             <div class="subtitle-1 playerStat-Text">
                 LiQ gaming player stats are updated daily at 7 AM EST. Use the search bar to search your in game user name and click the top of a column that you want to sort.
                 
-                Seasons will begin Aug 10th 2021 and will run for 3 months. During this time, we will be tracking the statistics listed below and we will be giving out various prizes!
+                Seasons are 3 months at a time. During this period, we will be tracking the statistics listed below and we will be giving out various prizes!
                 Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
                 winners will get Discord tags and be promoted on the server so they can brag about how good they are.
+            </div>
+            <div>Time Until Season End:</div>
+            <div style="padding-right: 24px !important;">
+              <Countdown end="February 11, 2022"></Countdown>
             </div>
             <Seasons/>
             <!-- <StatsTables :topStat="players" :totalStat="totals"/>--><!-- This will be for the total of them all -->
@@ -27,6 +31,9 @@
 <script>
 // @ is an alias to /src
 import Seasons from '@/components/Seasons.vue'
+import Countdown from 'vuejs-countdown'
+import seasons from "@/assets/yamls/seasons.yaml"
+
 // import StatsTables from '@/components/StatsTable.vue'
 //Json files
 
@@ -34,11 +41,12 @@ export default {
   name: "PlayerStats",
   components: {
     Seasons,
+    Countdown
     // StatsTables
   },
   data () {
       return {
-        
+        seasons: seasons,
       }
   }
 };

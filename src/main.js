@@ -11,9 +11,9 @@ import VueRouter from 'vue-router'
 import VueSocialSharing from 'vue-social-sharing'
 import VueClipboard from 'vue-clipboard2'
 import axios from 'axios'
-import Loading from 'vue-loading-overlay';
-import 'vue-loading-overlay/dist/vue-loading.css';
-Vue.component('loading-overlay', Loading)
+
+import VueLuxon from "vue-luxon";
+Vue.use(VueLuxon);
 
 Vue.config.productionTip = false
 Vue.use(VueClipboard)

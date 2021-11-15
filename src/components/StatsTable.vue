@@ -1,6 +1,5 @@
 <template>
 <div>
-    <loading :active="isLoading" :is-full-page="true"/>
     <v-col> 
             <v-container class="my-2">
                 <v-layout row wrap class="justify-center">
