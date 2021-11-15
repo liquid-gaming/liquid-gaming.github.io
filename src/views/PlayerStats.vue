@@ -15,7 +15,7 @@
                 Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
                 winners will get Discord tags and be promoted on the server so they can brag about how good they are.
             </div>
-            <div>Time Until Season End:</div>
+            <div>Time Until Season Ends:</div>
             <div style="padding-right: 24px !important;">
               <Countdown end="February 11, 2022"></Countdown>
             </div>
