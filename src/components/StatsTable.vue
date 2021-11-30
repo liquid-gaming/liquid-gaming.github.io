@@ -342,11 +342,16 @@ import WhatsappSvg from "@/assets/ShareButtonIcons/whatsapp.svg"
 
 
 export default {
-  name: "seeding",
+  name: "StatsTable",
     props: { 
         topStat: {},
         totalStat: {},
-        tab: Number
+        tab: Number,
+        archive: {
+          type: Boolean,
+          required: true,
+          default: true
+        }
         },
   components: {
     BarChart,
@@ -436,6 +441,10 @@ export default {
           { draggable: true }
         );
       }      
+      console.log(this.archive)
+      if(this.archive){
+        this.sharing.url = 'https://liqgaming.com/#/archivedplayerstats?username='
+      }
     },
     unSelectItem () {
       this.selectedItem = false

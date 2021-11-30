@@ -9,6 +9,7 @@ import LiqWeekly from '../views/LiqWeekly.vue'
 import Rules from '../views/Rules.vue'
 import MapRotation from '../views/MapRotation.vue'
 import SquadMaps from '../views/SquadMaps.vue'
+import ArchivedPlayerStats from '../views/ArchivedPlayerStats.vue'
 
 import RouterLinks from '../constants/RouterLinks.js'
 
@@ -92,6 +93,11 @@ export default new VueRouter({
       path: '/mortarCalculator',
       name: 'MortarCalculator',
       beforeEnter() {location.href = RouterLinks.MORTAR_CALCULATOR}
+    },
+    {
+      path: '/archivedplayerstats',
+      name: 'ArchivedPlayerStats',
+      component: ArchivedPlayerStats
     },
     { path: '*', component: Home }
   ]

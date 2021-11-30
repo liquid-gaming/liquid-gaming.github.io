@@ -6,23 +6,9 @@
           <v-col align="center" justify="center">
             <div :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" 
                  :style="{'height:100px': $vuetify.breakpoint.smAndUp, 'height:200px': $vuetify.breakpoint.smAndDown}" >
-              Squad Player Stats
+              Archived Squad Player Stats
             </div>
-            <div class="subtitle-1 playerStat-Text">
-                LiQ gaming player stats are updated daily at 7 AM EST. Use the search bar to search your in game user name and click the top of a column that you want to sort.
-                
-                Seasons are 3 months at a time. During this period, we will be tracking the statistics listed below and we will be giving out various prizes!
-                Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!! The winners will need to contact the Squad community managers. In addition to this the 
-                winners will get Discord tags and be promoted on the server so they can brag about how good they are.
-            </div>
-            <div>Time Until Season Ends:</div>
-            <div style="padding-right: 24px !important;">
-              <Countdown end="February 11, 2022"></Countdown>
-            </div>
-            <v-btn router to="/archivedplayerstats"  style="width: 98%;margin-top: 20px !important;" color="#1F2E29">
-              View Previous Seasons
-            </v-btn>
-            <Seasons/>
+            <ArchivedSeasons/>
           </v-col>
         </v-row>
       </v-card>
@@ -32,17 +18,15 @@
 
 <script>
 // @ is an alias to /src
-import Seasons from '@/components/Seasons.vue'
-import Countdown from 'vuejs-countdown'
+import ArchivedSeasons from '@/components/ArchivedSeasons.vue'
 import seasons from "@/assets/yamls/seasons.yaml"
 
 //Json files
 
 export default {
-  name: "PlayerStats",
+  name: "ArchivedPlayerStats",
   components: {
-    Seasons,
-    Countdown
+    ArchivedSeasons,
   },
   data () {
       return {
@@ -166,10 +150,6 @@ export default {
       width: 50%;
       height: 40px;
       font-weight: bold;
-    }
-    .previous-btn{
-      margin: 20px 12px 0px 12px !important;
-      width: 100%;
     }
   }
 </style>
