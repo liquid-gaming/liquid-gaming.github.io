@@ -1,0 +1,247 @@
+[
+    {
+      "name": "『LiQ』Liquid Gaming: Noob Friendly -AAS/RAAS/INV - PTFO",
+      "description":
+        "This is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. It will teach you all the basics so that as you fan out into the wild, you will be better prepared to fit in as a valued player.",
+      "battlemetricId": 7871746,
+      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit?usp=sharing",
+      "rules":[
+        {
+          "title":"HATE SPEECH Is Strictly FORBIDDEN",
+          "description":"Any speech that denigrates a person or group will not be tolerated; Including but not limited to race, sexual orientation, and religion. Any instances of hate speech considered to be offensive or hindering the experience of any player on a LiQuid Gaming Server will result in a ban as determined by a LiQ Admin."
+        },
+        {
+          "title":"All SQUAD LEADERS Must Have A MIC & Squad Leader KIT.",
+          "description":"Squad leaders must be able to effectively communicate with the team and squad using a microphone. Also the squad leader must at all times have a squad leader kit. Severity of circumstances for punishment will be determined by the LiQ admin of the server at that time."
+        },
+        {
+          "title":"If you CREATE a squad you must be the Squad Leader of that squad.",
+          "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
+        },
+        {
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
+        },
+        {
+          "title":"DO NOT Solo Vehicles That Require A CREWMAN Kit.",
+          "description":"Any vehicle that requires a driver/gunner where both seats require a crewman kit. Is applicable under this rule. Handled with a warn/kick method to the discretion of the LiQ admin. All admins must remain cognizant of the probability that a crew member jumped out to repair or the vehicle is returning to main. This does not require administrative action."
+        },
+        {
+          "title":"DO NOT Exploit GAME BUGS Such As a Wall Breach & Invulnerable FOBs.",
+          "description":"Any game bug or exploit that is created, manufactured, or accidentally found by a player and then used to hamper the opposing team's efforts to win the game. Is applicable to this rule and is met with a kick/ban where the severity of the circumstances are determined by the LiQ admin."
+        },
+        {
+          "title":"Players That Are NOT Assigned To a SQUAD Will Be KICKED From The Server.",
+          "description":"Any player that does not immediately join or create a squad when they join the server is subject to a kick from the server under the presumption that they are either AFK or wishing to play unassigned. Generally resulting in a kick but circumstances will be handled by a LiQ admin."
+        },
+        {
+          "title":"DON'T BE AN ASSHAT or TROLL.",
+          "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        },
+        {
+          "title":"DO NOT MINE OR CAMP THE ENEMY MAIN.",
+          "description":"If a player places a mine, positions their vehicle or person in a location where their intent is to kill or destroy enemy vehicles coming from/to the enemy main. Will be considered camping the enemy main and punished under this rule at the discretion of the LiQ admin in a kick/ban."
+        },
+        {
+          "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
+          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen."
+        },
+        {
+          "title":"No intentional heli ramming",
+          "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
+        },
+        {
+          "title":"No unarmed kits on a live server",
+          "description":"When the server is live, you are not allowed to have an unarmed kit."
+        },
+        {
+          "title":"Intentional Teamkilling will not be tolerated",
+          "description":"Apologize for all teamkills in all chat."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+        },
+        {
+          "title":"Politics",
+          "description":"Do not discuss or reference politics or other controversial topics on the server"
+        }
+      ]                  
+    },
+    {
+      "name": "『LiQ』Liquid Gaming: - Map Voting -AAS/RAAS/INV - PTFO",
+      "description":
+        "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
+      "battlemetricId": 7894269,
+      "mapRotationLink": "https://docs.google.com/spreadsheets/d/156pnIhJb3zmoEcwFSx8Kv1AQ0HRzYmI4t0kDfQNmrVE/edit#gid=1466113834",
+      "mapVoteCommands": [
+        {
+          "title": "!mapvote help",
+          "description": "This will show you all the commands for !mapvote."
+        },
+        {
+          "title": "!mapvote results",
+          "description": "This will show you the results of the map voting."
+        },
+        {
+          "title": "!mapvote *Map Name Layer*",
+          "description": "The !mapvote needs to be in the following format shown in this example.\n!mapvote Al Basrah AAS v1\n\nTo view all the current layers for squad please click here: ",
+          "link": "https://docs.google.com/spreadsheets/d/1SiKtpNkOy3Gk52IFue5IacIeRDpB20ONmH3_p_B29_w/edit#gid=368118095"
+        },
+        {
+          "title": "!skipmap",
+          "description": "Use !skipmap to start the vote to skip the current map. The 5 minute countdown will begin and everyone can enter either '+' to vote YES or '-' to vote NO in all chat.\n\nThere needs to be at least 30 YES votes for the map to skip. A NO vote will counter a Yes vote. So if there are 2 No votes, you will need 32 YES votes for it to skip."
+        }
+      ],
+      "rules":[
+        {
+          "title":"HATE SPEECH Is Strictly FORBIDDEN",
+          "description":"Any speech that denigrates a person or group will not be tolerated; Including but not limited to race, sexual orientation, and religion. Any instances of hate speech considered to be offensive or hindering the experience of any player on a LiQuid Gaming Server will result in a ban as determined by a LiQ Admin."
+        },
+        {
+          "title":"All SQUAD LEADERS Must Have A MIC & Squad Leader KIT.",
+          "description":"Squad leaders must be able to effectively communicate with the team and squad using a microphone. Also the squad leader must at all times have a squad leader kit. Severity of circumstances for punishment will be determined by the LiQ admin of the server at that time."
+        },
+        {
+          "title":"If you CREATE a squad you must be the Squad Leader of that squad.",
+          "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
+        },
+        {
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
+        },
+        {
+          "title":"DO NOT Solo Vehicles That Require A CREWMAN Kit.",
+          "description":"Any vehicle that requires a driver/gunner where both seats require a crewman kit. Is applicable under this rule. Handled with a warn/kick method to the discretion of the LiQ admin. All admins must remain cognizant of the probability that a crew member jumped out to repair or the vehicle is returning to main. This does not require administrative action."
+        },
+        {
+          "title":"DO NOT Exploit GAME BUGS Such As a Wall Breach & Invulnerable FOBs.",
+          "description":"Any game bug or exploit that is created, manufactured, or accidently found by a player and then used to hamper the opposing team's efforts to win the game. Is applicable to this rule and is met with a kick/ban where the severity of the circumstances are determined by the LiQ admin."
+        },
+        {
+          "title":"Players That Are NOT Assigned To a SQUAD Will Be KICKED From The Server.",
+          "description":"Any player that does not immediately join or create a squad when they join the server is subject to a kick from the server under the presumption that they are either AFK or wishing to play unassigned. Generally resulting in a kick but circumstances will be handled by a LiQ admin."
+        },
+        {
+          "title":"DON'T BE AN ASSHAT or TROLL.",
+          "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        },
+        {
+          "title":"DO NOT MINE OR CAMP THE ENEMY MAIN.",
+          "description":"If a player places a mine, positions their vehicle or person in a location where their intent is to kill or destroy enemy vehicles coming from/to the enemy main. Will be considered camping the enemy main and punished under this rule at the discretion of the LiQ admin in a kick/ban."
+        },
+        {
+          "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
+          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen."
+        },
+        {
+          "title":"No intentional heli ramming",
+          "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
+        },
+        {
+          "title":"No unarmed kits on a full-pop server",
+          "description":"When the server is populated, you are not allowed to have an unarmed kit."
+        },
+        {
+          "title":"Intentional Teamkilling will not be tolerated",
+          "description":"Apologize for all teamkills in all chat."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+        },
+        {
+          "title":"Politics",
+          "description":"Do not discuss or reference politics or other controversial topics on the server"
+        }
+      ]                  
+    },
+    {
+      "name": "『LiQ』 - New MAPS - Panjwai  - Wake - FR Faction - Liquid Gaming",
+      "description":
+        "LiQ is changing the modded server away from GA and over to the French Faction. Check out our Announcements page by clicking the Announcements tab to learn more!",
+      "battlemetricId": 11237886,
+      "rules":[
+        {
+          "title":"HATE SPEECH Is Strictly FORBIDDEN",
+          "description":"Any speech that denigrates a person or group will not be tolerated; Including but not limited to race, sexual orientation, and religion. Any instances of hate speech considered to be offensive or hindering the experience of any player on a LiQuid Gaming Server will result in a ban as determined by a LiQ Admin."
+        },
+        {
+          "title":"All SQUAD LEADERS Must Have A MIC & Squad Leader KIT.",
+          "description":"Squad leaders must be able to effectively communicate with the team and squad using a microphone. Also the squad leader must at all times have a squad leader kit. Severity of circumstances for punishment will be determined by the LiQ admin of the server at that time."
+        },
+        {
+          "title":"If you CREATE a squad you must be the Squad Leader of that squad.",
+          "description":"When a player clicks to create a squad then they must lead that squad. A warn/kick method is in place for this rule and is up to the discretion of the LiQ admin to determine the severity of the circumstances."
+        },
+        {
+          "title":"LOCKED Squads With Less Than 4 Players Must SPECIFY Their Role; LOGI, TANK, MORTAR.",
+          "description":"Any squad that is locked with less than 4 people must have a specific role specified in the name of that squad. Clans or friends do not count as a specific reason to lock a squad. Handled with a warn/disband/kick method, that is decided on the specific situation by the LiQ admin."
+        },
+        {
+          "title":"DO NOT Solo Vehicles That Require A CREWMAN Kit.",
+          "description":"Any vehicle that requires a driver/gunner where both seats require a crewman kit. Is applicable under this rule. Handled with a warn/kick method to the discretion of the LiQ admin. All admins must remain cognizant of the probability that a crew member jumped out to repair or the vehicle is returning to main. This does not require administrative action."
+        },
+        {
+          "title":"DO NOT Exploit GAME BUGS Such As a Wall Breach & Invulnerable FOBs.",
+          "description":"Any game bug or exploit that is created, manufactured, or accidently found by a player and then used to hamper the opposing team's efforts to win the game. Is applicable to this rule and is met with a kick/ban where the severity of the circumstances are determined by the LiQ admin."
+        },
+        {
+          "title":"Players That Are NOT Assigned To a SQUAD Will Be KICKED From The Server.",
+          "description":"Any player that does not immediately join or create a squad when they join the server is subject to a kick from the server under the presumption that they are either AFK or wishing to play unassigned. Generally resulting in a kick but circumstances will be handled by a LiQ admin."
+        },
+        {
+          "title":"DON'T BE AN ASSHAT or TROLL.",
+          "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        },
+        {
+          "title":"DO NOT MINE OR CAMP THE ENEMY MAIN.",
+          "description":"If a player places a mine, positions their vehicle or person in a location where their intent is to kill or destroy enemy vehicles coming from/to the enemy main. Will be considered camping the enemy main and punished under this rule at the discretion of the LiQ admin in a kick/ban."
+        },
+        {
+          "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
+          "description":"When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad."
+        },
+        {
+          "title":"No intentional heli ramming",
+          "description":"You are not allowed to intentionally hit a helicopter into another helicopter to cause damage or otherwise immobilize it."
+        },
+        {
+          "title":"No unarmed kits on a full-pop server",
+          "description":"When the server is populated, you are not allowed to have an unarmed kit."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+        },
+        {
+          "title":"Politics",
+          "description":"Do not discuss or reference politics or other controversial topics on the server"
+        }
+      ]                  
+    },
+    {
+      "name": "『LiQ』Liquid Gaming: Jensens Test Range",
+      "description":
+        "Our very own Jensens Test Range! Find this server in the Customer Server browser! Have fun!",
+      "battlemetricId": 10425293,
+      "rules":[
+        {
+          "title":"HATE SPEECH Is Strictly FORBIDDEN",
+          "description":"Any speech that denigrates a person or group will not be tolerated; Including but not limited to race, sexual orientation, and religion. Any instances of hate speech considered to be offensive or hindering the experience of any player on a LiQuid Gaming Server will result in a ban as determined by a LiQ Admin."
+        },
+        {
+          "title":"DON'T BE AN ASSHAT or TROLL.",
+          "description":"Under this rule any player found to be intentionally disrupting the flow of gameplay or other player’s experience in the server. Outside of normal gameplay and discussion. Will be met with a warn/kick/ban under the discretion of the LiQ admin."
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+        },
+        {
+          "title":"Politics",
+          "description":"Do not discuss or reference politics or other controversial topics on the server"
+        }
+      ]                  
+    }
+  ]

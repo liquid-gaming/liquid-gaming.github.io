@@ -1,0 +1,40 @@
+[
+    {
+      "name": "LiQuid Gaming Minecraft Server!",
+      "description": "How to join the server:\n  •  Set your game version to 1.16.4 \n  •  Join the server with IP: server2.liqgaming.com:7792",
+      "battlemetricId": 9328894,
+      "rules":[
+        {
+          "title":"Don't be an AssHat"
+        },
+        {
+          "title":"Ender dragon is reserved for a scheduled event"
+        },
+        {
+          "title":"Do not steal, ask before taking stuff"
+        },
+        {
+          "title":"Admins reserve the right to remove you from the server for breaking these rules"
+        },
+        {
+          "title":"General trolling/grieving is forbidden"
+        },
+        {
+          "title":"Racist remarks and or symbols are forbidden"
+        },
+        {
+          "title":"Be in the discord while playing"
+        },
+        {
+          "title":"Lets keep our server looking nice, please replant trees when you cut down"
+        },
+        {
+          "title":"Do not cause issues on the server"
+        },
+        {
+          "title":"No Self Promoting",
+          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+        }
+      ]                  
+    }
+  ]

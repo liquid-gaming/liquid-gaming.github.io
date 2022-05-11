@@ -1,0 +1,51 @@
+{
+    "rules":[
+        {
+          "title":"Treat players and your fellow Admins with respect."
+        },
+        {
+          "title":"Must be 18 to join and be a member."
+        },
+        {
+          "title":"Discriminatory jokes and language, hate speech (which calls out a group by their age, race, gender), etc. is prohibitive."
+        },
+        {
+          "title":"Verbal abuse, insults, or threats towards others will not be tolerated."
+        },
+        {
+          "title":"Friendly banter can escalate quickly, if you are asked to stop. Then stop."
+        },
+        {
+          "title":"Admins must follow the same rules as the players do. You are not “above” the rules that you enforce."
+        },
+        {
+          "title":"Do not post invite links to other server.",
+          "description":"Without permission."
+        },
+        {
+          "title":"Do not use the list of members to PM advertisements."
+        },
+        {
+          "title":"Use the channels for their intended purpose. #general is \nfor general discussion, #squad-talk is for \nsquad etc. If you are unsure, post in #general."
+        },
+        {
+          "title":"No inappropriate nicknames."
+        },
+        {
+          "title":"Admins reserve the right to delete any post."
+        },
+        {
+          "title":"Gore, death, or other inappropriate conetent is prohibited."
+        },
+        {
+          "title":"Do not discuss politics/religion or any other controversial topics."
+        },
+        {
+          "title":"BE RESPECTFUL TO YOUR FELLOW GAMERS! INSIDE AND OUTSIDE OF THE COMMUNITY!"
+        },
+        {
+          "title":"Admin's Right",
+          "description":"All rules are up to an admin’s discretion, if they feel that the actions \nand/or behavior of a person inside of the LiQuid Gaming discord is \n“out of hand” they may use the tools necessary to ensure the \ndiscord remains in a state followed by the rules above."
+        }
+    ]
+}

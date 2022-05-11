@@ -1,0 +1,140 @@
+[
+    {
+        "name": "Almtree",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Apache1",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Budge",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Chase",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "SuperFlanker",
+        "roles":
+            [
+                {
+                    "name": "Founder"
+                }
+            ]
+    },
+    {
+        "name": "Got2bhockey",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
+                }
+            ]
+    },
+    {
+        "name": "Kibz",
+        "roles":
+            [
+                {
+                    "name": "Administrator"
+                }
+            ]
+    },
+    {
+        "name": "Binx",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "CeeJay",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Chaoth3ch",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },
+    {
+        "name": "Shaka",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },  
+    {
+        "name": "Basa (Doc)",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Rust"
+                },
+                {
+                    "name": "Director_of_Squad"
+                }
+            ]
+    },
+    {
+        "name": "Θscar Mike",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Competitive"
+                }
+            ]
+    },
+    {
+        "name": "Tiberius",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Recruitment"
+                }
+            ]
+    },
+    {
+        "name": "Too Many Cooks",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Arma"
+                }
+            ]
+    }
+]

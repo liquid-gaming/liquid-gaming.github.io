@@ -1,0 +1,198 @@
+---
+- color: blue
+  icon: ac_unit
+  title: SQUAD WINTER SKIRMISH
+  date: 2021-12-05
+  content: |-
+    SQUAD WINTER SKIRMISH IS BEGINNING TOMORROW AT 19 UTC! presented by Shift W (EXO / LiQ / KD / ACM)
+
+    https://discord.gg/VKBkegTRfj
+
+    Come watch WEEK 1 action! 
+    Week 1 :  December 5, 2021 2:00 PM
+
+
+    SPiT vs [1st] & [P²]
+
+    Caster(s) : 
+    JGango  (English)
+    Streaming link: https://www.twitch.tv/gangstergaming__
+
+    9A ♠️ Zeke & Evz  (English)
+    Streaming link: https://twitch.tv/zekillez
+
+
+    Shift W vs SPM & TP
+
+    Caster(s) :
+    Nutsz (English)
+    Streaming link: https://www.twitch.tv/itsnutsz
+
+    Wookie (English)
+    Streaming link: https://www.twitch.tv/xpickleg
+
+- color: rgb(255 0 0)
+  icon: shield
+  title: Veterans Day
+  date: 2021-11-11
+  content: |-
+    "The veterans of our military services have put their lives on the line to protect the freedoms that we enjoy. 
+    They have dedicated their lives to their country and deserve to be recognized for their commitment."— Judd Gregg. 
+    
+    On this Veterans Day, let us remember the service of our veterans, and their families. We thank you for your 
+    service to our country and you will not be forgotten! To the veterans in the discord, you can access the vets-info 
+    once you obtain the @Military Veteran role, we won't leave you behind on the battlefield and we wont forget you at home, 
+    thank you! 
+
+  images: airforce1.png
+- color: rgb(255 0 0)
+  icon: group
+  title: Squad Stats Season 2!
+  date: 2021-11-03
+  content: |-
+    The end of the first LiQ Squad Season is almost here and the statistics are amazing!
+    So far we have had over 900,000 kills, over 1 million deaths and 1.3 million wounds
+
+    It is time for the Prizes to be announced.
+
+    The top player in their category will receive an exclusive LIQ Dog tag with their username what category they were top in.
+
+    For kills, there will also be additional rewards for the top three players:
+    1st place player will receive a AAA game of their choice up to a value of $60 and LIQ Merch to the value of $40
+    2nd place will receive a AAA game of their choice up to a value of $60 and LIQ Merch to the value of $25
+    3rd place will get LIQ Merch to the value of $25
+
+    We will also be donating $200 to the Operation Supply Drop charity which has been supporting troops since 2010.
+
+    Get ready for SEASON TWO which starts November 13th! 
+
+  images: season2.png
+- color: rgb(66, 245, 242)
+  icon: group
+  title: Squad Seasons!
+  date: 2021-08-10
+  content: |-
+    Today LiQ Administration and staff are proud to announce the start of Liquid Gaming's Squad SEASONS!
+
+    Seasons will begin Aug 10th and will run for 3 months. During this time we will be tracking the all statistics listed below and the top performers of each category will be eligible for prizes.
+
+    The Following stats will be tracked:
+    - Kills
+    - Deaths
+    - Revives
+    - Time played!
+
+    Potential rewards range from White-Lists to Game Giveaways and LIQ Merch!!!!!
+
+    At the end of the season an announcement will be made on our website (changes coming soon) and in discord, listing all the winners. The winners will need to contact the Squad community managers for prizes. In addition to this the winners will get special discord tags and will be promoted on the server so they can brag about how good they are.
+
+    You will be able to track your status in our discord #player-stats and on our website (updated weekly)
+
+    More information will be announced in the coming weeks!
+
+    Get out there and have fun! and enjoy the first season!
+- color: rgb(35 135 255)
+  icon: local_shipping
+  title: Armor Claim Rule Change
+  date: 2021-06-08
+  content: |-
+    Hello all we've made a change to our vehicle claim rules on all of our squad servers effective immediately.
+    The new rule reads:
+
+    "Squads NAMED after a vehicle get PRIORITY for that vehicle. Only ONE vehicle type allowed per squad. Armor (generic) gets leftovers."
+
+    With this rule change, we will no longer allow for double vehicle claims such as BRAD/TANK, BMP/TANK, STRYKER/MRAP, etc. As another reminder, squads named ARMOR will lose claim if any other squad has a more specific claim over the vehicle.
+- color: rgb(255, 196, 0)
+  icon: groups
+  title: Squad Server Whitelist Giveaway!
+  date: 2021-06-10
+  content: |-
+    Thanks to the generous donation of 『LiQ』Jonboy  we are proud to announce we will be running a few giveaways in our discord in the #community-giveaway channel. 
+    These giveaway prizes will be whitelisted slots of varying length on the LiQ squad servers. These whitelisted slots will allow you to skip to the front of the queue and
+    get right to the action on any of our squad servers! Giveaway will end in one week so sign up now for your chance to win!
+- color: rgb(35 135 255)
+  icon: local_shipping
+  title: Armor Claim Rule Change
+  date: 2021-06-08
+  content: |-
+    Hello all we've made a change to our vehicle claim rules on all of our squad servers effective immediately.
+    The new rule reads:
+
+    "Squads NAMED after a vehicle get PRIORITY for that vehicle. Only ONE vehicle type allowed per squad. Armor (generic) gets leftovers."
+
+    With this rule change, we will no longer allow for double vehicle claims such as BRAD/TANK, BMP/TANK, STRYKER/MRAP, etc. As another reminder, squads named ARMOR will lose claim if any other squad has a more specific claim over the vehicle.
+- color: rgb(255 0 0)
+  icon: mdi-youtube
+  title: Introducing LiQ Weekly!
+  date: 2021-05-18
+  content: |-
+    We are proud to announce a new LiQ community initiative, LiQ Weekly!
+
+    This weekly montage will be posted to our official LiQ YouTube Channel that you can find here:
+    
+    https://www.youtube.com/channel/UC30Q0MNu38abdwl0PIQ-pNA
+
+    The montage is a series of clips featuring some of the most interesting things that players have experienced across our servers. Each weekly montage consists of clips from the previous week. We encourage you to participate by submitting your very own clip!
+
+    You can submit a clip by sending it to Akuma, the individual leading this initiative.
+
+  images: liq-weekly.png
+- color: rgb(0 135 66)
+  icon: celebration
+  title: French Faction
+  date: 2021-05-13
+  content: |-
+    LiQ is changing the modded server away from GA and over to the French Faction. Along with the French Faction, we are also adding two new maps! 
+
+    The new maps are:
+     - Panjwai
+     - Wake Island
+
+    You will need to subscribe to 3 mods listed below.
+
+    https://steamcommunity.com/sharedfiles/filedetails/?id=2198088821
+    https://steamcommunity.com/sharedfiles/filedetails/?id=2129480878
+    https://steamcommunity.com/sharedfiles/filedetails/?id=2010827510
+
+
+    Enjoy!
+
+    『LiQ』 - New MAPS - Panjwai  - Wake - FR Faction - Liquid Gaming
+  images: french.jpg
+- color: grey
+  icon: flight_takeoff
+  title: Galactic Contention
+  date: 2021-05-06
+  content: |-
+    We are proud to announce that LiQ has been included in the whitelist mod test with OWI, and we have chosen to run Galactic Contention! This mod is a little large as it is a rewrite of a lot of the core functions, it sits at about 30 GB.
+    This is the rotation we are running with:
+
+    GC_BespinPlatforms_AAS_V2
+    GC_Kashyyyk_INV_V1
+    GC_CatoNeimoidia_AAS_V1
+    GC_Galban_AAS_V1_P1
+    GC_Sullust_INV_V2
+    GC_Miniosis_AAS_V2
+    GC_NabooPlains_AAS_V1
+    GC_Sesid_AAS_V2
+    GC_YavinVillage_AAS_V1
+    GC_Kadavo_INV_V1
+    GC_Kashyyyk_AAS_V1
+    GC_Galban_AAS_V1
+    GC_BespinPlatforms_AAS_V1
+    GC_Sullust_AAS_V1
+    GC_Miniosis_AAS_V1
+    GC_Mygeeto_AAS_V1
+
+    We have been advised not to run some layers due to small issues that effect game play, so ADMINS do not manually swap maps.
+
+    We hope you will be able to help us populate the server and play on this over the next few weeks.
+
+    Additionally, The Potato Fields and 56th is running a new map called Panjwia and the French Faction (French Faction from Friday), so keep an eye out in the main server browser for that.
+
+    Thanks again and if this goes well we hope OWI will allow us to run any mods on a live licensed server.
+
+    『LiQ』 - Galactic Contention NA - Liquid Gaming - OWI Official
+
+    Mod Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2428425228
+  images: gc.png
