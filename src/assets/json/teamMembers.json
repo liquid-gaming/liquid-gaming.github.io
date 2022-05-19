@@ -54,7 +54,7 @@
             ]
     },
     {
-        "name": "Kibz",
+        "name": "Binx",
         "roles":
             [
                 {
@@ -63,11 +63,11 @@
             ]
     },
     {
-        "name": "Binx",
+        "name": "Chaoth3ch",
         "roles":
             [
                 {
-                    "name": "Advisor"
+                    "name": "Administrator"
                 }
             ]
     },
@@ -81,7 +81,7 @@
             ]
     },
     {
-        "name": "Chaoth3ch",
+        "name": "Kibz",
         "roles":
             [
                 {
