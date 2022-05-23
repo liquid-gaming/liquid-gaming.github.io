@@ -104,7 +104,13 @@
             [
                 {
                     "name": "Director_of_Rust"
-                },
+                }
+            ]
+    },
+    {
+        "name": "E10",
+        "roles":
+            [
                 {
                     "name": "Director_of_Squad"
                 }
