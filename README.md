@@ -48,36 +48,14 @@ Go to the About.vue in the components folder and check the styles to see if ther
 
 
 ### Updating Player stats
-Player stats json can be found in the `src/assets/json`. In that folder there will be the ArchivedStats, the old seasons, and the current stats.
-Archived stats are not to be touched ever.
+Player stats json can be found in the `src/assets/json`. In that folder there will be the the current stats and the previous stats.
+
+To update the previous season copy the current seasons top stats and total stats into the files located under the previous stats folder.
+
 Current Stats are updated daily with a python script written by Got2bHockey, ask him for info on that if need be. The bot writes to the `top-stats.json` and `total-stats.json`. Do not move or delete these files.
 
-## New Season Creation
+### Updating countdown to new season
 
-When creating a new season copy the current top-stats.json and total-stats.json, and create a new folder in the json folder with the following naming convention "SeasonTwo", "SeasonThree", Etc... then paste the two json files in the newly created folder.
+Find the Countdown component call on line 20 of PlayerStats and change the new date to 3 months after the old season finished.
 
-Then head to the seasons.vue inside the components folder. When in there import the two new files like so
-```
-    import topStats2 from "@/assets/json/SeasonTwo/top-stats.json"
-    import totalStats2 from "@/assets/json/SeasonTwo/total-stats.json"
-```
-
-add these to the data return like so 
-```
-    topStatsTwo: topStats2,
-    totalStatsTwo: totalStats2,
-```
-
-then add it to the seasonsList in the mounted hook like we are adding to it below. Make sure it is the newest object in the list so we don't have to sort this.
-```
-this.seasonsList.push(
-            {
-                topStats: this.topStatsTwo,
-                totalStats: this.topStatsTwo
-            },
-            {
-                topStats: this.topStatsOne,
-                totalStats: this.topStatsOne
-            }
-        );
 ```
