@@ -72,6 +72,18 @@
             ]
     },
     {
+        "name": "Basa (Doc)",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                },
+                {
+                    "name": "Director_of_Rust"
+                }
+            ]
+    },
+    {
         "name": "CeeJay",
         "roles":
             [
@@ -98,15 +110,6 @@
                 }
             ]
     },  
-    {
-        "name": "Basa (Doc)",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Rust"
-                }
-            ]
-    },
     {
         "name": "E10",
         "roles":
