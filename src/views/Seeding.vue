@@ -14,6 +14,7 @@
                   Seeding is made to allow players to play fairly while we try to populate the server. We typically use Al Basrah Skirmish V1 to seed our servers. 
                   Please read the rules for seeding below and look at the image provided to see how we set up the map for seeding. The image also shows the locations 
                   of the FOBs and designated zone to fight over without crossing the colored lines of your associated team.
+                  If any backup FOBs are needed, the radio and the HAB are to be placed BEHIND the primary HAB locations automatically set on the map.
               </div>
             </v-flex>      
           </template>          
