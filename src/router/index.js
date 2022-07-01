@@ -80,9 +80,9 @@ export default new VueRouter({
       component: Rules
     },
     {
-      path: '/mapRotation',
-      name: 'MapRotation',
-      component: MapRotation
+      path: '/rotation',
+      name: 'rotation',
+      beforeEnter() {location.href = RouterLinks.ROTATION}
     },
     {
       path: '/squadMaps',
