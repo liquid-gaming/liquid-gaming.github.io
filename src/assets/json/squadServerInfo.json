@@ -241,6 +241,14 @@
         {
           "title":"Politics",
           "description":"Do not discuss or reference politics or other controversial topics on the server"
+        },
+        {
+          "title":"Trolling",
+          "description":"Do not troll and spawn camp people. If asked to stop camping, stop!"
+        },
+        {
+          "title":"Heli ramming",
+          "description":"No intentional heli ramming"
         }
       ]                  
     }
