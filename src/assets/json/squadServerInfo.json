@@ -44,7 +44,7 @@
         },
         {
           "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
-          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen."
+          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen. The squad that is named after the appropriate vehicle FIRST has priority over said vehicle. This is NOT always the squad with the lowest numbered squad (for instance when a squad is disbanded and renamed)."
         },
         {
           "title":"No intentional heli ramming",
@@ -132,7 +132,7 @@
         },
         {
           "title":"Squads NAMED after a vehicle get PRIORITY for that vehicle.",
-          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen."
+          "description":"Only ONE vehicle type allowed per squad. When a squad is created and named with the intention of using a certain vehicle “ex. Heli” said squad will get priority of the named vehicle. If the named squad is not operating in a manner deemed acceptable by the LiQ admin the admin may disband the squad.  A squad's vic claim extends to ALL of those vics if the squad has enough crewmen. The squad that is named after the appropriate vehicle FIRST has priority over said vehicle. This is NOT always the squad with the lowest numbered squad (for instance when a squad is disbanded and renamed)."
         },
         {
           "title":"No intentional heli ramming",
