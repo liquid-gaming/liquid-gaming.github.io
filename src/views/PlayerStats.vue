@@ -17,7 +17,7 @@
             </div>
             <div>Time Until Season Ends:</div>
             <div style="padding-right: 24px !important;">
-              <Countdown end="Aug 9, 2022"></Countdown>
+              <Countdown end="Nov 11, 2022"></Countdown>
             </div>
             
             <v-btn router to="/archivedplayerstats"  style="width: 98%;margin-top: 20px !important;" color="#1F2E29">
