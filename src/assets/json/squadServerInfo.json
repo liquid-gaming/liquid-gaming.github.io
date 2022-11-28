@@ -65,6 +65,10 @@
         {
           "title":"Politics",
           "description":"Do not discuss or reference politics or other controversial topics on the server"
+        },
+        {
+          "title":"Sharing team info",
+          "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
         }
       ]                  
     },
@@ -148,6 +152,10 @@
         {
           "title":"Politics",
           "description":"Do not discuss or reference politics or other controversial topics on the server"
+        },
+        {
+          "title":"Sharing team info",
+          "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
         }
       ]                  
     },
@@ -192,6 +200,10 @@
         {
           "title":"Politics",
           "description":"Do not discuss or reference politics or other controversial topics on the server"
+        },
+        {
+          "title":"Sharing team info",
+          "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
         }
       ]                  
     },
