@@ -69,6 +69,10 @@
         {
           "title":"Sharing team info",
           "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
+        },
+        {
+          "title":"Rushing the enemy",
+          "description":"Do not rush the enemy first point on AAS or RAAS. Play the active objectives. Follow admin guidance when in doubt."
         }
       ]                  
     },
