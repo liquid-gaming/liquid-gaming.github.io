@@ -102,6 +102,15 @@
             ]
     },  
     {
+        "name": "Welcome Bot",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    }, 
+    {
         "name": "Brennan",
         "roles":
             [
