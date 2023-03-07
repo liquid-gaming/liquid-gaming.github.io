@@ -12,7 +12,7 @@
               </div>
               <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
                   Seeding is made to allow players to play fairly while we try to populate the server. 
-                  We typically use Al Basrah Skirmish V1 to seed our servers. Once the server is announced as LIVE,
+                  We typically use official OWI seed layers to seed our servers. Once the server is announced as LIVE,
                    these rules will no longer apply until the next seed. Please read the rules for seeding below.<br/><br/><br/>
               </div>
             </v-flex>
