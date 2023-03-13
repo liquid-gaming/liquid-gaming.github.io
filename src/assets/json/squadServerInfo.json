@@ -71,8 +71,8 @@
           "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
         },
         {
-          "title":"Rushing the enemy",
-          "description":"Do not rush the enemy first or second point on AAS or RAAS. Play the active objectives. Follow admin guidance when in doubt."
+          "title":"PTFO",
+          "description":"Play the freaking objectives. This includes not rushing past mid point on RAAS before points are visible. When in doubt follow admin guidance."
         }
       ]                  
     },
@@ -160,6 +160,10 @@
         {
           "title":"Sharing team info",
           "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
+        },
+        {
+          "title":"PTFO",
+          "description":"Play the freaking objectives. This includes not rushing past mid point on RAAS before points are visible. When in doubt follow admin guidance."
         }
       ]                  
     },
