@@ -104,6 +104,11 @@ export default new VueRouter({
       beforeEnter() {location.href = RouterLinks.LIQ_WHITELIST}
     },
     {
+      path: '/seedrewards',
+      name: 'seedrewards',
+      beforeEnter() {location.href = RouterLinks.LIQ_SEEDREWARDS}
+    },
+    {
       path: '/archivedplayerstats',
       name: 'ArchivedPlayerStats',
       component: ArchivedPlayerStats
