@@ -77,9 +77,6 @@
             [
                 {
                     "name": "Advisor"
-                },
-                {
-                    "name": "Director_of_Rust"
                 }
             ]
     },
@@ -143,6 +140,15 @@
             [
                 {
                     "name": "Director_of_Arma"
+                }
+            ]
+    },
+    {
+        "name": "Skipper",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Rust"
                 }
             ]
     }
