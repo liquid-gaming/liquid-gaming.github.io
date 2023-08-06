@@ -35,7 +35,7 @@
             </v-container>
           </v-flex>
           <v-flex just>
-            <template v-for="(server, i) in squadServersList">
+            <template v-for="(server, i) in rustServersListJson">
                 <v-flex :key="i" class="rulesMargin">
                 <RuleCard :server="server"/>
                 </v-flex>
