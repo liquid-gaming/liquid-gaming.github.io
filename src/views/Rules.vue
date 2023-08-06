@@ -22,6 +22,25 @@
                 </v-flex>
             </template>
           </v-flex>
+          <v-flex just>
+            <v-container>
+              <v-row align="left" justify="left">
+                <v-card :elevation="5" class="recruitment-card">
+                    <div 
+                    :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
+                    LiQuid Gaming Rust Server Rules
+                    </div>
+                </v-card>
+              </v-row>
+            </v-container>
+          </v-flex>
+          <v-flex just>
+            <template v-for="(server, i) in squadServersList">
+                <v-flex :key="i" class="rulesMargin">
+                <RuleCard :server="server"/>
+                </v-flex>
+            </template>
+          </v-flex>
         </v-row>
       </div>
     </v-container>
@@ -33,6 +52,7 @@
 import RuleCard from "@/components/RuleCard.vue";
 //Json files 
 import squadServersListJson from "@/assets/json/squadServerInfo.json"
+import rustServersListJson from "@/assets/json/squadServerInfo.json"
 
 export default {
   name: "Rules",
@@ -42,6 +62,7 @@ export default {
   data () {
     return {
       squadServersList: squadServersListJson,
+      rustServersList: rustServersListJson,
     }
   },
   methods:{
