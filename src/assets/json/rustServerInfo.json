@@ -1,33 +1,32 @@
 [
     {
-      "name": "LiQ - LiQuid Gaming Community Rust",
-      "description": "PVP, Vanilla, Monthly wipes, server2.liqgaming.com - 195.7.2.117",
+      "name": "LiQ Gaming Noob Friendly | 2X | Raidable Bases | PvP | Backpacks",
+      "description": "PVP, Vanilla-esque, Monthly wipes, server2.liqgaming.com",
       "battlemetricId": 9702955,
       "rules":[
         {
-          "title":"Don't be an AssHat."
+            "title": "Hate Speech is strictly forbidden! - Any speech that denigrates a person or group will not be tolerated; including but not limited to race, sexual orientation, and religion. Any instances of hate speech considered offensive or hindering the experience of any player on a LiQuid Gaming Server will result in a ban as determined by a LiQ Admin."
         },
         {
-          "title":"No glitching, hacking, or other types of cheating."
+            "title": "No Glitching, hacking, or any other type of cheating. - Any form of cheating will result in a ban as determined by a LiQ Admin."
         },
         {
-          "title":"Be respectful of all players (no toxicity, trolling, hate speech, etc)."
+            "title": "No real-life threats, doxing, or other types of malicious behavior. - Any violation of this rule will result in a ban as determined by a LiQ Admin."
         },
         {
-          "title":"No real-life threats, doxing, or other type of malicious behavior."
+            "title": "Don’t be Toxic or a Troll. - Under this rule, intentionally disrupting gameplay flow or other players' experience outside of normal gameplay and discussion will lead to a warn/kick/ban under the discretion of the LiQ admin."
         },
         {
-          "title":"No griefing - this includes intentionally blocking off bases or building players in."
+            "title": "No Bunker bases - The TC and all loot in a base must be accessible via doors and/or windows. Loot and TC cannot be completely walled off. Bases found not following this rule will have built structures deleted for compliance. Players will be warned, kicked, then temporarily banned for violation."
         },
         {
-          "title":"No building to troll named locations. This including walling off access to public areas of interest (eg. sulfer quarry)."
+            "title": "No in-siding - No betraying teammates. This is punishable by a temporary ban."
         },
         {
-          "title":"Have fun!"
+            "title": "No Griefing - Do not grief player bases or monuments by blocking them off. Raided player bases cannot be blocked from the original owner unless you intend to take over and utilize it. Players will be warned, kicked, then temporarily banned for violation."
         },
         {
-          "title":"No Self Promoting",
-          "description":"Streamers are welcome to play on our servers. But spamming chat with promotions and/or advertising will not be promoted any form. If you wish to promote on our servers please contact our administration on our discord."
+            "title": "No Despawning Loot - Do NOT despawn loot to prevent other players from getting it. Players will be kicked or temporarily banned for violating this rule under the discretion of the LiQ admin."
         }
       ]                  
     }
