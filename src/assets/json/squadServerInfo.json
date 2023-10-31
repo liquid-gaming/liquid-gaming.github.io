@@ -1,6 +1,6 @@
 [
     {
-      "name": "『LiQ』Liquid Gaming: Noob Friendly -AAS/RAAS/INV - PTFO",
+      "name": "『LiQ』Liquid Gaming - New Player Friendly - AAS/RAAS/INV - PTFO",
       "description":
         "This is our Main Server at LiQ - it has a good mix of rules and maps that we have designed to help the new squad player learn and understand how community servers are run. It will teach you all the basics so that as you fan out into the wild, you will be better prepared to fit in as a valued player.",
       "battlemetricId": 7871746,
@@ -75,13 +75,13 @@
           "description":"Play the ACTIVE objective (PTFO) –  When in doubt play for the active flags or mid-map control. Intentionally rushing the first or second point is not allowed on RAAS. Follow admin guidance and warnings."
         },
         {
-          "title":"No LiQ clan stacking on Noob Friendly",
+          "title":"No LiQ clan stacking on New Player Friendly",
           "description":"A difference of 6 players overall is stacking (recruits included). LiQ members should take initiative to prevent stacks and balance matches themselves. Please follow yellow text, red warning & chats by our admins. LiQ members will be force swapped otherwise. Intentional LiQ stacking will result in action. Use !switch or ask for help to swap over."
         }
       ]                  
     },
     {
-      "name": "『LiQ』Liquid Gaming: - Map Voting -AAS/RAAS/INV - PTFO",
+      "name": "『LiQ』Liquid Gaming - Teamwork Required - Map Voting - PTFO",
       "description":
         "This is our second server that includes map voting. Currently it includes the same maps and rules as our first server, but that is up for change as time moves on.",
       "battlemetricId": 7894269,
@@ -168,6 +168,10 @@
         {
           "title":"PTFO",
           "description":"Play the ACTIVE objective (PTFO) –  When in doubt play for the active flags or mid-map control. Intentionally rushing the first or second point is not allowed on RAAS. Follow admin guidance and warnings."
+        },
+        {
+          "title":"Teamwork is required",
+          "description":"Teamwork is required - Squad Leaders must be active in command chat."
         }
       ]                  
     },
