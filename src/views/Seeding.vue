@@ -23,11 +23,13 @@
                   Rules
               </div>
               <div class="subtitle-1" style="opacity: 0.75; margin:10px 0 40px 0; text-align: center">
-                  <b>Noob Friendly & Map Voting</b><br/>
+                  <b>New Player Friendly & Teamwork Required</b><br/>
                   • The server will become LIVE after the server reaches 23 v 23 players.<br/>
-                  • Fighting is allowed over the center objective or two middle objective, whichever applies.<br/>
-                  • DO NOT attack, dig, or IED HABs and/or FOBs.<br/>
-                  • Only one FOB and HAB allowed per side.<br/><br/>
+                  • Fight over the active objective. Intentionally camping spawns is not allowed during the seeding phase. Players should not primarily attack from the spawn areas, PTFO.<br/>
+                  • Do not place fortifications with one-way camo netting such as observation posts, bunkers, murder holes & MIL netting. All players should help and dig down these structures during seeding. You are free to build with any other fortifications.<br/>
+                  • Do not drive/use weaponized vehicles.<br/>
+                  • Do not dig, place or move HABs/FOBs, unless directed by an admin. <br/><br/>
+                
                   <b>Modded Server</b><br/>
                   • The server will become LIVE after the server reaches 20 players.<br/>
                   • No building fortifications or emplacements on PVP gamemodes.<br/>
