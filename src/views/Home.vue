@@ -91,69 +91,7 @@
                     </template>
                   </v-layout>
                 </v-flex>
-                <v-flex xs12 sm6 md6 lg6 class="paddingInbetween">
-                  <v-layout wrap>
-                    <v-container class="marginInbetween">
-                      <v-row align="left" justify="left">
-                        <v-col>
-                          <div class="display-1 font-weight-bold ">
-                            Valheim
-                          </div>
-                          <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                            This is a new booming Viking survival sandbox multiplayer game! Launched on Feb. 2, 2021, this game has been rocking the Steam sale charts lately.
-                          </div>
-                        </v-col>
-                      </v-row>
-                    </v-container>
-                    <template v-for="(server, i) in valheimServerList">
-                      <v-flex :key="i" just>
-                        <Servers :server="server" />
-                      </v-flex>
-                    </template>
-                  </v-layout>
-                </v-flex>
               </v-row>
-              <v-layout wrap>
-                <v-container class="marginInbetween">
-                  <v-row align="left" justify="left">
-                    <v-col>
-                      <div class="display-1 font-weight-bold ">
-                        Minecraft
-                      </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                        To learn more about Minecraft and what it is, click <a target="_blank" :href="minecraftLink.link">here</a>.
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-                <template v-for="(server, i) in minecraftServersList">
-                  <v-flex :key="i" xs12 sm4 md5 lg6 just>
-                    <Servers :server="server" />
-                  </v-flex>
-                </template>
-              </v-layout>
-              <!-- <v-layout wrap>
-                <v-container>
-                  <v-row align="left" justify="left">
-                    <v-col>
-                      <div class="display-1 font-weight-bold ">
-                        Beyond The Wire
-                      </div>
-                      <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                        "Beyond the Wire is a large scale multiplayer first-person shooter immersing players in the frantic and bloody Western Front of the Great War. In 
-                        battles with up to 100 real-world combatants, players will have to contend with large open maps and tight claustrophobic trenches. Utilizing both 
-                        period-appropriate guns and a more tactical close-quarters melee combat system, the action in Beyond the Wire is more comprehensive than 
-                        anything seen in a WW1 game to date." - <a target="_blank" href="https://playbtw.com/">Playbtw.com</a>
-                      </div>
-                    </v-col>
-                  </v-row>
-                </v-container>
-                <template v-for="(server, i) in beyondTheWireServersList">
-                  <v-flex :key="i" xs12 sm6 md6 lg6 just class="marginInbetweenSmaller">
-                    <Servers :server="server"/>
-                  </v-flex>
-                </template>
-              </v-layout> -->
             </v-flex>
           </v-layout>
         </v-row>
