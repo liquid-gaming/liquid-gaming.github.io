@@ -169,4 +169,7 @@ export default {
 .Director_of_Competitive{
     color: mix(#7a031f, grey) !important;
 }
+.Director_of_Events{
+    color: #ac9742 !important;
+}
 </style>
