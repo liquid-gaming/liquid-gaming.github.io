@@ -1,5 +1,130 @@
 ---
-- color: rgb(255 0 0)
+- color: rgb(255, 196, 65)
+  icon: groups
+  title: Squad Stats Season 9!
+  date: 2023-11-25
+  content: |-
+    Gather 'round because it's that time again! We've officially wrapped up Season 9 of LiQ Squad Seasons, and the scorecards are in. Let's break down the final numbers:
+    Total Wounds: 738,667
+    Total Kills: 517,336
+    Total Deaths: 578,311
+    Total Revives: 168,397
+    Total Unique Players: 35,069
+
+    But hold on to your helmets, because without any more delays, let's give a round of applause to our Season 9 champions!
+
+    Top Killers:
+    OH DEER  - 4,037 kills
+    『LiQ』DJ_Ratel  - 2,882 kills
+    『LiQ』Havok  - 2,623 kills
+
+    Most Perseverance:
+    『LiQ』DJ_Ratel  - 2,060 deaths
+
+    Revival Maestro:
+    Napayshni  - 769 revives
+
+    Most Hours:
+    『LiQ』Kyle  - 655 hours
+
+
+    A huge thank you to each and every one of you for making this another fantastic season! If you find your name among the victors, please reach out and create an ⁠⁠advisor-ticket so we can arrange for your rewards ($50 for the top killer and $25 each for the other categories, provided as Steam gift cards).
+
+- color: rgb(50 50 65)
+  icon: group
+  title: Squad Stats Season 8!
+  date: 2023-08-25
+  content: |-
+    Attention, @everyone ! It's that time once again! We've concluded the 8th season of LiQ Squad Seasons, and the results have been tallied. Let's dive into the final numbers:
+    Total Wounds: 788,987
+    Total Kills: 662,783
+    Total Deaths: 614,917
+    Total Revives: 175,800
+    Total Unique Players: 37,557
+
+    Now, without further ado, let's celebrate our season 8 champions!
+
+    Top Killers:
+    『LiQ』Havok  - 3,967 kills
+    『LiQ』Redneck - 2,968 kills
+    『LiQ』Tactics - 2,192 kills
+
+    Most Perseverance:
+    Mom Should'a - 1,316 deaths
+
+    Revival Maestro:
+    『LiQ』Emelle - 973 revives
+
+    Most Hours:
+    『LiQ』 La Flame - 391 hours
+
+
+    A huge thank you to each and every one of you for making this another fantastic season! If you find your name among the victors, please reach out and create an advisor-ticket so we can arrange for your rewards ($50 for the top killer and $25 each for the other categories, provided as Steam gift cards).
+
+- color: rgb(155 255 0)
+  icon: group
+  title: Squad Stats Season 7!
+  date: 2023-05-17
+  content: |-
+    Its that time again! Our Seventh season of LiQ Squad Seasons is now over and the results are in so let's check out those totals:
+    698,717 wounds
+    504,768 kills
+    573,610 deaths
+    163,223 revives
+    33,279 unique players
+
+
+    Now on to our season 6 winners!
+
+    Top Kills:
+    Youwotmate - 4,055
+    keko - 3,401
+    snipes187 - 2,388
+
+    Most Deaths:
+    snipes187 - 2,416
+
+    Most Revives:
+    『LiQ』RaeQuis - 925
+
+    Thank you so much everyone for another great season! If you were listed as one of the winners, please be sure to reach out and make an advisor-ticket so we can get you your prizes ($50 for top kills and $25 for each of the rest in the form of a Steam gift card).
+
+    We've started up season 8 so be sure to hop on and claim your spot on the top of our leaderboards. As always, be sure to track your stats throughout the season on our website.
+
+- color: rgb(0 15 255)
+  icon: group
+  title: Squad Stats Season 6!
+  date: 2022-11-15
+  content: |-
+   You know what time it is! Our SIXTH season of LiQ Squad Seasons is now over and the results are in so let's check out those totals:
+      
+   959,600 wounds
+   693,309 kills
+   814,505 deaths
+   250,056 revives
+   40,267 unique players
+
+   Now on to our season 6 winners!
+  
+   Top Kills:
+   1. Zim - 3,598
+   2. Battle_Ratel - 3,184
+   3. Ruby - 2,388
+  
+   Most Deaths:
+   Battle_Ratel - 2,459
+  
+   Most Revives:
+   Zim - 1,110
+  
+   Most Hours:
+   Battle_Ratel - 311 hrs
+
+   Thank you so much everyone for another great season! If you were listed as one of the winners, please be sure to reach out and make an ⁠advisor-ticket so we can get you your prizes.
+  
+   We've started up season 7 so be sure to hop on and claim your spot on the top of our leaderboards. As always, be sure to track your stats throughout the season on our website.
+  
+- color: rgb(21 150 0)
   icon: group
   title: Squad Stats Season 5!
   date: 2022-11-15
@@ -68,11 +193,11 @@
   content: |-
     "The veterans of our military services have put their lives on the line to protect the freedoms that we enjoy. 
     They have dedicated their lives to their country and deserve to be recognized for their commitment."— Judd Gregg. 
-    
+
     On this Veterans Day, let us remember the service of our veterans, and their families. We thank you for your 
     service to our country and you will not be forgotten! To the veterans in the discord, you can access the vets-info 
     once you obtain the @Military Veteran role, we won't leave you behind on the battlefield and we wont forget you at home, 
-    thank you! 
+    thank you!
 
   images: airforce1.png
 - color: rgb(255 0 0)
@@ -94,7 +219,7 @@
 
     We will also be donating $200 to the Operation Supply Drop charity which has been supporting troops since 2010.
 
-    Get ready for SEASON TWO which starts November 13th! 
+    Get ready for SEASON TWO which starts November 13th!
 
   images: season2.png
 - color: rgb(66, 245, 242)
@@ -159,7 +284,7 @@
     We are proud to announce a new LiQ community initiative, LiQ Weekly!
 
     This weekly montage will be posted to our official LiQ YouTube Channel that you can find here:
-    
+
     https://www.youtube.com/channel/UC30Q0MNu38abdwl0PIQ-pNA
 
     The montage is a series of clips featuring some of the most interesting things that players have experienced across our servers. Each weekly montage consists of clips from the previous week. We encourage you to participate by submitting your very own clip!
