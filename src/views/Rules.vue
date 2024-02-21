@@ -9,7 +9,7 @@
                 <v-card :elevation="5" class="recruitment-card">
                     <div 
                     :class="{'display-3 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}">
-                    LiQuid Gaming Squad Server Rules
+                    LiQuid Gaming Server Rules
                     </div>
                 </v-card>
               </v-row>
