@@ -28,6 +28,7 @@
                   • Fight over the active objective. Intentionally camping spawns is not allowed during the seeding phase. Players should not primarily attack from the spawn areas, PTFO.<br/>
                   • Do not place fortifications with one-way camo netting such as observation posts, bunkers, murder holes & MIL netting. All players should help and dig down these structures during seeding. You are free to build with any other fortifications.<br/>
                   • Do not drive/use weaponized vehicles.<br/>
+                  • Do not camp spawns, play the objective.<br/>
                   • Do not dig, place or move HABs/FOBs, unless directed by an admin. <br/><br/>
                 
                   <b>Modded Server</b><br/>
