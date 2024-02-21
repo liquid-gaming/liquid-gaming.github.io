@@ -90,7 +90,7 @@
             ]
     }, 
     {
-        "name": "Nightshade",
+        "name": "TempusOwl",
         "roles":
             [
                 {
@@ -122,6 +122,15 @@
             [
                 {
                     "name": "Director_of_Rust"
+                }
+            ]
+    },
+    {
+        "name": "Outlast",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Events"
                 }
             ]
     }
