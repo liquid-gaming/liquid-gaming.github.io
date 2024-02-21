@@ -8,11 +8,11 @@
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="text-right">
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/" text>Home</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text><sub class="updateBadge">UPDATED</sub>Announcements</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/announcements" text>Announcements</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/rules" text>Rules</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/seeding" text>Seeding</v-btn>
                     <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/playerstats" text><sub class="updateBadge">UPDATED</sub>Player Stats</v-btn>
-                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" router to="/squadMaps" text>Maps</v-btn>
+                    <v-btn active-class="no-active" v-show="$vuetify.breakpoint.smAndUp" href="https://squadmaps.com/" text>Maps</v-btn>
                 </v-toolbar-items>
                 </v-layout>
             </v-container>
