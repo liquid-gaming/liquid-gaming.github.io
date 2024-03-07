@@ -111,7 +111,7 @@ import Servers from "@/components/Servers.vue";
 import About from "@/components/About.vue"
 import Recruitment from "@/components/Recruitment.vue"
 //Json files
-import squadServersListJson from "@/assets/json/squadServerInfo.json"
+import squadServersListJson from "@/assets/json/gameServerRules.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
 import valheimServerListJson from "@/assets/json/valheimServerInfo.json"
 import rustServerListJson from "@/assets/json/rustServerInfo.json"
