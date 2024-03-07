@@ -66,7 +66,6 @@
 
 <script>
 // import * as easings from "vuetify/es5/services/goto/easing-patterns";
-import { mdiTrophyAward } from '@mdi/js';
 import { mdiCalculator } from '@mdi/js';
 export default {
   data() {
