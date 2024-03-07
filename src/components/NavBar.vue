@@ -84,7 +84,6 @@ export default {
         { title: 'Player Stats', icon: 'leaderboard', route: '/playerstats' },
         { title: 'Squad Maps', icon: 'map', route: '/squadMaps' },
         { title: 'Mortar Calculator', icon: mdiCalculator, route: '/mortarCalculator' },
-        { title: 'Squad Masters', icon: mdiTrophyAward, route: '/squadMasters' },
         { title: 'Discord', icon: 'mdi-discord', route: '/discord' },
         { title: 'Merchandise', icon: 'shopping_cart', route: '/merch' },
         { title: 'Patreon', icon: 'mdi-patreon', route: '/patreon' }
