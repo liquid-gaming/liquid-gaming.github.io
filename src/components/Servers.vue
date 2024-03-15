@@ -6,10 +6,6 @@
         <v-col>
           <div class="title mt-2 titleColour">{{server.name}}</div>
           <div :class="{ preWrapped: containBreaks(server.description)}">{{server.description}}</div>
-          <div v-if="server.mapRotationLink != null">
-            <div class="title mt-2 titleColour">Map Rotation</div>
-            <div>Click here to see this servers map rotation: <a target="_blank" :href="server.mapRotationLink">Map Rotation</a></div>
-          </div>
           <div class="title mt-2 titleColour">Battmetrics</div>
         </v-col>
       </v-row>
@@ -62,7 +58,6 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </div>
-    <div v-else class="serverNothingCard"></div>
     <div class="serverInfoCard">
       <v-expansion-panels class="serverExpantionCard" v-if="server.rules != undefined">
         <v-expansion-panel>
@@ -147,8 +142,5 @@ export default {
 }
 .serverExpantionCard{
   border-radius: 10px;
-}
-.serverNothingCard{
-  padding:15px;
 }
 </style>

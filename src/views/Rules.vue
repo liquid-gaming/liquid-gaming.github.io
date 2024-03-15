@@ -86,4 +86,10 @@ export default {
 .rulesMargin{
   margin-top:10px;
 }
+
+.flex, .child-flex > * {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
 </style>
