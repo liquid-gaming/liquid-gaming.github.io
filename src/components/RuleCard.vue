@@ -43,7 +43,7 @@
               <v-card class="card-container rule-cards">
                 <v-card-text class="px-4" :class="{'larger-display': $vuetify.breakpoint.smAndDown}">
                   <v-card-title>
-                    <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
+                    <h5 class="titleColour">{{rule.title}}</h5>
                   </v-card-title>
                   <v-card-subtitle v-if="rule.description != null">
                     <p>{{rule.description}}</p>
