@@ -58,7 +58,6 @@
                         "Squad is a tactical FPS that provides authentic combat experiences through teamwork, communication, and gameplay. It seeks to bridge 
                         the large gap between arcade shooter and military simulation. Large scale, combined arms combat, base building, and a great integrated VoIP system."
                         - Offworld Industries. To learn more about Squad click <a target="_blank" :href="squadLink.link">here</a>.
-                        <a target="_blank" :href="squadTrelloLink.link">here</a>.
                       </div>
                     </v-col>
                   </v-row>
