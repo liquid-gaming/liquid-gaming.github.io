@@ -12,13 +12,13 @@
     <div v-if="server.mapVoteCommands != null" class="expantionPannelsDivs">
       <v-expansion-panels class="expantionPannels">
         <v-expansion-panel>
-          <v-expansion-panel-header class="titleColour">Map Vote Commands</v-expansion-panel-header>
+          <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-flex v-for="(command, index) in server.mapVoteCommands" :key="index">
               <v-card class="card-container rule-cards">
                 <v-card-text class="px-4">
                   <v-card-title>
-                    <h5 class="titleColour">{{index+1}}: {{command.title}}</h5>
+                    <h5 class="titleColour">{{command.title}}</h5>
                   </v-card-title>
                   <v-card-subtitle :class="{ preWrapped: containBreaks(command.description)}" v-if="command.description != null && command.link == null">
                     <p>{{command.description}}</p>
@@ -43,7 +43,7 @@
               <v-card class="card-container rule-cards">
                 <v-card-text class="px-4" :class="{'larger-display': $vuetify.breakpoint.smAndDown}">
                   <v-card-title>
-                    <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
+                    <h5 class="titleColour">{{rule.title}}</h5>
                   </v-card-title>
                   <v-card-subtitle v-if="rule.description != null">
                     <p>{{rule.description}}</p>

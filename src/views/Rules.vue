@@ -39,7 +39,7 @@
 // @ is an alias to /src
 import RuleCard from "@/components/RuleCard.vue";
 //Json files 
-import squadServersListJson from "@/assets/json/squadServerInfo.json"
+import squadServersListJson from "@/assets/json/gameServerRules.json"
 import rustServersListJson from "@/assets/json/rustServerInfo.json"
 
 export default {
@@ -86,4 +86,10 @@ export default {
 .rulesMargin{
   margin-top:10px;
 }
+
+.flex, .child-flex > * {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
 </style>
