@@ -9,7 +9,7 @@ npm install
 ```
 npm run serve
 ```
-For Windows Only: Replace package.json to use "set" instead of "export" at the top. Revert this before commmiting. 
+For Windows Only: Replace package.json to use "set" instead of "export" at the top. Revert this before commiting. 
 ```
 "serve": "set NODE_OPTIONS=--openssl-legacy-provider && set UV_USE_IO_URING=0 && vue-cli-service serve",
 "build": "set NODE_OPTIONS=--openssl-legacy-provider && set UV_USE_IO_URING=0 && vue-cli-service build",
