@@ -40,7 +40,7 @@
                   Servers
                 </div>
                 <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
-                  LiQuid Gaming currently hosts 7 gaming servers for our community, which includes; Squad, Minecraft, Rust, and Valheim. More will be coming throughout the year.
+                  LiQuid Gaming currently hosts several gaming servers for our community, which includes; Squad, Rust & more throughout the year.
                 </div>
               </v-col>
             </v-row>
@@ -57,8 +57,7 @@
                       <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" class="home-text">
                         "Squad is a tactical FPS that provides authentic combat experiences through teamwork, communication, and gameplay. It seeks to bridge 
                         the large gap between arcade shooter and military simulation. Large scale, combined arms combat, base building, and a great integrated VoIP system."
-                        - Offworld Industries. To learn more about Squad click <a target="_blank" :href="squadLink.link">here</a>, to see their roadmap click 
-                        <a target="_blank" :href="squadTrelloLink.link">here</a>.
+                        - Offworld Industries. To learn more about Squad click <a target="_blank" :href="squadLink.link">here</a>.
                       </div>
                     </v-col>
                   </v-row>
@@ -111,7 +110,7 @@ import Servers from "@/components/Servers.vue";
 import About from "@/components/About.vue"
 import Recruitment from "@/components/Recruitment.vue"
 //Json files
-import squadServersListJson from "@/assets/json/squadServerInfo.json"
+import squadServersListJson from "@/assets/json/gameServerRules.json"
 import minecraftServersListJson from "@/assets/json/minecraftServerInfo.json"
 import valheimServerListJson from "@/assets/json/valheimServerInfo.json"
 import rustServerListJson from "@/assets/json/rustServerInfo.json"

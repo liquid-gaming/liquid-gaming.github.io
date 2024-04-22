@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Seeding from '../views/Seeding.vue'
-import SquadMasters from '../views/SquadMasters.vue'
 import PlayerStats from '../views/PlayerStats.vue'
 import Announcements from '../views/Announcements.vue'
 import LiqWeekly from '../views/LiqWeekly.vue'
@@ -27,11 +26,6 @@ export default new VueRouter({
       path: '/seeding',
       name: 'Seeding',
       component: Seeding
-    },
-    {
-      path: '/squadMasters',
-      name: 'SquadMasters',
-      component: SquadMasters
     },
     {
       path: '/playerstats',

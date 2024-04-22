@@ -7,8 +7,8 @@
                         Who We Are
                     </div>
                     <div :class="{'subtitle-1': $vuetify.breakpoint.smAndDown}" style="opacity: 0.75; margin-top:10px;">
-                        LiQuid Gaming was created back in May of 2019 by our founding fathers. Since then we have grown to upward of 3000 members in our Discord and over 480 LiQ members.
-                        Our board of directors currently consist of the 17 members below, not listed are our many trustworthy admins for our various servers. If you have any questions or
+                        LiQuid Gaming was created back in May of 2019 by our founding fathers. Since then we have grown to upward of 4000 members in our Discord and over 800 LiQ members.
+                        Our board of directors currently consist of the 15 members below, not listed are our many trustworthy admins for our various servers. If you have any questions or
                         inquiries, please contact us in our Discord.
                     </div>
                     <div :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-2 font-weight-bold': $vuetify.breakpoint.smAndDown}" style="margin-top:20px;">
@@ -70,7 +70,7 @@
                                     <v-card class="card-container discordRules">
                                         <v-card-text class="px-4">
                                             <v-card-title>
-                                                <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
+                                                <h5 class="titleColour">{{rule.title}}</h5>
                                             </v-card-title>
                                             <v-card-subtitle v-if="rule.description != null">
                                                 <p>{{rule.description}}</p>

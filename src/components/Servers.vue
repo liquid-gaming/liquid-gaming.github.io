@@ -6,10 +6,6 @@
         <v-col>
           <div class="title mt-2 titleColour">{{server.name}}</div>
           <div :class="{ preWrapped: containBreaks(server.description)}">{{server.description}}</div>
-          <div v-if="server.mapRotationLink != null">
-            <div class="title mt-2 titleColour">Map Rotation</div>
-            <div>Click here to see this servers map rotation: <a target="_blank" :href="server.mapRotationLink">Map Rotation</a></div>
-          </div>
           <div class="title mt-2 titleColour">Battmetrics</div>
         </v-col>
       </v-row>
@@ -41,13 +37,13 @@
     <div v-if="server.mapVoteCommands != null" class="serverInfoCard">
       <v-expansion-panels class="serverExpantionCard">
         <v-expansion-panel>
-          <v-expansion-panel-header class="titleColour">Map Vote Commands</v-expansion-panel-header>
+          <v-expansion-panel-header class="titleColour">Rules</v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-flex v-for="(command, index) in server.mapVoteCommands" :key="index">
               <v-card class="card-container rule-cards">
                 <v-card-text class="px-4">
                   <v-card-title>
-                    <h5 class="titleColour">{{index+1}}: {{command.title}}</h5>
+                    <h5 class="titleColour">{{command.title}}</h5>
                   </v-card-title>
                   <v-card-subtitle :class="{ preWrapped: containBreaks(command.description)}" v-if="command.description != null && command.link == null">
                     <p>{{command.description}}</p>
@@ -62,7 +58,6 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </div>
-    <div v-else class="serverNothingCard"></div>
     <div class="serverInfoCard">
       <v-expansion-panels class="serverExpantionCard" v-if="server.rules != undefined">
         <v-expansion-panel>
@@ -72,7 +67,7 @@
               <v-card class="card-container rule-cards">
                 <v-card-text class="px-4" :class="{'larger-display': $vuetify.breakpoint.smAndDown}">
                   <v-card-title>
-                    <h5 class="titleColour">{{index+1}}: {{rule.title}}</h5>
+                    <h5 class="titleColour">{{rule.title}}</h5>
                   </v-card-title>
                   <v-card-subtitle v-if="rule.description != null">
                     <p>{{rule.description}}</p>
@@ -147,8 +142,5 @@ export default {
 }
 .serverExpantionCard{
   border-radius: 10px;
-}
-.serverNothingCard{
-  padding:15px;
 }
 </style>
