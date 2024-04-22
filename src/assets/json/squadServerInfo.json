@@ -89,6 +89,10 @@
       {
         "title":"No Unarmed Kits",
         "description":"When the server is live, you are not allowed to have an unarmed kit."
+      },
+      {
+        "title":"To report problems with a specific server, players can email licensing@offworldindustries.com with the following details:",
+        "description":"Name of the server, any evidence such as video, pictures, etc, date and time of the incident. Or alternatively you can fill out the following form https://forms.gle/R3D434WVuaY9obtT6"
       }
     ]   
   },
@@ -182,6 +186,10 @@
       {
         "title":"No Unarmed Kits",
         "description":"When the server is live, you are not allowed to have an unarmed kit."
+      },
+      {
+        "title":"To report problems with a specific server, players can email licensing@offworldindustries.com with the following details:",
+        "description":"Name of the server, any evidence such as video, pictures, etc, date and time of the incident. Or alternatively you can fill out the following form https://forms.gle/R3D434WVuaY9obtT6"
       }
     ]   
   },
@@ -230,6 +238,10 @@
       {
         "title":"Sharing team info",
         "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
+      },
+      {
+        "title":"To report problems with a specific server, players can email licensing@offworldindustries.com with the following details:",
+        "description":"Name of the server, any evidence such as video, pictures, etc, date and time of the incident. Or alternatively you can fill out the following form https://forms.gle/R3D434WVuaY9obtT6"
       }
     ]                  
   },
@@ -262,6 +274,10 @@
       {
         "title":"Heli ramming",
         "description":"No intentional heli ramming"
+      },
+      {
+        "title":"To report problems with a specific server, players can email licensing@offworldindustries.com with the following details:",
+        "description":"Name of the server, any evidence such as video, pictures, etc, date and time of the incident. Or alternatively you can fill out the following form https://forms.gle/R3D434WVuaY9obtT6"
       }
     ]                  
   }
