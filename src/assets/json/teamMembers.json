@@ -115,23 +115,5 @@
                     "name": "Director_of_Arma"
                 }
             ]
-    },
-    {
-        "name": "Skipper",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Rust"
-                }
-            ]
-    },
-    {
-        "name": "Outlast",
-        "roles":
-            [
-                {
-                    "name": "Director_of_Events"
-                }
-            ]
     }
 ]
