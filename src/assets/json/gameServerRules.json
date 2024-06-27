@@ -67,6 +67,10 @@
         "description":"Intentional Heli v. Heli ramming is bannable - Apologize for all accidents in ALL chat."
       },
       {
+        "title":"3.5 Minimum Distance From Main For Using Rocket Trucks",
+        "description":"You must drive the BM-21 (Grad) and rocket trucks past the first point/objective before using their rockets on distant targets, unless the active objective is the first point."
+      },
+      {
         "title":"4.1 No Main Camping",
         "description":"No main camping - Our rule is based on intention, not distance. Setting up ambushes or placing mines intending to kill vehicles leaving the roads out of the main is not allowed. Play your active objectives! Will be considered camping the enemy main and punished under this rule at the discretion of the LiQ admin in a kick/ban."
       },
@@ -162,6 +166,10 @@
       {
         "title":"3.4 No Heli v. Heli Ramming",
         "description":"Intentional Heli v. Heli ramming is bannable - Apologize for all accidents in ALL chat."
+      },
+      {
+        "title":"3.5 Minimum Distance From Main For Using Rocket Trucks",
+        "description":"You must drive the BM-21 (Grad) and rocket trucks past the first point/objective before using their rockets on distant targets, unless the active objective is the first point."
       },
       {
         "title":"4.1 No Main Camping",
