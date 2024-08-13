@@ -115,5 +115,14 @@
                     "name": "Director_of_Arma"
                 }
             ]
+    },
+    {
+        "name": "IItsAJackal",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Minecraft"
+                }
+            ]
     }
 ]
