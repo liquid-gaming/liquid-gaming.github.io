@@ -157,6 +157,9 @@ export default {
 .Director_of_Recruitment{
     color: mix(#3b38dd, grey) !important;
 }
+.Director_of_Minecraft{
+    color: mix(#51dd38, grey) !important;
+}
 .Assistant_Director_of_Recruitment{
     color: mix(#4b0772, grey) !important;
 }
