@@ -124,5 +124,14 @@
                     "name": "Director_of_Minecraft"
                 }
             ]
+    },
+    {
+        "name": "Big Jim Arnett",
+        "roles":
+            [
+                {
+                    "name": "Director_of_Events"
+                }
+            ]
     }
 ]
