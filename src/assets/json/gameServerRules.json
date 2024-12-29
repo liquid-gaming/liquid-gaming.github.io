@@ -31,6 +31,10 @@
         "description":"A difference of 6 players overall is stacking (recruits included). LiQ members should take initiative to prevent stacks and balance matches themselves. Please follow yellow text, red warning & chats by our admins. LiQ members will be force swapped otherwise. Intentional LiQ stacking will result in action. Use !switch or ask for help to swap over."
       },
       {
+        "title":"1.7 No Excessive Squad Creation",
+        "description":"Avoid spamming squad creation or using command lines excessively at round start. Excessive squad creations negatively impact server health and will result in a kick."
+      },
+      {
         "title":"2.1 No Hate Speech",
         "description":"Hate speech, discriminatory behavior, sexual harassment, and slurs are forbidden."
       },
@@ -128,7 +132,11 @@
         "description":"A difference of 6 players overall is stacking (recruits included). LiQ members should take initiative to prevent stacks and balance matches themselves. Please follow yellow text, red warning & chats by our admins. LiQ members will be force swapped otherwise. Intentional LiQ stacking will result in action. Use !switch or ask for help to swap over."
       },
       {
-        "title":"1.7 Teamwork Required",
+        "title":"1.7 No Excessive Squad Creation",
+        "description":"Avoid spamming squad creation or using command lines excessively at round start. Excessive squad creations negatively impact server health and will result in a kick."
+      },
+      {
+        "title":"1.8 Teamwork Required",
         "description":"Squad Leaders must be active in command chat. Make sure to actively communicate and plan, and work together with other squads."
       },
       {
