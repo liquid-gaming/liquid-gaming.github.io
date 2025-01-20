@@ -72,6 +72,24 @@
             ]
     },
     {
+        "name": "iCampHard",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },  
+    {
+        "name": "Redneck",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },  
+    {
         "name": "Shaka",
         "roles":
             [
