@@ -1,6 +1,6 @@
 [
   {
-    "name": "『LiQ』Liquid Gaming - New Player Friendly - AAS/RAAS/INV - PTFO",
+    "name": "LiQ | New Player Friendly | LiQuid Gaming | liqgaming.com/discord",
     "description":
       "Our main Squad server: Designed for everyone, including new players looking to learn the game and improve their skills.",
     "battlemetricId": 7871746,
@@ -109,7 +109,7 @@
     ]   
   },
   {
-    "name": "『LiQ』Liquid Gaming - Teamwork Required - Map Voting - PTFO",
+    "name": "LiQ | Teamwork Required | LiQuid Gaming | liqgaming.com/discord",
     "description":
       "This is our second server where teamwork is expected. Squad leaders must be active in Command Chat!.",
     "battlemetricId": 7894269,
@@ -150,6 +150,115 @@
       {
         "title":"1.9 Teamwork Required",
         "description":"Squad Leaders must be active in command chat. Make sure to actively communicate and plan, and work together with other squads."
+      },
+      {
+        "title":"2.1 No Hate Speech",
+        "description":"Hate speech, discriminatory behavior, sexual harassment, and slurs are forbidden."
+      },
+      {
+        "title":"2.2 No Toxicity",
+        "description":"Toxicity is not tolerated - Be respectful through your communications and actions."
+      },
+      {
+        "title":"2.3 No Politics, Play The Match!", 
+        "description":"Political, controversial or NSFW topics are discouraged. Focus on the match!"
+      },
+      {
+        "title":"2.4 No Trolling/Griefing.",
+        "description":"No Trolling/Griefing - Intentionally disrupting matches is not allowed."
+      },
+      {
+        "title":"2.5 Open A Ticket!",
+        "description":"If you have rule concerns/reports, create a ticket on our Discord with evidence. Chat is not the place to argue about rules, this can be disruptive to all players."
+      },
+      {
+        "title":"2.6 No mic or music spam",
+        "description":"Music and soundboards are allowed within reason, but do not spam local, squad, or command chat. If you're asked to stop, do so immediately."
+      },
+      {
+        "title":"3.1 No Soloing Vehicles",
+        "description":"No soloing vehicles that require a crewman kit to operate - Leaving main or pushing further into battle while soloing is forbidden."
+      },
+      {
+        "title":"3.2 Claim Your Vehicle",
+        "description":"The squad named after AND created first has the priority in claiming the vehicle. Each named squad may claim only one vehicle, regardless of whether they have enough members to operate multiple claimed vehicles. Claim is NOT always the squad with the lowest numbered squad (for instance when a squad is disbanded and renamed). Always follow admin directions."
+      },
+      {
+        "title":"3.3 Be Specfic In Squad Names To Ensure Claim!",
+        "description":"Non-specific squad names like Armor will get leftovers. Squad names that refer to a single spawn like MBT, TANK, Abrams or M1A2 are equal. Names that apply to more than one vehicle will get leftovers."
+      },
+      {
+        "title":"3.4 No Heli v. Heli Ramming",
+        "description":"Intentional Heli v. Heli ramming is bannable - Apologize for all accidents in ALL chat."
+      },
+      {
+        "title":"3.5 Minimum Distance From Main For Using Artillery Vehicles",
+        "description":"Artillery vehicles (BM-21 Grad, M113, etc.) must advance beyond the initial point before firing, unless the first objective is an active objective."
+      },
+      {
+        "title":"4.1 No Main Camping",
+        "description":"No main camping - Our rule is based on intent, not distance. Avoid setting up ambushes, planting mines, or trailing vehicles from main.  When in doubt, play near objectives to support your team."
+      },
+      {
+        "title":"4.2 Play The Objective",
+        "description":"Play the ACTIVE objective (PTFO) -  When in doubt play for the active flags or mid-map control. Intentionally rushing the first or second point is not allowed on RAAS. Follow admin guidance and warnings."
+      },
+      {
+        "title":"No Sharing Team Info",
+        "description":"Do NOT share sensitive team info. This includes going AFK with map open while streaming"
+      },
+      {
+        "title":"Do not Exploit Game Bugs Such As a Wall Breach & Invulnerable FOBs.",
+        "description":"Any game bug or exploit that is created, manufactured, or accidentally found by a player and then used to hamper the opposing team's efforts to win the game. Is applicable to this rule and is met with a kick/ban where the severity of the circumstances are determined by the LiQ admin."
+      },
+      {
+        "title":"No Unarmed Kits",
+        "description":"When the server is live, you are not allowed to have an unarmed kit."
+      },
+      {
+        "title":"To report problems with a specific server, players can email licensing@offworldindustries.com with the following details:",
+        "description":"Name of the server, any evidence such as video, pictures, etc, date and time of the incident. Or alternatively you can fill out the following form https://forms.gle/R3D434WVuaY9obtT6"
+      }
+    ]   
+  },
+  {
+    "name": "LiQ | Global Escalation | LiQuid Gaming | liqgaming.com/discord",
+    "description":
+      "Our modded Global Escalation Squad server: Designed for everyone, including new players looking to learn the game and improve their skills.",
+    "battlemetricId": 32938053,
+    "mapRotationLink": "",
+    "rules":[
+      {
+        "title":"1.1 Apologize for ALL teamkills",
+        "description":"Apologize for ALL teamkills in [J key] ALL chat. Intentional teamkilling is bannable, including revenge TKs."
+      },
+      {
+        "title":"1.2 No Squad Baiting",
+        "description":"When a player clicks to create a squad, they must lead that squad. Creating squads you don't intend to lead will result in action. Lead it or disband it."
+      },
+      {
+        "title":"1.3 Squad Leaders must have microphone & SL kit",
+        "description":"All SLs must have an SL kit & microphone - SLs should actively lead their squad, communicate & coordinate."
+      },
+      {
+        "title":"1.4 No Locked Squads Under 4",
+        "description":"Unless named for a vehicle claim or TOW/Mortar FOB. "
+      },
+      {
+        "title":"1.5 No Advertising in our servers",
+        "description":"No advertising clans, discords or similar communities within our own spaces."
+      },
+      {
+        "title":"1.6 No LiQ clan stacking on New Player Friendly",
+        "description":"A difference of 6 players overall is stacking (recruits included). LiQ members should take initiative to prevent stacks and balance matches themselves. Please follow yellow text, red warning & chats by our admins. LiQ members will be force swapped otherwise. Intentional LiQ stacking will result in action. Use !switch or ask for help to swap over."
+      },
+      {
+        "title":"1.7 No Excessive Squad Creation",
+        "description":"Avoid spamming squad creation or using command lines excessively at round start. Excessive squad creations negatively impact server health and will result in a kick."
+      },
+      {
+        "title":"1.8 No Unarmed Kits",
+        "description": "Players must spawn with a valid kit. Unarmed kits are not permitted on a live server and may result in removal."
       },
       {
         "title":"2.1 No Hate Speech",
