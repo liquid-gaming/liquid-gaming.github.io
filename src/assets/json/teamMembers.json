@@ -71,6 +71,15 @@
                 }
             ]
     },
+        {
+        "name": "Exploits",
+        "roles":
+            [
+                {
+                    "name": "Advisor"
+                }
+            ]
+    },  
     {
         "name": "iCampHard",
         "roles":
